@@ -1,0 +1,33 @@
+[System] alessia enters the room
+[System] ana enters the room
+ana: ola
+alessia: Ana como estas?
+ana: bem
+alessia: boa
+[System] ana has left the room
+[System] alessia enters the room
+alessia: ola
+[System] Jone enters the room
+Jone: Olá Jone
+[System] linda enters the room
+linda: Olá Jone
+Jone: Olá linda
+[System] linda has left the room
+[System] linda enters the room
+linda: Tudo bem?
+Jone: Sim e contigo?
+linda: Fui abaixo
+linda: Também
+[System] Jone has left the room
+[System] Jone enters the room
+Jone: Pois, agora fui eu
+linda: que cena
+[System] linda has left the room
+[System] Jone has left the room
+[System] Jone enters the room
+[System] Jone has left the room
+[System] Jone enters the room
+Jone: Olá
+[System] Jone has left the room
+[System] Jone entrou na sala
+[System] Jone has left the room

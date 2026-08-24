@@ -1,0 +1,8 @@
+[System] Jone entrou na sala
+[System] Jone has left the room
+[System] Jone entrou na sala
+[System] Jone has left the room
+[System] Jone entrou na sala
+[System] Jone has left the room
+[System] Jone entrou na sala
+[System] Jone has left the room

@@ -1,0 +1,52 @@
+Determining if the function shm_open exists in the rt failed with the following output:
+Change Dir: C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2020.2.3/bin/ninja/win/ninja.exe cmTC_58795 && [1/2] Building C object CMakeFiles/cmTC_58795.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_58795.exe
+FAILED: cmTC_58795.exe 
+cmd.exe /C "cd . && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -DCHECK_FUNCTION_EXISTS=shm_open  CMakeFiles/cmTC_58795.dir/CheckFunctionExists.c.obj -o cmTC_58795.exe -Wl,--out-implib,libcmTC_58795.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lrt
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 failed with the following output:
+Change Dir: C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2020.2.3/bin/ninja/win/ninja.exe cmTC_6bdbd && [1/2] Building CXX object CMakeFiles/cmTC_6bdbd.dir/src.cxx.obj
+FAILED: CMakeFiles/cmTC_6bdbd.dir/src.cxx.obj 
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -pedantic  -pedantic-errors  -Wshorten-64-to-32   -Wshorten-64-to-32 -std=c++11 -o CMakeFiles/cmTC_6bdbd.dir/src.cxx.obj -c "C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx"
+C__~1.EXE: error: unrecognized command line option '-Wshorten-64-to-32'
+C__~1.EXE: error: unrecognized command line option '-Wshorten-64-to-32'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2020.2.3/bin/ninja/win/ninja.exe cmTC_899f4 && [1/2] Building CXX object CMakeFiles/cmTC_899f4.dir/src.cxx.obj
+FAILED: CMakeFiles/cmTC_899f4.dir/src.cxx.obj 
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -wd654   -wd654 -std=c++11 -o CMakeFiles/cmTC_899f4.dir/src.cxx.obj -c "C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx"
+C__~1.EXE: error: unrecognized command line option '-wd654'
+C__~1.EXE: error: unrecognized command line option '-wd654'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WTHREAD_SAFETY failed with the following output:
+Change Dir: C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2020.2.3/bin/ninja/win/ninja.exe cmTC_6dbbc && [1/2] Building CXX object CMakeFiles/cmTC_6dbbc.dir/src.cxx.obj
+FAILED: CMakeFiles/cmTC_6dbbc.dir/src.cxx.obj 
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\C__~1.EXE -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety   -Wthread-safety -std=c++11 -o CMakeFiles/cmTC_6dbbc.dir/src.cxx.obj -c "C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx"
+C__~1.EXE: error: unrecognized command line option '-Wthread-safety'; did you mean '-fthread-jumps'?
+C__~1.EXE: error: unrecognized command line option '-Wthread-safety'; did you mean '-fthread-jumps'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }

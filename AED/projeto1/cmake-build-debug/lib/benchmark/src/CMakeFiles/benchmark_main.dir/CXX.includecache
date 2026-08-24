@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/benchmark/include/benchmark/benchmark.h
+stdint.h
+-
+algorithm
+-
+cassert
+-
+cstddef
+-
+iosfwd
+-
+limits
+-
+map
+-
+set
+-
+string
+-
+utility
+-
+vector
+-
+benchmark/export.h
+../lib/benchmark/include/benchmark/benchmark/export.h
+atomic
+-
+initializer_list
+-
+type_traits
+-
+utility
+-
+intrin.h
+-
+
+../lib/benchmark/include/benchmark/export.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_main.cc
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+

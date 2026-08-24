@@ -1,0 +1,1 @@
+ lib/libgtestd.a lib/libgtest_maind.a lib/benchmark/src/libbenchmark.a lib/benchmark/src/libbenchmark_main.a lib/libgtestd.a lib/benchmark/src/libbenchmark.a -lshlwapi -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

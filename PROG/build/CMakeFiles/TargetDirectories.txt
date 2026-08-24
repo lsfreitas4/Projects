@@ -1,0 +1,5 @@
+/mnt/c/Users/migue/Desktop/Faculdade/ProjetoProg/build/CMakeFiles/runscrim.dir
+/mnt/c/Users/migue/Desktop/Faculdade/ProjetoProg/build/CMakeFiles/tester.dir
+/mnt/c/Users/migue/Desktop/Faculdade/ProjetoProg/build/CMakeFiles/delivery.dir
+/mnt/c/Users/migue/Desktop/Faculdade/ProjetoProg/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/migue/Desktop/Faculdade/ProjetoProg/build/CMakeFiles/rebuild_cache.dir

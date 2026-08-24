@@ -1,0 +1,12 @@
+"C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2020.2.3/bin/ninja/win/ninja.exe" -G Ninja -S "C:\Users\isabe\OneDrive\Ambiente de Trabalho\FEUP\FEUP_4\AED\feup-aed2223\projeto2" -B "C:\Users\isabe\OneDrive\Ambiente de Trabalho\FEUP\FEUP_4\AED\feup-aed2223\projeto2\cmake-build-debug"
+-- git version: v0.0.0-dirty normalized to 0.0.0
+-- Version: 1.7.0
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+Doxygen needs to be installed to generate the documentation.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/projeto2/cmake-build-debug

@@ -1,0 +1,844 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/benchmark/include/benchmark/benchmark.h
+stdint.h
+-
+algorithm
+-
+cassert
+-
+cstddef
+-
+iosfwd
+-
+limits
+-
+map
+-
+set
+-
+string
+-
+utility
+-
+vector
+-
+benchmark/export.h
+../lib/benchmark/include/benchmark/benchmark/export.h
+atomic
+-
+initializer_list
+-
+type_traits
+-
+utility
+-
+intrin.h
+-
+
+../lib/benchmark/include/benchmark/export.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/arraysize.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark.cc
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+benchmark_api_internal.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_api_internal.h
+benchmark_runner.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_runner.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+sys/resource.h
+-
+sys/time.h
+-
+unistd.h
+-
+algorithm
+-
+atomic
+-
+condition_variable
+-
+cstdio
+-
+cstdlib
+-
+fstream
+-
+iostream
+-
+limits
+-
+map
+-
+memory
+-
+random
+-
+string
+-
+thread
+-
+utility
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+colorprint.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/colorprint.h
+commandlineflags.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.h
+complexity.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+counter.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/counter.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+log.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+mutex.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/mutex.h
+perf_counters.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perf_counters.h
+re.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/re.h
+statistics.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/statistics.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+thread_manager.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/thread_manager.h
+thread_timer.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/thread_timer.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_api_internal.cc
+benchmark_api_internal.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_api_internal.h
+cinttypes
+-
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_api_internal.h
+cmath
+-
+iosfwd
+-
+limits
+-
+memory
+-
+string
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+commandlineflags.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_name.cc
+benchmark/benchmark.h
+-
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_register.cc
+benchmark_register.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_register.h
+sys/resource.h
+-
+sys/time.h
+-
+unistd.h
+-
+algorithm
+-
+atomic
+-
+cinttypes
+-
+condition_variable
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+fstream
+-
+iostream
+-
+memory
+-
+numeric
+-
+sstream
+-
+thread
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+benchmark_api_internal.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_api_internal.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+commandlineflags.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.h
+complexity.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+log.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+mutex.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/mutex.h
+re.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/re.h
+statistics.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/statistics.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+timers.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_register.h
+algorithm
+-
+limits
+-
+vector
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_runner.cc
+benchmark_runner.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_runner.h
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+benchmark_api_internal.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_api_internal.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+sys/resource.h
+-
+sys/time.h
+-
+unistd.h
+-
+algorithm
+-
+atomic
+-
+condition_variable
+-
+cstdio
+-
+cstdlib
+-
+fstream
+-
+iostream
+-
+memory
+-
+string
+-
+thread
+-
+utility
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+colorprint.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/colorprint.h
+commandlineflags.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.h
+complexity.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+counter.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/counter.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+log.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+mutex.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/mutex.h
+perf_counters.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perf_counters.h
+re.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/re.h
+statistics.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/statistics.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+thread_manager.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/thread_manager.h
+thread_timer.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/thread_timer.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_runner.h
+thread
+-
+vector
+-
+benchmark_api_internal.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark_api_internal.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+perf_counters.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perf_counters.h
+thread_manager.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/thread_manager.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.cc
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+cmath
+-
+cstdlib
+-
+ostream
+-
+benchmark/export.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/export.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+log.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/colorprint.cc
+colorprint.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/colorprint.h
+cstdarg
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+memory
+-
+string
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+io.h
+-
+windows.h
+-
+unistd.h
+-
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/colorprint.h
+cstdarg
+-
+iostream
+-
+string
+-
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.cc
+commandlineflags.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.h
+algorithm
+-
+cctype
+-
+cstdlib
+-
+cstring
+-
+iostream
+-
+limits
+-
+map
+-
+utility
+-
+../src/string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.h
+cstdint
+-
+map
+-
+string
+-
+benchmark/export.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/export.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.cc
+complexity.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+algorithm
+-
+cmath
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+string
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/console_reporter.cc
+algorithm
+-
+cstdint
+-
+cstdio
+-
+cstring
+-
+iostream
+-
+string
+-
+tuple
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+colorprint.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/colorprint.h
+commandlineflags.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/commandlineflags.h
+complexity.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+counter.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/counter.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+timers.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/counter.cc
+counter.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/counter.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/counter.h
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/csv_reporter.cc
+algorithm
+-
+cstdint
+-
+iostream
+-
+string
+-
+tuple
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+complexity.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+timers.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/cycleclock.h
+cstdint
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+mach/mach_time.h
+-
+sys/time.h
+-
+time.h
+-
+emscripten.h
+-
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+cstdlib
+-
+TargetConditionals.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/TargetConditionals.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/json_reporter.cc
+algorithm
+-
+cmath
+-
+cstdint
+-
+iomanip
+-
+iostream
+-
+limits
+-
+string
+-
+tuple
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+complexity.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/complexity.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+timers.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+iostream
+-
+ostream
+-
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/mutex.h
+condition_variable
+-
+mutex
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perf_counters.cc
+perf_counters.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perf_counters.h
+cstring
+-
+memory
+-
+vector
+-
+perfmon/pfmlib.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perfmon/pfmlib.h
+perfmon/pfmlib_perf_event.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perfmon/pfmlib_perf_event.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/perf_counters.h
+array
+-
+cstdint
+-
+memory
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+log.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+mutex.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/mutex.h
+unistd.h
+-
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/re.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+regex
+-
+gnuregex.h
+-
+regex.h
+-
+string
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/reporter.cc
+cstdlib
+-
+iostream
+-
+map
+-
+string
+-
+tuple
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+timers.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/sleep.cc
+sleep.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/sleep.h
+cerrno
+-
+cstdlib
+-
+ctime
+-
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+windows.h
+-
+unistd.h
+-
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/sleep.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/statistics.cc
+statistics.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/statistics.h
+algorithm
+-
+cmath
+-
+numeric
+-
+string
+-
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/statistics.h
+vector
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.cc
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+array
+-
+cerrno
+-
+cmath
+-
+cstdarg
+-
+cstdio
+-
+memory
+-
+sstream
+-
+arraysize.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/arraysize.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+sstream
+-
+string
+-
+utility
+-
+vector
+-
+benchmark/export.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/export.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/sysinfo.cc
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+shlwapi.h
+-
+versionhelpers.h
+-
+windows.h
+-
+codecvt
+-
+fcntl.h
+-
+sys/resource.h
+-
+sys/time.h
+-
+sys/types.h
+-
+unistd.h
+-
+sys/sysctl.h
+-
+kstat.h
+-
+netdb.h
+-
+sys/syspage.h
+-
+qurt.h
+-
+algorithm
+-
+array
+-
+bitset
+-
+cerrno
+-
+climits
+-
+cstdint
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+fstream
+-
+iostream
+-
+iterator
+-
+limits
+-
+locale
+-
+memory
+-
+sstream
+-
+utility
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+cycleclock.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/cycleclock.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+log.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+sleep.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/sleep.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/thread_manager.h
+atomic
+-
+benchmark/benchmark.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/benchmark/benchmark.h
+mutex.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/mutex.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/thread_timer.h
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+timers.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.cc
+timers.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+internal_macros.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/internal_macros.h
+shlwapi.h
+-
+versionhelpers.h
+-
+windows.h
+-
+fcntl.h
+-
+sys/resource.h
+-
+sys/time.h
+-
+sys/types.h
+-
+unistd.h
+-
+sys/sysctl.h
+-
+mach/mach_init.h
+-
+mach/mach_port.h
+-
+mach/thread_act.h
+-
+qurt.h
+-
+emscripten.h
+-
+cerrno
+-
+cstdint
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+ctime
+-
+iostream
+-
+limits
+-
+mutex
+-
+check.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/check.h
+log.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/log.h
+sleep.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/sleep.h
+string_util.h
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/string_util.h
+
+C:/Users/isabe/OneDrive/Ambiente de Trabalho/FEUP/FEUP_4/AED/feup-aed2223/lib/benchmark/src/timers.h
+chrono
+-
+string
+-
+

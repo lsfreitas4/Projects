@@ -1,0 +1,35 @@
+=== Mosaico | Condição: loss_01 ===
+--- http1.1 ---
+  Run 1: 391ms
+  Run 2: 388ms
+  Run 3: 414ms
+  Run 4: 396ms
+  Run 5: 400ms
+  Run 6: 395ms
+  Run 7: 392ms
+  Run 8: 400ms
+  Run 9: 414ms
+  Run 10: 390ms
+--- http2 ---
+  Run 1: 413ms
+  Run 2: 413ms
+  Run 3: 404ms
+  Run 4: 411ms
+  Run 5: 400ms
+  Run 6: 397ms
+  Run 7: 395ms
+  Run 8: 419ms
+  Run 9: 428ms
+  Run 10: 411ms
+--- http3 ---
+  Run 1: 376ms
+  Run 2: 421ms
+  Run 3: 402ms
+  Run 4: 392ms
+  Run 5: 392ms
+  Run 6: 393ms
+  Run 7: 389ms
+  Run 8: 628ms
+  Run 9: 391ms
+  Run 10: 392ms
+=== Concluído ===

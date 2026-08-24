@@ -1,0 +1,36 @@
+=== Condição: delay_100ms ===
+Hora: Tue May 12 10:55:10 AM UTC 2026
+--- http1.1 ---
+  Run 1: TTFB=0.308299s  Total=0.308380s
+  Run 2: TTFB=0.308110s  Total=0.308175s
+  Run 3: TTFB=0.308513s  Total=0.308621s
+  Run 4: TTFB=0.306930s  Total=0.306997s
+  Run 5: TTFB=0.308041s  Total=0.308110s
+  Run 6: TTFB=0.307271s  Total=0.307337s
+  Run 7: TTFB=0.307438s  Total=0.307506s
+  Run 8: TTFB=0.308033s  Total=0.308148s
+  Run 9: TTFB=0.307506s  Total=0.307574s
+  Run 10: TTFB=0.306869s  Total=0.306937s
+--- http2 ---
+  Run 1: TTFB=0.308188s  Total=0.308288s
+  Run 2: TTFB=0.309235s  Total=0.309357s
+  Run 3: TTFB=0.308826s  Total=0.308930s
+  Run 4: TTFB=0.308930s  Total=0.309123s
+  Run 5: TTFB=0.308435s  Total=0.308716s
+  Run 6: TTFB=0.307529s  Total=0.307679s
+  Run 7: TTFB=0.308878s  Total=0.309012s
+  Run 8: TTFB=0.309095s  Total=0.309157s
+  Run 9: TTFB=0.309240s  Total=0.309401s
+  Run 10: TTFB=0.308642s  Total=0.308740s
+--- http3 ---
+  Run 1: TTFB=0.211881s  Total=0.212071s
+  Run 2: TTFB=0.206806s  Total=0.207069s
+  Run 3: TTFB=0.208463s  Total=0.208649s
+  Run 4: TTFB=0.209216s  Total=0.209406s
+  Run 5: TTFB=0.209570s  Total=0.209772s
+  Run 6: TTFB=0.210083s  Total=0.210272s
+  Run 7: TTFB=0.209252s  Total=0.209567s
+  Run 8: TTFB=0.208934s  Total=0.209125s
+  Run 9: TTFB=0.209703s  Total=0.209900s
+  Run 10: TTFB=0.208760s  Total=0.208949s
+=== Concluído ===

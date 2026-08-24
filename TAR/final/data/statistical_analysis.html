@@ -1,0 +1,194 @@
+
+<style>
+.section { margin: 1.5rem 0; }
+.chart-title { font-size: 14px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 2px; }
+.chart-sub { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 10px; }
+.legend { display: flex; gap: 16px; margin-bottom: 10px; flex-wrap: wrap; font-size: 12px; color: var(--color-text-secondary); }
+.legend span { display: flex; align-items: center; gap: 5px; }
+.leg { width: 10px; height: 10px; border-radius: 2px; }
+</style>
+
+<div class="section">
+  <div class="chart-title">TTFB médio com desvio padrão (10 runs)</div>
+  <div class="chart-sub">Barras de erro = ±1 desvio padrão</div>
+  <div class="legend">
+    <span><span class="leg" style="background:#378ADD"></span>HTTP/1.1</span>
+    <span><span class="leg" style="background:#1D9E75"></span>HTTP/2</span>
+    <span><span class="leg" style="background:#D85A30"></span>HTTP/3</span>
+  </div>
+  <div style="position:relative;width:100%;height:280px;">
+    <canvas id="ttfbChart" role="img" aria-label="TTFB médio com desvio padrão para baseline, delay 100ms e loss 5%">TTFB: HTTP/3 consistentemente mais rápido sob latência.</canvas>
+  </div>
+</div>
+
+<div class="section">
+  <div class="chart-title">Mosaico: tempo total médio com desvio padrão (10 runs)</div>
+  <div class="chart-sub">50 ficheiros de 10KB — cenário multi-recurso</div>
+  <div class="legend">
+    <span><span class="leg" style="background:#378ADD"></span>HTTP/1.1</span>
+    <span><span class="leg" style="background:#1D9E75"></span>HTTP/2</span>
+    <span><span class="leg" style="background:#D85A30"></span>HTTP/3</span>
+  </div>
+  <div style="position:relative;width:100%;height:280px;">
+    <canvas id="mosaicoChart" role="img" aria-label="Tempo total mosaico com desvio padrão para baseline, delay 100ms e loss 5%">Mosaico: resultados mais variáveis sob 5% de perda.</canvas>
+  </div>
+</div>
+
+<div id="statsSection" class="section"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+function stats(arr) {
+  const n = arr.length;
+  const mean = arr.reduce((a,b) => a+b, 0) / n;
+  const std = Math.sqrt(arr.reduce((s,x) => s + (x-mean)**2, 0) / n);
+  return { mean: +mean.toFixed(2), std: +std.toFixed(2) };
+}
+
+const data = {
+  ttfb: {
+    baseline: {
+      h1: [6.824,4.286,6.464,5.084,3.738,3.708,4.758,4.947,4.276,3.921],
+      h2: [4.277,4.079,4.437,3.786,4.347,4.385,3.897,3.478,3.864,4.075],
+      h3: [4.436,4.627,4.456,4.693,5.159,9.746,5.868,4.690,4.593,4.418]
+    },
+    delay100: {
+      h1: [308.299,308.110,308.513,306.930,308.041,307.271,307.438,308.033,307.506,306.869],
+      h2: [308.188,309.235,308.826,308.930,308.435,307.529,308.878,309.095,309.240,308.642],
+      h3: [211.881,206.806,208.463,209.216,209.570,210.083,209.252,208.934,209.703,208.760]
+    },
+    loss5: {
+      h1: [4.476,6.575,3.974,3.848,6.310,8.823,3.389,208.379,3.849,5.518],
+      h2: [210.110,5.936,7.080,7.099,7.287,6.480,4.680,7.261,6.613,6.432],
+      h3: [4.612,4.952,48.991,7.551,7.566,8.726,8.827,8.302,6.241,5.462]
+    }
+  },
+  mosaico: {
+    baseline: {
+      h1: [396,415,400,413,392,425,395,386,395,388],
+      h2: [423,380,386,425,407,417,391,389,409,377],
+      h3: [399,409,408,384,394,417,401,391,407,395]
+    },
+    delay100: {
+      h1: [10286,10288,10295,10280,10279,10298,10293,10272,10306,10292],
+      h2: [10374,10393,10380,10397,10399,10401,10388,10389,10399,10395],
+      h3: [10210,10228,10201,10187,10187,10182,10193,10170,10209,10182]
+    },
+    loss5: {
+      h1: [2487,2073,1541,1025,1818,2125,2306,841,1630,1860],
+      h2: [1418,1108,2259,1289,1484,1737,619,1069,886,1519],
+      h3: [1311,1234,590,2189,1021,2305,1783,1023,1035,795]
+    }
+  }
+};
+
+const labels = ['Baseline', '+100ms delay', '5% perda'];
+const colors = { h1: '#378ADD', h2: '#1D9E75', h3: '#D85A30' };
+
+function makeErrPlugin(key) {
+  return {
+    id: 'errBars_' + key,
+    afterDraw(chart) {
+      const ctx = chart.ctx;
+      chart.data.datasets.forEach((ds, di) => {
+        if (!ds.errorBars) return;
+        const meta = chart.getDatasetMeta(di);
+        meta.data.forEach((pt, i) => {
+          const std = ds.errorBars[i];
+          const y = pt.y;
+          const scale = chart.scales.y;
+          const pixPerUnit = (scale.bottom - scale.top) / (scale.max - scale.min);
+          const errPx = std * pixPerUnit;
+          ctx.save();
+          ctx.strokeStyle = ds.borderColor;
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.moveTo(pt.x, y - errPx);
+          ctx.lineTo(pt.x, y + errPx);
+          ctx.moveTo(pt.x - 4, y - errPx);
+          ctx.lineTo(pt.x + 4, y - errPx);
+          ctx.moveTo(pt.x - 4, y + errPx);
+          ctx.lineTo(pt.x + 4, y + errPx);
+          ctx.stroke();
+          ctx.restore();
+        });
+      });
+    }
+  };
+}
+
+const conds = ['baseline','delay100','loss5'];
+const protos = ['h1','h2','h3'];
+const tMeans = {}, tStds = {}, mMeans = {}, mStds = {};
+protos.forEach(p => {
+  tMeans[p] = conds.map(c => stats(data.ttfb[c][p]).mean);
+  tStds[p]  = conds.map(c => stats(data.ttfb[c][p]).std);
+  mMeans[p] = conds.map(c => stats(data.mosaico[c][p]).mean);
+  mStds[p]  = conds.map(c => stats(data.mosaico[c][p]).std);
+});
+
+const chartOpts = (maxY) => ({
+  responsive: true, maintainAspectRatio: false,
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { grid: { color: 'rgba(128,128,128,0.1)' }, ticks: { color: '#888', font: { size: 12 } } },
+    y: { min: 0, max: maxY, grid: { color: 'rgba(128,128,128,0.1)' },
+         ticks: { color: '#888', font: { size: 12 }, callback: v => v + 'ms' },
+         title: { display: true, text: 'ms', color: '#888', font: { size: 11 } } }
+  }
+});
+
+Chart.register(makeErrPlugin('t1'));
+new Chart(document.getElementById('ttfbChart'), {
+  type: 'line',
+  data: {
+    labels,
+    datasets: [
+      { label:'HTTP/1.1', data: tMeans.h1, borderColor: colors.h1, backgroundColor: colors.h1+'20', tension:0.3, pointRadius:5, errorBars: tStds.h1 },
+      { label:'HTTP/2',   data: tMeans.h2, borderColor: colors.h2, backgroundColor: colors.h2+'20', tension:0.3, pointRadius:5, borderDash:[4,3], errorBars: tStds.h2 },
+      { label:'HTTP/3',   data: tMeans.h3, borderColor: colors.h3, backgroundColor: colors.h3+'20', tension:0.3, pointRadius:5, borderWidth:2.5, errorBars: tStds.h3 }
+    ]
+  },
+  options: chartOpts(400),
+  plugins: [makeErrPlugin('t2')]
+});
+
+Chart.register(makeErrPlugin('m1'));
+new Chart(document.getElementById('mosaicoChart'), {
+  type: 'bar',
+  data: {
+    labels,
+    datasets: [
+      { label:'HTTP/1.1', data: mMeans.h1, backgroundColor: colors.h1+'BB', errorBars: mStds.h1 },
+      { label:'HTTP/2',   data: mMeans.h2, backgroundColor: colors.h2+'BB', errorBars: mStds.h2 },
+      { label:'HTTP/3',   data: mMeans.h3, backgroundColor: colors.h3+'BB', errorBars: mStds.h3 }
+    ]
+  },
+  options: chartOpts(12000),
+  plugins: [makeErrPlugin('m2')]
+});
+
+const s = document.getElementById('statsSection');
+s.innerHTML = '<div class="chart-title" style="margin-bottom:10px">Tabela de médias e desvios padrão (ms)</div>';
+const rows = [
+  ['Baseline TTFB',      ...protos.map(p => { const st=stats(data.ttfb.baseline[p]);  return `${st.mean.toFixed(1)} ± ${st.std.toFixed(1)}`; })],
+  ['Delay 100ms TTFB',   ...protos.map(p => { const st=stats(data.ttfb.delay100[p]);  return `${st.mean.toFixed(1)} ± ${st.std.toFixed(1)}`; })],
+  ['Loss 5% TTFB',       ...protos.map(p => { const st=stats(data.ttfb.loss5[p]);     return `${st.mean.toFixed(1)} ± ${st.std.toFixed(1)}`; })],
+  ['Baseline mosaico',   ...protos.map(p => { const st=stats(data.mosaico.baseline[p]); return `${Math.round(st.mean)} ± ${Math.round(st.std)}`; })],
+  ['Delay 100ms mosaico',...protos.map(p => { const st=stats(data.mosaico.delay100[p]); return `${Math.round(st.mean)} ± ${Math.round(st.std)}`; })],
+  ['Loss 5% mosaico',    ...protos.map(p => { const st=stats(data.mosaico.loss5[p]);    return `${Math.round(st.mean)} ± ${Math.round(st.std)}`; })],
+];
+const tbl = `<div style="overflow-x:auto"><table style="width:100%;font-size:12px;border-collapse:collapse">
+  <thead><tr style="border-bottom:0.5px solid var(--color-border-secondary)">
+    <th style="text-align:left;padding:6px 8px;color:var(--color-text-secondary);font-weight:500">Condição</th>
+    <th style="text-align:center;padding:6px 8px;color:#378ADD;font-weight:500">HTTP/1.1</th>
+    <th style="text-align:center;padding:6px 8px;color:#1D9E75;font-weight:500">HTTP/2</th>
+    <th style="text-align:center;padding:6px 8px;color:#D85A30;font-weight:500">HTTP/3</th>
+  </tr></thead><tbody>
+  ${rows.map((r,i) => `<tr style="border-bottom:0.5px solid var(--color-border-tertiary);background:${i%2?'var(--color-background-secondary)':'transparent'}">
+    <td style="padding:6px 8px;color:var(--color-text-secondary);font-size:11px">${r[0]}</td>
+    ${r.slice(1).map(v=>`<td style="text-align:center;padding:6px 8px;color:var(--color-text-primary)">${v}</td>`).join('')}
+  </tr>`).join('')}
+  </tbody></table></div>`;
+s.innerHTML += tbl;
+</script>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>HTTP Benchmark Mosaic</title></head>
+<body>
+    <h1>Teste de Multiplexagem HTTP/1.1 vs HTTP/2 vs HTTP/3</h1>
+    <div id="mosaic"></div>
+    <script>
+        for (let i = 1; i <= 50; i++) {
+            let img = document.createElement('img');
+            img.src = 'file' + i + '.dat';
+            img.style.width = '10px'; // Apenas para visualização
+            document.getElementById('mosaic').appendChild(img);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+=== Mosaico | Condição: delay_20ms ===
+--- http1.1 ---
+  Run 1: 2282ms
+  Run 2: 2287ms
+  Run 3: 2253ms
+  Run 4: 2248ms
+  Run 5: 2254ms
+  Run 6: 2268ms
+  Run 7: 2292ms
+  Run 8: 2250ms
+  Run 9: 2270ms
+  Run 10: 2276ms
+--- http2 ---
+  Run 1: 2280ms
+  Run 2: 2291ms
+  Run 3: 2301ms
+  Run 4: 2308ms
+  Run 5: 2309ms
+  Run 6: 2303ms
+  Run 7: 2295ms
+  Run 8: 2291ms
+  Run 9: 2302ms
+  Run 10: 2293ms
+--- http3 ---
+  Run 1: 2264ms
+  Run 2: 2254ms
+  Run 3: 2262ms
+  Run 4: 2222ms
+  Run 5: 2261ms
+  Run 6: 2235ms
+  Run 7: 2237ms
+  Run 8: 2271ms
+  Run 9: 2249ms
+  Run 10: 2227ms
+=== Concluído ===

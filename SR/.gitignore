@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtualenvs
+venv/
+.env/
+
+# Logs e bases de dados locais
+*.log
+*.sqlite
+*.db
+*.db-journal
+
+# Ficheiros gerados pelo Cowrie / Snort
+cowrie/
+var/
+snort/
+*.pcap

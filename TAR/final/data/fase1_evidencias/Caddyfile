@@ -1,0 +1,11 @@
+{
+    servers {
+         protocols h1 h2 h3 
+    }
+}
+
+https://server.test {
+     tls internal
+     root * /src/http-test
+     file_server
+}

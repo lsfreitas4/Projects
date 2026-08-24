@@ -1,0 +1,35 @@
+=== Mosaico | Condição: baseline ===
+--- http1.1 ---
+  Run 1: 396ms
+  Run 2: 415ms
+  Run 3: 400ms
+  Run 4: 413ms
+  Run 5: 392ms
+  Run 6: 425ms
+  Run 7: 395ms
+  Run 8: 386ms
+  Run 9: 395ms
+  Run 10: 388ms
+--- http2 ---
+  Run 1: 423ms
+  Run 2: 380ms
+  Run 3: 386ms
+  Run 4: 425ms
+  Run 5: 407ms
+  Run 6: 417ms
+  Run 7: 391ms
+  Run 8: 389ms
+  Run 9: 409ms
+  Run 10: 377ms
+--- http3 ---
+  Run 1: 399ms
+  Run 2: 409ms
+  Run 3: 408ms
+  Run 4: 384ms
+  Run 5: 394ms
+  Run 6: 417ms
+  Run 7: 401ms
+  Run 8: 391ms
+  Run 9: 407ms
+  Run 10: 395ms
+=== Concluído ===

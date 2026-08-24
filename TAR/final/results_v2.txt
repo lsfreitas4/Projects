@@ -1,0 +1,387 @@
+ drop_batch 64
+valverde@client-vm:~$ ~/measure.sh baseline
+~/measure_mosaico.sh baseline
+=== Condição: baseline ===
+Hora: Tue May 12 10:49:35 AM UTC 2026
+--- http1.1 ---
+  Run 1: TTFB=0.006824s  Total=0.006882s
+  Run 2: TTFB=0.004286s  Total=0.004326s
+  Run 3: TTFB=0.006464s  Total=0.006547s
+  Run 4: TTFB=0.005084s  Total=0.005135s
+  Run 5: TTFB=0.003738s  Total=0.003776s
+  Run 6: TTFB=0.003708s  Total=0.003744s
+  Run 7: TTFB=0.004758s  Total=0.004820s
+  Run 8: TTFB=0.004947s  Total=0.004997s
+  Run 9: TTFB=0.004276s  Total=0.004310s
+  Run 10: TTFB=0.003921s  Total=0.003957s
+--- http2 ---
+  Run 1: TTFB=0.004277s  Total=0.004331s
+  Run 2: TTFB=0.004079s  Total=0.004173s
+  Run 3: TTFB=0.004437s  Total=0.004490s
+  Run 4: TTFB=0.003786s  Total=0.003861s
+  Run 5: TTFB=0.004347s  Total=0.004409s
+  Run 6: TTFB=0.004385s  Total=0.004436s
+  Run 7: TTFB=0.003897s  Total=0.003960s
+  Run 8: TTFB=0.003478s  Total=0.003531s
+  Run 9: TTFB=0.003864s  Total=0.003919s
+  Run 10: TTFB=0.004075s  Total=0.004150s
+--- http3 ---
+  Run 1: TTFB=0.004436s  Total=0.004550s
+  Run 2: TTFB=0.004627s  Total=0.004681s
+  Run 3: TTFB=0.004456s  Total=0.004517s
+  Run 4: TTFB=0.004693s  Total=0.004741s
+  Run 5: TTFB=0.005159s  Total=0.005328s
+  Run 6: TTFB=0.009746s  Total=0.009832s
+  Run 7: TTFB=0.005868s  Total=0.005969s
+  Run 8: TTFB=0.004690s  Total=0.004792s
+  Run 9: TTFB=0.004593s  Total=0.004648s
+  Run 10: TTFB=0.004418s  Total=0.004476s
+=== Concluído ===
+=== Mosaico | Condição: baseline ===
+--- http1.1 ---
+  Run 1: 396ms
+  Run 2: 415ms
+  Run 3: 400ms
+  Run 4: 413ms
+  Run 5: 392ms
+  Run 6: 425ms
+  Run 7: 395ms
+  Run 8: 386ms
+  Run 9: 395ms
+  Run 10: 388ms
+--- http2 ---
+  Run 1: 423ms
+  Run 2: 380ms
+  Run 3: 386ms
+  Run 4: 425ms
+  Run 5: 407ms
+  Run 6: 417ms
+  Run 7: 391ms
+  Run 8: 389ms
+  Run 9: 409ms
+  Run 10: 377ms
+--- http3 ---
+  Run 1: 399ms
+  Run 2: 409ms
+  Run 3: 408ms
+  Run 4: 384ms
+  Run 5: 394ms
+  Run 6: 417ms
+  Run 7: 401ms
+  Run 8: 391ms
+  Run 9: 407ms
+  Run 10: 395ms
+=== Concluído ===
+valverde@client-vm:~$ ^C
+valverde@client-vm:~$ ~/measure.sh delay_20ms && ~/measure_mosaico.sh delay_20ms
+=== Condição: delay_20ms ===
+Hora: Tue May 12 10:50:32 AM UTC 2026
+--- http1.1 ---
+  Run 1: TTFB=0.067705s  Total=0.067774s
+  Run 2: TTFB=0.065481s  Total=0.065602s
+  Run 3: TTFB=0.065084s  Total=0.065153s
+  Run 4: TTFB=0.068982s  Total=0.069050s
+  Run 5: TTFB=0.067870s  Total=0.067953s
+  Run 6: TTFB=0.065671s  Total=0.065741s
+  Run 7: TTFB=0.067495s  Total=0.067553s
+  Run 8: TTFB=0.068238s  Total=0.068340s
+  Run 9: TTFB=0.068292s  Total=0.068336s
+  Run 10: TTFB=0.067980s  Total=0.068080s
+--- http2 ---
+  Run 1: TTFB=0.066492s  Total=0.066629s
+  Run 2: TTFB=0.067077s  Total=0.067155s
+  Run 3: TTFB=0.068511s  Total=0.068623s
+  Run 4: TTFB=0.067638s  Total=0.067766s
+  Run 5: TTFB=0.069683s  Total=0.069776s
+  Run 6: TTFB=0.069538s  Total=0.069819s
+  Run 7: TTFB=0.068477s  Total=0.068681s
+  Run 8: TTFB=0.066722s  Total=0.066871s
+  Run 9: TTFB=0.068671s  Total=0.068844s
+  Run 10: TTFB=0.067736s  Total=0.067831s
+--- http3 ---
+  Run 1: TTFB=0.049449s  Total=0.049602s
+  Run 2: TTFB=0.049336s  Total=0.049528s
+  Run 3: TTFB=0.049607s  Total=0.049846s
+  Run 4: TTFB=0.045831s  Total=0.046014s
+  Run 5: TTFB=0.050121s  Total=0.050337s
+  Run 6: TTFB=0.049110s  Total=0.049330s
+  Run 7: TTFB=0.048730s  Total=0.048788s
+  Run 8: TTFB=0.046035s  Total=0.046249s
+  Run 9: TTFB=0.047471s  Total=0.047663s
+  Run 10: TTFB=0.047822s  Total=0.048054s
+=== Concluído ===
+=== Mosaico | Condição: delay_20ms ===
+--- http1.1 ---
+  Run 1: 2282ms
+  Run 2: 2287ms
+  Run 3: 2253ms
+  Run 4: 2248ms
+  Run 5: 2254ms
+  Run 6: 2268ms
+  Run 7: 2292ms
+  Run 8: 2250ms
+  Run 9: 2270ms
+  Run 10: 2276ms
+--- http2 ---
+  Run 1: 2280ms
+  Run 2: 2291ms
+  Run 3: 2301ms
+  Run 4: 2308ms
+  Run 5: 2309ms
+  Run 6: 2303ms
+  Run 7: 2295ms
+  Run 8: 2291ms
+  Run 9: 2302ms
+  Run 10: 2293ms
+--- http3 ---
+  Run 1: 2264ms
+  Run 2: 2254ms
+  Run 3: 2262ms
+  Run 4: 2222ms
+  Run 5: 2261ms
+  Run 6: 2235ms
+  Run 7: 2237ms
+  Run 8: 2271ms
+  Run 9: 2249ms
+  Run 10: 2227ms
+=== Concluído ===
+valverde@client-vm:~$ ~/set_netem.sh delay 50ms
+-bash: /home/valverde/set_netem.sh: No such file or directory
+valverde@client-vm:~$ ~/measure.sh delay_50ms && ~/measure_mosaico.sh delay_50ms
+=== Condição: delay_50ms ===
+Hora: Tue May 12 10:52:17 AM UTC 2026
+--- http1.1 ---
+  Run 1: TTFB=0.157786s  Total=0.157855s
+  Run 2: TTFB=0.157523s  Total=0.157654s
+  Run 3: TTFB=0.158192s  Total=0.158328s
+  Run 4: TTFB=0.158103s  Total=0.158189s
+  Run 5: TTFB=0.159317s  Total=0.159377s
+  Run 6: TTFB=0.159608s  Total=0.159684s
+  Run 7: TTFB=0.159342s  Total=0.159413s
+  Run 8: TTFB=0.156936s  Total=0.157038s
+  Run 9: TTFB=0.157124s  Total=0.157181s
+  Run 10: TTFB=0.157049s  Total=0.157118s
+--- http2 ---
+  Run 1: TTFB=0.158214s  Total=0.158340s
+  Run 2: TTFB=0.161033s  Total=0.161137s
+  Run 3: TTFB=0.160185s  Total=0.160311s
+  Run 4: TTFB=0.158729s  Total=0.158791s
+  Run 5: TTFB=0.159681s  Total=0.159833s
+  Run 6: TTFB=0.159038s  Total=0.159135s
+  Run 7: TTFB=0.156598s  Total=0.156857s
+  Run 8: TTFB=0.160247s  Total=0.160340s
+  Run 9: TTFB=0.158388s  Total=0.158496s
+  Run 10: TTFB=0.158355s  Total=0.158456s
+--- http3 ---
+  Run 1: TTFB=0.107267s  Total=0.107454s
+  Run 2: TTFB=0.109764s  Total=0.109954s
+  Run 3: TTFB=0.110107s  Total=0.110293s
+  Run 4: TTFB=0.109336s  Total=0.109484s
+  Run 5: TTFB=0.109411s  Total=0.109557s
+  Run 6: TTFB=0.109392s  Total=0.109831s
+  Run 7: TTFB=0.109872s  Total=0.110064s
+  Run 8: TTFB=0.110661s  Total=0.110860s
+  Run 9: TTFB=0.107532s  Total=0.107629s
+  Run 10: TTFB=0.107067s  Total=0.107196s
+=== Concluído ===
+=== Mosaico | Condição: delay_50ms ===
+--- http1.1 ---
+  Run 1: 5320ms
+  Run 2: 5298ms
+  Run 3: 5287ms
+  Run 4: 5278ms
+  Run 5: 5298ms
+  Run 6: 5319ms
+  Run 7: 5307ms
+  Run 8: 5256ms
+  Run 9: 5262ms
+  Run 10: 5270ms
+--- http2 ---
+  Run 1: 5331ms
+  Run 2: 5336ms
+  Run 3: 5331ms
+  Run 4: 5312ms
+  Run 5: 5354ms
+  Run 6: 5328ms
+  Run 7: 5366ms
+  Run 8: 5333ms
+  Run 9: 5357ms
+  Run 10: 5330ms
+--- http3 ---
+  Run 1: 5242ms
+  Run 2: 5240ms
+  Run 3: 5235ms
+  Run 4: 5240ms
+  Run 5: 5258ms
+  Run 6: 5247ms
+  Run 7: 5250ms
+  Run 8: 5257ms
+  Run 9: 5232ms
+  Run 10: 5259ms
+=== Concluído ===
+valverde@client-vm:~$ ~/measure.sh delay_100ms && ~/measure_mosaico.sh delay_100ms
+=== Condição: delay_100ms ===
+Hora: Tue May 12 10:55:10 AM UTC 2026
+--- http1.1 ---
+  Run 1: TTFB=0.308299s  Total=0.308380s
+  Run 2: TTFB=0.308110s  Total=0.308175s
+  Run 3: TTFB=0.308513s  Total=0.308621s
+  Run 4: TTFB=0.306930s  Total=0.306997s
+  Run 5: TTFB=0.308041s  Total=0.308110s
+  Run 6: TTFB=0.307271s  Total=0.307337s
+  Run 7: TTFB=0.307438s  Total=0.307506s
+  Run 8: TTFB=0.308033s  Total=0.308148s
+  Run 9: TTFB=0.307506s  Total=0.307574s
+  Run 10: TTFB=0.306869s  Total=0.306937s
+--- http2 ---
+  Run 1: TTFB=0.308188s  Total=0.308288s
+  Run 2: TTFB=0.309235s  Total=0.309357s
+  Run 3: TTFB=0.308826s  Total=0.308930s
+  Run 4: TTFB=0.308930s  Total=0.309123s
+  Run 5: TTFB=0.308435s  Total=0.308716s
+  Run 6: TTFB=0.307529s  Total=0.307679s
+  Run 7: TTFB=0.308878s  Total=0.309012s
+  Run 8: TTFB=0.309095s  Total=0.309157s
+  Run 9: TTFB=0.309240s  Total=0.309401s
+  Run 10: TTFB=0.308642s  Total=0.308740s
+--- http3 ---
+  Run 1: TTFB=0.211881s  Total=0.212071s
+  Run 2: TTFB=0.206806s  Total=0.207069s
+  Run 3: TTFB=0.208463s  Total=0.208649s
+  Run 4: TTFB=0.209216s  Total=0.209406s
+  Run 5: TTFB=0.209570s  Total=0.209772s
+  Run 6: TTFB=0.210083s  Total=0.210272s
+  Run 7: TTFB=0.209252s  Total=0.209567s
+  Run 8: TTFB=0.208934s  Total=0.209125s
+  Run 9: TTFB=0.209703s  Total=0.209900s
+  Run 10: TTFB=0.208760s  Total=0.208949s
+=== Concluído ===
+=== Mosaico | Condição: delay_100ms ===
+--- http1.1 ---
+  Run 1: 10286ms
+  Run 2: 10288ms
+  Run 3: 10295ms
+  Run 4: 10280ms
+  Run 5: 10279ms
+  Run 6: 10298ms
+  Run 7: 10293ms
+  Run 8: 10272ms
+  Run 9: 10306ms
+  Run 10: 10292ms
+--- http2 ---
+  Run 1: 10374ms
+  Run 2: 10393ms
+  Run 3: 10380ms
+  Run 4: 10397ms
+  Run 5: 10399ms
+  Run 6: 10401ms
+  Run 7: 10388ms
+  Run 8: 10389ms
+  Run 9: 10399ms
+  Run 10: 10395ms
+--- http3 ---
+  Run 1: 10210ms
+  Run 2: 10228ms
+  Run 3: 10201ms
+  Run 4: 10187ms
+  Run 5: 10187ms
+  Run 6: 10182ms
+  Run 7: 10193ms
+  Run 8: 10170ms
+  Run 9: 10209ms
+  Run 10: 10182ms
+=== Concluído ===
+valverde@client-vm:~$ ~/measure.sh delay_200ms && ~/measure_mosaico.sh delay_200ms
+=== Condição: delay_200ms ===
+Hora: Tue May 12 11:00:35 AM UTC 2026
+--- http1.1 ---
+  Run 1: TTFB=0.308665s  Total=0.308732s
+  Run 2: TTFB=0.307822s  Total=0.307878s
+  Run 3: TTFB=0.306423s  Total=0.306481s
+  Run 4: TTFB=0.307588s  Total=0.307656s
+  Run 5: TTFB=0.307531s  Total=0.307586s
+  Run 6: TTFB=0.306453s  Total=0.306534s
+  Run 7: TTFB=0.307165s  Total=0.307286s
+  Run 8: TTFB=0.306766s  Total=0.306825s
+  Run 9: TTFB=0.307944s  Total=0.308012s
+  Run 10: TTFB=0.309068s  Total=0.309221s
+--- http2 ---
+  Run 1: TTFB=0.305979s  Total=0.306126s
+  Run 2: TTFB=0.311487s  Total=0.311667s
+  Run 3: TTFB=0.306696s  Total=0.306833s
+  Run 4: TTFB=0.306842s  Total=0.306938s
+  Run 5: TTFB=0.306931s  Total=0.307090s
+  Run 6: TTFB=0.305654s  Total=0.305752s
+  Run 7: TTFB=0.308087s  Total=0.308230s
+  Run 8: TTFB=0.307540s  Total=0.307735s
+  Run 9: TTFB=0.308466s  Total=0.308592s
+  Run 10: TTFB=0.307598s  Total=0.307703s
+--- http3 ---
+  Run 1: TTFB=0.207547s  Total=0.207693s
+  Run 2: TTFB=0.206677s  Total=0.206864s
+  Run 3: TTFB=0.206625s  Total=0.206775s
+  Run 4: TTFB=0.207910s  Total=0.208097s
+  Run 5: TTFB=0.209128s  Total=0.209325s
+  Run 6: TTFB=0.209437s  Total=0.209630s
+  Run 7: TTFB=0.208070s  Total=0.208301s
+  Run 8: TTFB=0.209902s  Total=0.210162s
+  Run 9: TTFB=0.207332s  Total=0.207439s
+  Run 10: TTFB=0.210316s  Total=0.210508s
+=== Concluído ===
+=== Mosaico | Condição: delay_200ms ===
+--- http1.1 ---
+  Run 1: 10296ms
+  Run 2: 10301ms
+  Run 3: 10272ms
+  Run 4: 10286ms
+  Run 5: 10290ms
+  Run 6: 10287ms
+  Run 7: 10273ms
+  Run 8: 10260ms
+  Run 9: 10266ms
+  Run 10: 10291ms
+--- http2 ---
+  Run 1: 10408ms
+  Run 2: 10394ms
+  Run 3: 10397ms
+  Run 4: 10415ms
+  Run 5: 10392ms
+  Run 6: 10390ms
+  Run 7: 10384ms
+  Run 8: 10368ms
+  Run 9: 10418ms
+  Run 10: 10394ms
+--- http3 ---
+  Run 1: 10200ms
+  Run 2: 10202ms
+  Run 3: 10191ms
+  Run 4: 10185ms
+  Run 5: 10198ms
+  Run 6: 10191ms
+  Run 7: 10178ms
+  Run 8: 10203ms
+  Run 9: 10212ms
+  Run 10: 10189ms
+=== Concluído ===
+
+
+
+
+--- http1.1 ---
+Goodput: 524204127 bytes/s
+Goodput: 1042384237 bytes/s
+Goodput: 1057133495 bytes/s
+Goodput: 1178665287 bytes/s
+Goodput: 921063912 bytes/s
+--- http2 ---
+Goodput: 535776385 bytes/s
+Goodput: 530903052 bytes/s
+Goodput: 558140624 bytes/s
+Goodput: 468725302 bytes/s
+Goodput: 473853412 bytes/s
+--- http3 ---
+Goodput: 224607340 bytes/s
+Goodput: 239340258 bytes/s
+Goodput: 252073657 bytes/s
+Goodput: 230705730 bytes/s
+Goodput: 238862382 bytes/s

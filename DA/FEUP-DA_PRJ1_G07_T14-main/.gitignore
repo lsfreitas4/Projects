@@ -1,0 +1,38 @@
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeScripts/
+cmake-build-debug/
+
+# CLion
+.idea/
+
+# Compiled files
+bin/
+build/
+
+# Generated files
+Makefile
+*.cmake
+*.cbp
+*.gcov
+*.gcda
+*.gcno
+
+# Compiled binaries
+*.exe
+*.out
+
+# OS-specific files
+*.DS_Store
+Thumbs.db
+
+# Dependency directories
+vendor/
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+*.sln.docstates

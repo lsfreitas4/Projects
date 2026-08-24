@@ -1,0 +1,18 @@
+<map id="update_mouse" name="update_mouse">
+<area shape="rect" id="node1" title="Updates the mouse." alt="" coords="5,259,124,285"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a736aa929125c49d204d44323da038a95" title="Converts bytes to a mouse packet." alt="" coords="182,107,310,133"/>
+<area shape="rect" id="node3" href="$model_8c.html#a576001c2c0395e0363c1f9a03d7e4ee2" title="Checks for mouse click and performs the corresponding action." alt="" coords="172,157,320,184"/>
+<area shape="rect" id="node13" href="$mouse_8c.html#a210374b50462acdedab00df64d5cea3c" title="Mouse interrupt handler." alt="" coords="607,309,693,336"/>
+<area shape="rect" id="node15" href="$model_8c.html#ae6513b1d86e99c33c62472f1b42dc913" title="Moves the cursor based on the given mouse packet." alt="" coords="193,309,299,336"/>
+<area shape="rect" id="node16" href="$mouse_8c.html#a3b71fce460b15fe9d0de3d8c77d9cad3" title="Parses a mouse packet." alt="" coords="192,360,300,387"/>
+<area shape="rect" id="node4" href="$model_8c.html#adb597ce60397fa935ef3e3daa852015b" title="Adds a score to the leaderboard." alt="" coords="368,5,519,32"/>
+<area shape="rect" id="node5" href="$sprite_8c.html#a673cf3cd5655d631f19cb2bba104eff2" title="Creates a new sprite." alt="" coords="597,56,703,83"/>
+<area shape="rect" id="node6" href="$model_8c.html#a06d4a7e848486d6ad4720a3e842a7224" title="Resets the states of the game." alt="" coords="392,107,495,133"/>
+<area shape="rect" id="node7" href="$model_8c.html#a59c0df8a9001ec8997aca3ae4ff1dd82" title="Updates the array with the given level." alt="" coords="567,107,733,133"/>
+<area shape="rect" id="node8" href="$rtc_8c.html#aaf9fa7dc504378312f4e526ae11da75e" title="Updates the values of the RTC." alt="" coords="373,208,514,235"/>
+<area shape="rect" id="node9" href="$rtc_8c.html#ae3e6ef6cb5629cbbb53f0bc7f3b8324b" title="Checks if the RTC is currently updating." alt="" coords="589,157,711,184"/>
+<area shape="rect" id="node10" href="$rtc_8c.html#aad9b81b7c1ea288679dae99ca05b7118" title="Reads the output of the Real&#45;Time Clock (RTC) using the specified command byte." alt="" coords="810,208,934,235"/>
+<area shape="rect" id="node12" href="$rtc_8c.html#a891509fed13e0cac396e9c401f887d72" title="Converts a Binary&#45;Coded Decimal (BCD) number to binary." alt="" coords="609,259,691,285"/>
+<area shape="rect" id="node11" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="1011,259,1109,285"/>
+<area shape="rect" id="node14" href="$mouse_8c.html#adadf243f6a3148a2a63bd88ca6b89cef" title="Checks if the output buffer can be read from the mouse." alt="" coords="781,309,963,336"/>
+</map>

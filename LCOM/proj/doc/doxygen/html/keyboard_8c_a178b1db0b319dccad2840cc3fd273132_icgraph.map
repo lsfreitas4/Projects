@@ -1,0 +1,5 @@
+<map id="keyboard_subscribe_int" name="keyboard_subscribe_int">
+<area shape="rect" id="node1" title="Subscribes to keyboard interrupts." alt="" coords="176,31,351,57"/>
+<area shape="rect" id="node2" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a088baa9cfa5677f344bf7936c57a6f2f" title="Waits for the ESC key to be pressed." alt="" coords="12,56,121,83"/>
+</map>

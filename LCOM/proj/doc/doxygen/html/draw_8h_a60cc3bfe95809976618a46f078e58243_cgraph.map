@@ -1,0 +1,4 @@
+<map id="print_background_game" name="print_background_game">
+<area shape="rect" id="node1" title="Prints the background game using an XPM map." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel at the specified coordinates with the given color." alt="" coords="232,5,347,32"/>
+</map>

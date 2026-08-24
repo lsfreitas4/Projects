@@ -1,0 +1,7 @@
+<map id="change_sample_rate" name="change_sample_rate">
+<area shape="rect" id="node1" title="Changes the sample rate of the mouse." alt="" coords="5,77,163,104"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a4776d05b8faed4b54dcba64d73b64980" title=" " alt="" coords="211,41,379,82"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#ae2b9080d623ab180b1f545e9b038636f" title=" " alt="" coords="439,107,595,133"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#adadf243f6a3148a2a63bd88ca6b89cef" title="Checks if the output buffer can be read from the mouse." alt="" coords="427,5,608,32"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="656,56,755,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="load_sprites" name="load_sprites">
+<area shape="rect" id="node1" title="Loads the sprites." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a673cf3cd5655d631f19cb2bba104eff2" title="Creates a new sprite." alt="" coords="155,5,261,32"/>
+</map>

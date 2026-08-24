@@ -1,0 +1,18 @@
+<map id="update" name="update">
+<area shape="rect" id="node1" title="Updates the sprite." alt="" coords="5,157,72,184"/>
+<area shape="rect" id="node2" href="$model_8c.html#a0a7939bfb6d357953b7689705e6d79b5" title="Updates the position of the sprite." alt="" coords="120,132,239,159"/>
+<area shape="rect" id="node15" href="$model_8c.html#a8982e2565f6e56d02f7664b35a8031d9" title="Updates the speed of the sprite." alt="" coords="126,183,233,209"/>
+<area shape="rect" id="node3" href="$model_8c.html#a5d62ac650136606812cf07c8672734ea" title="Moves the sprite horizontally." alt="" coords="287,81,361,108"/>
+<area shape="rect" id="node12" href="$model_8c.html#a289238f5b9eee1290cfec8fd22ff2f4e" title="Moves the sprite vertically." alt="" coords="287,132,361,159"/>
+<area shape="rect" id="node4" href="$model_8c.html#affabab2c68a26fa7d716b13c35048e04" title="Checks for collision between a sprite and a given position." alt="" coords="409,81,525,108"/>
+<area shape="rect" id="node11" href="$vbe_8c.html#a8becb86f48f701c43e1c411f57f60c4d" title="Gets the horizontal resolution of the screen." alt="" coords="428,31,507,57"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="Keyboard interrupt handler." alt="" coords="593,56,657,83"/>
+<area shape="rect" id="node8" href="$model_8c.html#a06d4a7e848486d6ad4720a3e842a7224" title="Resets the states of the game." alt="" coords="573,107,676,133"/>
+<area shape="rect" id="node6" href="$keyboard_8c.html#a5168f22184d8edc53bec6e23fe72330a" title="Checks if the output buffer can be read." alt="" coords="742,5,873,32"/>
+<area shape="rect" id="node7" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="939,31,1037,57"/>
+<area shape="rect" id="node9" href="$sprite_8c.html#a673cf3cd5655d631f19cb2bba104eff2" title="Creates a new sprite." alt="" coords="754,107,861,133"/>
+<area shape="rect" id="node10" href="$model_8c.html#a59c0df8a9001ec8997aca3ae4ff1dd82" title="Updates the array with the given level." alt="" coords="724,157,891,184"/>
+<area shape="rect" id="node13" href="$vbe_8c.html#ad5999dee7ae30ea14b13e2e2e5a92c88" title="Gets the vertical resolution of the screen." alt="" coords="428,132,507,159"/>
+<area shape="rect" id="node14" href="$model_8c.html#a450a3352bbf61fc777e842068b9d2e51" title="Sets the ground for the sprite." alt="" coords="420,183,515,209"/>
+<area shape="rect" id="node16" href="$model_8c.html#a2e87729979f6d801ab66de2ecc08f536" title="Applies gravity to the sprite." alt="" coords="290,183,358,209"/>
+</map>

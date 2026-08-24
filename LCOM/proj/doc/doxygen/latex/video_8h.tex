@@ -1,0 +1,109 @@
+\hypertarget{video_8h}{}\doxysection{video.\+h File Reference}
+\label{video_8h}\index{video.h@{video.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for video.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{video_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{video_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{video_8h_a16d73f78d19c944e160e8b3e7024f0cd}{set\+\_\+graphic\+\_\+mode}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Sets the graphic mode to the specified mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{video_8h_aa86357e516b83208fb5e6c5786d93880}{set\+\_\+text\+\_\+mode}} ()
+\begin{DoxyCompactList}\small\item\em Sets the text mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video_8h_abf2ffa2b9a2151d4259d995dfcc9aa18}{change\+\_\+screen\+\_\+vertical\+\_\+retrace}} (int h)
+\begin{DoxyCompactList}\small\item\em Changes the screen vertical retrace. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{video_8h_a6eee762bc1440dc6026fb25f98f8fee8}{change\+\_\+screen\+\_\+artifacts}} (int h)
+\begin{DoxyCompactList}\small\item\em Changes the screen artifacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{video_8h_a6eee762bc1440dc6026fb25f98f8fee8}\label{video_8h_a6eee762bc1440dc6026fb25f98f8fee8}} 
+\index{video.h@{video.h}!change\_screen\_artifacts@{change\_screen\_artifacts}}
+\index{change\_screen\_artifacts@{change\_screen\_artifacts}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{change\_screen\_artifacts()}{change\_screen\_artifacts()}}
+{\footnotesize\ttfamily void change\+\_\+screen\+\_\+artifacts (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Changes the screen artifacts. 
+
+This function changes the screen artifacts to the specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The value to set the screen artifacts to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{video_8h_abf2ffa2b9a2151d4259d995dfcc9aa18}\label{video_8h_abf2ffa2b9a2151d4259d995dfcc9aa18}} 
+\index{video.h@{video.h}!change\_screen\_vertical\_retrace@{change\_screen\_vertical\_retrace}}
+\index{change\_screen\_vertical\_retrace@{change\_screen\_vertical\_retrace}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{change\_screen\_vertical\_retrace()}{change\_screen\_vertical\_retrace()}}
+{\footnotesize\ttfamily void change\+\_\+screen\+\_\+vertical\+\_\+retrace (\begin{DoxyParamCaption}\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+
+Changes the screen vertical retrace. 
+
+This function changes the screen vertical retrace to the specified value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The value to set the screen vertical retrace to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{video_8h_a16d73f78d19c944e160e8b3e7024f0cd}\label{video_8h_a16d73f78d19c944e160e8b3e7024f0cd}} 
+\index{video.h@{video.h}!set\_graphic\_mode@{set\_graphic\_mode}}
+\index{set\_graphic\_mode@{set\_graphic\_mode}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{set\_graphic\_mode()}{set\_graphic\_mode()}}
+{\footnotesize\ttfamily int set\+\_\+graphic\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Sets the graphic mode to the specified mode. 
+
+This function sets the graphic mode of the video device to the specified mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set the graphic mode to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{video_8h_a16d73f78d19c944e160e8b3e7024f0cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video_8h_aa86357e516b83208fb5e6c5786d93880}\label{video_8h_aa86357e516b83208fb5e6c5786d93880}} 
+\index{video.h@{video.h}!set\_text\_mode@{set\_text\_mode}}
+\index{set\_text\_mode@{set\_text\_mode}!video.h@{video.h}}
+\doxysubsubsection{\texorpdfstring{set\_text\_mode()}{set\_text\_mode()}}
+{\footnotesize\ttfamily int set\+\_\+text\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the text mode. 
+
+This function sets the video device to the text mode.
+
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}

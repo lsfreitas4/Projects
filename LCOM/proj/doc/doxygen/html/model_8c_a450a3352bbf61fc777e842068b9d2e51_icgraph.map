@@ -1,0 +1,8 @@
+<map id="set_ground" name="set_ground">
+<area shape="rect" id="node1" title="Sets the ground for the sprite." alt="" coords="737,5,832,32"/>
+<area shape="rect" id="node2" href="$model_8c.html#a289238f5b9eee1290cfec8fd22ff2f4e" title="Moves the sprite vertically." alt="" coords="615,5,689,32"/>
+<area shape="rect" id="node3" href="$model_8c.html#a0a7939bfb6d357953b7689705e6d79b5" title="Updates the position of the sprite." alt="" coords="448,5,567,32"/>
+<area shape="rect" id="node4" href="$model_8c.html#acbfb4add61ed502548117c89c6cab7f5" title="Updates the sprite." alt="" coords="333,5,400,32"/>
+<area shape="rect" id="node5" href="$model_8c.html#a3dbbef8766f0ce676f34b8b4f1bf3485" title="Updates the timer." alt="" coords="176,5,285,32"/>
+<area shape="rect" id="node6" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,5,128,32"/>
+</map>

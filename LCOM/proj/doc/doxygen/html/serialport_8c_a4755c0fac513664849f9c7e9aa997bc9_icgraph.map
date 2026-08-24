@@ -1,0 +1,4 @@
+<map id="ser_read_byte" name="ser_read_byte">
+<area shape="rect" id="node1" title="Reads a byte from the serial port." alt="" coords="115,5,229,32"/>
+<area shape="rect" id="node2" href="$serialport_8c.html#a9353fabdd05ea291e02243dace57ae1c" title="Interrupt handler for the serial port." alt="" coords="5,5,67,32"/>
+</map>

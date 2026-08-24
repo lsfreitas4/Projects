@@ -1,0 +1,4 @@
+<map id="draw_sprite" name="draw_sprite">
+<area shape="rect" id="node1" title="Draws a sprite on the screen." alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel at the specified coordinates with the given color." alt="" coords="152,5,267,32"/>
+</map>

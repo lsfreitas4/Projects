@@ -1,0 +1,5 @@
+<map id="reset_states" name="reset_states">
+<area shape="rect" id="node1" title="Resets the states of the game." alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="$sprite_8c.html#a673cf3cd5655d631f19cb2bba104eff2" title="Creates a new sprite." alt="" coords="186,5,293,32"/>
+<area shape="rect" id="node3" href="$model_8c.html#a59c0df8a9001ec8997aca3ae4ff1dd82" title="Updates the array with the given level." alt="" coords="156,56,323,83"/>
+</map>

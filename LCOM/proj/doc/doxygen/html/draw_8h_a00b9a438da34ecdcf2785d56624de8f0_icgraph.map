@@ -1,0 +1,8 @@
+<map id="draw_digits" name="draw_digits">
+<area shape="rect" id="node1" title="Draws digits on the screen." alt="" coords="668,31,765,57"/>
+<area shape="rect" id="node2" href="$draw_8c.html#adc37ea95d6b131697311029bc38d65ea" title="Draws the leaderboard on the screen." alt="" coords="481,5,620,32"/>
+<area shape="rect" id="node6" href="$draw_8c.html#a4f3d01370e91e93f6b4fe1f9d8201e9f" title=" " alt="" coords="505,56,596,83"/>
+<area shape="rect" id="node3" href="$draw_8c.html#a8f7acda4de2ff9ede5fca68d2db09959" title="Draws a frame on the screen." alt="" coords="333,31,433,57"/>
+<area shape="rect" id="node4" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,31,128,57"/>
+<area shape="rect" id="node5" href="$model_8c.html#a3dbbef8766f0ce676f34b8b4f1bf3485" title="Updates the timer." alt="" coords="176,56,285,83"/>
+</map>

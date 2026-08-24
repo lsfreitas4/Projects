@@ -1,0 +1,509 @@
+\hypertarget{vbe_8c}{}\doxysection{vbe.\+c File Reference}
+\label{vbe_8c}\index{vbe.c@{vbe.c}}
+{\ttfamily \#include \char`\"{}vbe.\+h\char`\"{}}\newline
+Include dependency graph for vbe.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{vbe_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{vbe_8c_a8becb86f48f701c43e1c411f57f60c4d}{get\+\_\+hres}} ()
+\begin{DoxyCompactList}\small\item\em Gets the horizontal resolution of the screen. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{vbe_8c_ad5999dee7ae30ea14b13e2e2e5a92c88}{get\+\_\+vres}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vertical resolution of the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{vbe_8c_a6d7ae86cd6c0a50b77a6994d730d422c}{map\+\_\+phys\+\_\+virt}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Maps the physical video memory to the virtual address space using the specified video mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{vbe_8c_a6f895de9725f9f231f9a7f74b6087f60}{vg\+\_\+draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel at the specified coordinates with the given color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vbe_8c_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a horizontal line starting from the specified coordinates with the given length and color. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{vbe_8c_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle starting from the specified coordinates with the given width, height, and color. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_aa12c8b709fb8219b11ec35afc84b8829}{index\+\_\+indexed\+\_\+mode}} (uint16\+\_\+t row, uint16\+\_\+t col, uint8\+\_\+t no\+\_\+rectangles, uint32\+\_\+t first, uint8\+\_\+t step)
+\begin{DoxyCompactList}\small\item\em Calculates the pixel value in indexed mode based on the row, column, number of rectangles, first pixel value, and step size. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_ad04caa9632bdb6892f46a3f006e17428}{direct\+\_\+mode}} (uint32\+\_\+t red, uint32\+\_\+t green, uint32\+\_\+t blue)
+\begin{DoxyCompactList}\small\item\em Calculates the pixel value in direct mode based on the red, green, and blue components. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_aa5d4d568712904fcacd45cab9c240a87}{first\+\_\+red}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Calculates the first red component of a pixel in indexed mode. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_a1f07c8cb0a604240fd847535fb9aa93c}{first\+\_\+green}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Calculates the first green component of a pixel in indexed mode. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_a1990d58f93806df03940cdd203aac4e6}{first\+\_\+blue}} (uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Calculates the first blue component of a pixel in indexed mode. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_a7124cb40501d0ac75c66d3bd083a4373}{red\+\_\+value}} (uint32\+\_\+t \mbox{\hyperlink{vbe_8h_a8219f4a8c83aa942a1a679eff6ae9616}{first\+\_\+red}}, uint16\+\_\+t col\+\_\+num, uint8\+\_\+t step)
+\begin{DoxyCompactList}\small\item\em Calculates the red component of a pixel in indexed mode based on the first red component, column number, and step size. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_aabf53078fe75bdd6f9f3798251ea04b1}{green\+\_\+value}} (uint32\+\_\+t \mbox{\hyperlink{vbe_8h_a77bf7ccd010875e3bc5ab66838d87776}{first\+\_\+green}}, uint16\+\_\+t row\+\_\+num, uint8\+\_\+t step)
+\begin{DoxyCompactList}\small\item\em Calculates the green component of a pixel in indexed mode based on the first green component, row number, and step size. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{vbe_8c_a28b297635fee8813d331ab73f0b65a4e}{blue\+\_\+value}} (uint32\+\_\+t \mbox{\hyperlink{vbe_8h_a22b9f8637c4de703dd100769bc017b54}{first\+\_\+blue}}, uint16\+\_\+t row\+\_\+num, uint16\+\_\+t col\+\_\+num, uint8\+\_\+t step)
+\begin{DoxyCompactList}\small\item\em Calculates the blue component of a pixel in indexed mode based on the first blue component, row number, column number, and step size. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{vbe_8c_a84df7072b44541ffae1cea32d96490ea}{print\+\_\+xpm}} (xpm\+\_\+map\+\_\+t xpm, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Prints an XPM image at the specified coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{vbe_8c_a609bbc8e7716577069b3bb3d523ed562}{buffer\+\_\+copy}} ()
+\begin{DoxyCompactList}\small\item\em Copies the buffer to the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{vbe_8c_ab3fa90a009de7dbcdd47c404ed99ac4d}{flip\+\_\+screen}} ()
+\begin{DoxyCompactList}\small\item\em Flips the screen by swapping the front and back buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{vbe_8c_ae8e58725b95349bed23353c5fcffddf0}{second\+\_\+screen}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{vbe_8c_a26081be7a771e5c611b33f15caaf831e}{vmi\+\_\+p}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{vbe_8c_a28b297635fee8813d331ab73f0b65a4e}\label{vbe_8c_a28b297635fee8813d331ab73f0b65a4e}} 
+\index{vbe.c@{vbe.c}!blue\_value@{blue\_value}}
+\index{blue\_value@{blue\_value}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{blue\_value()}{blue\_value()}}
+{\footnotesize\ttfamily uint32\+\_\+t blue\+\_\+value (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first\+\_\+blue,  }\item[{uint16\+\_\+t}]{row\+\_\+num,  }\item[{uint16\+\_\+t}]{col\+\_\+num,  }\item[{uint8\+\_\+t}]{step }\end{DoxyParamCaption})}
+
+
+
+Calculates the blue component of a pixel in indexed mode based on the first blue component, row number, column number, and step size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+\_\+blue} & The first blue component. \\
+\hline
+{\em row\+\_\+num} & The row number. \\
+\hline
+{\em col\+\_\+num} & The column number. \\
+\hline
+{\em step} & The step size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The blue component. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{vbe_8c_a28b297635fee8813d331ab73f0b65a4e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_a609bbc8e7716577069b3bb3d523ed562}\label{vbe_8c_a609bbc8e7716577069b3bb3d523ed562}} 
+\index{vbe.c@{vbe.c}!buffer\_copy@{buffer\_copy}}
+\index{buffer\_copy@{buffer\_copy}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{buffer\_copy()}{buffer\_copy()}}
+{\footnotesize\ttfamily void buffer\+\_\+copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Copies the buffer to the screen. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8c_a609bbc8e7716577069b3bb3d523ed562_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_ad04caa9632bdb6892f46a3f006e17428}\label{vbe_8c_ad04caa9632bdb6892f46a3f006e17428}} 
+\index{vbe.c@{vbe.c}!direct\_mode@{direct\_mode}}
+\index{direct\_mode@{direct\_mode}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{direct\_mode()}{direct\_mode()}}
+{\footnotesize\ttfamily uint32\+\_\+t direct\+\_\+mode (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{red,  }\item[{uint32\+\_\+t}]{green,  }\item[{uint32\+\_\+t}]{blue }\end{DoxyParamCaption})}
+
+
+
+Calculates the pixel value in direct mode based on the red, green, and blue components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em red} & The red component. \\
+\hline
+{\em green} & The green component. \\
+\hline
+{\em blue} & The blue component. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pixel value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vbe_8c_a1990d58f93806df03940cdd203aac4e6}\label{vbe_8c_a1990d58f93806df03940cdd203aac4e6}} 
+\index{vbe.c@{vbe.c}!first\_blue@{first\_blue}}
+\index{first\_blue@{first\_blue}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{first\_blue()}{first\_blue()}}
+{\footnotesize\ttfamily uint32\+\_\+t first\+\_\+blue (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first }\end{DoxyParamCaption})}
+
+
+
+Calculates the first blue component of a pixel in indexed mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first pixel value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The first blue component. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{vbe_8c_a1990d58f93806df03940cdd203aac4e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_a1f07c8cb0a604240fd847535fb9aa93c}\label{vbe_8c_a1f07c8cb0a604240fd847535fb9aa93c}} 
+\index{vbe.c@{vbe.c}!first\_green@{first\_green}}
+\index{first\_green@{first\_green}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{first\_green()}{first\_green()}}
+{\footnotesize\ttfamily uint32\+\_\+t first\+\_\+green (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first }\end{DoxyParamCaption})}
+
+
+
+Calculates the first green component of a pixel in indexed mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first pixel value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The first green component. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{vbe_8c_a1f07c8cb0a604240fd847535fb9aa93c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_aa5d4d568712904fcacd45cab9c240a87}\label{vbe_8c_aa5d4d568712904fcacd45cab9c240a87}} 
+\index{vbe.c@{vbe.c}!first\_red@{first\_red}}
+\index{first\_red@{first\_red}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{first\_red()}{first\_red()}}
+{\footnotesize\ttfamily uint32\+\_\+t first\+\_\+red (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first }\end{DoxyParamCaption})}
+
+
+
+Calculates the first red component of a pixel in indexed mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first pixel value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The first red component. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{vbe_8c_aa5d4d568712904fcacd45cab9c240a87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_ab3fa90a009de7dbcdd47c404ed99ac4d}\label{vbe_8c_ab3fa90a009de7dbcdd47c404ed99ac4d}} 
+\index{vbe.c@{vbe.c}!flip\_screen@{flip\_screen}}
+\index{flip\_screen@{flip\_screen}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{flip\_screen()}{flip\_screen()}}
+{\footnotesize\ttfamily void flip\+\_\+screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Flips the screen by swapping the front and back buffers. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{vbe_8c_ab3fa90a009de7dbcdd47c404ed99ac4d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8c_ab3fa90a009de7dbcdd47c404ed99ac4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_a8becb86f48f701c43e1c411f57f60c4d}\label{vbe_8c_a8becb86f48f701c43e1c411f57f60c4d}} 
+\index{vbe.c@{vbe.c}!get\_hres@{get\_hres}}
+\index{get\_hres@{get\_hres}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{get\_hres()}{get\_hres()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+hres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the horizontal resolution of the screen. 
+
+\begin{DoxyReturn}{Returns}
+The horizontal resolution. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8c_a8becb86f48f701c43e1c411f57f60c4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_ad5999dee7ae30ea14b13e2e2e5a92c88}\label{vbe_8c_ad5999dee7ae30ea14b13e2e2e5a92c88}} 
+\index{vbe.c@{vbe.c}!get\_vres@{get\_vres}}
+\index{get\_vres@{get\_vres}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{get\_vres()}{get\_vres()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+vres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the vertical resolution of the screen. 
+
+\begin{DoxyReturn}{Returns}
+The vertical resolution. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8c_ad5999dee7ae30ea14b13e2e2e5a92c88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_aabf53078fe75bdd6f9f3798251ea04b1}\label{vbe_8c_aabf53078fe75bdd6f9f3798251ea04b1}} 
+\index{vbe.c@{vbe.c}!green\_value@{green\_value}}
+\index{green\_value@{green\_value}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{green\_value()}{green\_value()}}
+{\footnotesize\ttfamily uint32\+\_\+t green\+\_\+value (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first\+\_\+green,  }\item[{uint16\+\_\+t}]{row\+\_\+num,  }\item[{uint8\+\_\+t}]{step }\end{DoxyParamCaption})}
+
+
+
+Calculates the green component of a pixel in indexed mode based on the first green component, row number, and step size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+\_\+green} & The first green component. \\
+\hline
+{\em row\+\_\+num} & The row number. \\
+\hline
+{\em step} & The step size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The green component. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{vbe_8c_aabf53078fe75bdd6f9f3798251ea04b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_aa12c8b709fb8219b11ec35afc84b8829}\label{vbe_8c_aa12c8b709fb8219b11ec35afc84b8829}} 
+\index{vbe.c@{vbe.c}!index\_indexed\_mode@{index\_indexed\_mode}}
+\index{index\_indexed\_mode@{index\_indexed\_mode}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{index\_indexed\_mode()}{index\_indexed\_mode()}}
+{\footnotesize\ttfamily uint32\+\_\+t index\+\_\+indexed\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{row,  }\item[{uint16\+\_\+t}]{col,  }\item[{uint8\+\_\+t}]{no\+\_\+rectangles,  }\item[{uint32\+\_\+t}]{first,  }\item[{uint8\+\_\+t}]{step }\end{DoxyParamCaption})}
+
+
+
+Calculates the pixel value in indexed mode based on the row, column, number of rectangles, first pixel value, and step size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row index. \\
+\hline
+{\em col} & The column index. \\
+\hline
+{\em no\+\_\+rectangles} & The number of rectangles. \\
+\hline
+{\em first} & The first pixel value. \\
+\hline
+{\em step} & The step size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pixel value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vbe_8c_a6d7ae86cd6c0a50b77a6994d730d422c}\label{vbe_8c_a6d7ae86cd6c0a50b77a6994d730d422c}} 
+\index{vbe.c@{vbe.c}!map\_phys\_virt@{map\_phys\_virt}}
+\index{map\_phys\_virt@{map\_phys\_virt}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{map\_phys\_virt()}{map\_phys\_virt()}}
+{\footnotesize\ttfamily void map\+\_\+phys\+\_\+virt (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Maps the physical video memory to the virtual address space using the specified video mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The video mode to use. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{vbe_8c_a6d7ae86cd6c0a50b77a6994d730d422c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_a84df7072b44541ffae1cea32d96490ea}\label{vbe_8c_a84df7072b44541ffae1cea32d96490ea}} 
+\index{vbe.c@{vbe.c}!print\_xpm@{print\_xpm}}
+\index{print\_xpm@{print\_xpm}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{print\_xpm()}{print\_xpm()}}
+{\footnotesize\ttfamily int print\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Prints an XPM image at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & The XPM image to print. \\
+\hline
+{\em x} & The x-\/coordinate of the starting point of the image. \\
+\hline
+{\em y} & The y-\/coordinate of the starting point of the image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{vbe_8c_a7124cb40501d0ac75c66d3bd083a4373}\label{vbe_8c_a7124cb40501d0ac75c66d3bd083a4373}} 
+\index{vbe.c@{vbe.c}!red\_value@{red\_value}}
+\index{red\_value@{red\_value}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{red\_value()}{red\_value()}}
+{\footnotesize\ttfamily uint32\+\_\+t red\+\_\+value (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{first\+\_\+red,  }\item[{uint16\+\_\+t}]{col\+\_\+num,  }\item[{uint8\+\_\+t}]{step }\end{DoxyParamCaption})}
+
+
+
+Calculates the red component of a pixel in indexed mode based on the first red component, column number, and step size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+\_\+red} & The first red component. \\
+\hline
+{\em col\+\_\+num} & The column number. \\
+\hline
+{\em step} & The step size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The red component. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{vbe_8c_a7124cb40501d0ac75c66d3bd083a4373_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_a5e5b25bd525250f61f40b9e9f212d5e6}\label{vbe_8c_a5e5b25bd525250f61f40b9e9f212d5e6}} 
+\index{vbe.c@{vbe.c}!vg\_draw\_hline@{vg\_draw\_hline}}
+\index{vg\_draw\_hline@{vg\_draw\_hline}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a horizontal line starting from the specified coordinates with the given length and color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the starting point of the line. \\
+\hline
+{\em y} & The y-\/coordinate of the starting point of the line. \\
+\hline
+{\em len} & The length of the line. \\
+\hline
+{\em color} & The color of the line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{vbe_8c_a5e5b25bd525250f61f40b9e9f212d5e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{vbe_8c_a5e5b25bd525250f61f40b9e9f212d5e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_a6f895de9725f9f231f9a7f74b6087f60}\label{vbe_8c_a6f895de9725f9f231f9a7f74b6087f60}} 
+\index{vbe.c@{vbe.c}!vg\_draw\_pixel@{vg\_draw\_pixel}}
+\index{vg\_draw\_pixel@{vg\_draw\_pixel}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel at the specified coordinates with the given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the pixel. \\
+\hline
+{\em y} & The y-\/coordinate of the pixel. \\
+\hline
+{\em color} & The color of the pixel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8c_a6f895de9725f9f231f9a7f74b6087f60_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vbe_8c_a99d2da2559e11200c6b40c469e9977ec}\label{vbe_8c_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{vbe.c@{vbe.c}!vg\_draw\_rectangle@{vg\_draw\_rectangle}}
+\index{vg\_draw\_rectangle@{vg\_draw\_rectangle}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle starting from the specified coordinates with the given width, height, and color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of the starting point of the rectangle. \\
+\hline
+{\em y} & The y-\/coordinate of the starting point of the rectangle. \\
+\hline
+{\em width} & The width of the rectangle. \\
+\hline
+{\em height} & The height of the rectangle. \\
+\hline
+{\em color} & The color of the rectangle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vbe_8c_a99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{vbe_8c_ae8e58725b95349bed23353c5fcffddf0}\label{vbe_8c_ae8e58725b95349bed23353c5fcffddf0}} 
+\index{vbe.c@{vbe.c}!second\_screen@{second\_screen}}
+\index{second\_screen@{second\_screen}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{second\_screen}{second\_screen}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ second\+\_\+screen}
+
+\mbox{\Hypertarget{vbe_8c_a26081be7a771e5c611b33f15caaf831e}\label{vbe_8c_a26081be7a771e5c611b33f15caaf831e}} 
+\index{vbe.c@{vbe.c}!vmi\_p@{vmi\_p}}
+\index{vmi\_p@{vmi\_p}!vbe.c@{vbe.c}}
+\doxysubsubsection{\texorpdfstring{vmi\_p}{vmi\_p}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t vmi\+\_\+p}
+

@@ -1,0 +1,4 @@
+<map id="clear" name="clear">
+<area shape="rect" id="node1" title="Clears the queue, removing all elements." alt="" coords="128,5,183,32"/>
+<area shape="rect" id="node2" href="$serialport_8c.html#ac938921551cca0e526f0e9a16c324199" title="Exits the serial port." alt="" coords="5,5,80,32"/>
+</map>

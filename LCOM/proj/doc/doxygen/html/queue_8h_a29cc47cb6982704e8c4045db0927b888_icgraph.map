@@ -1,0 +1,8 @@
+<map id="isEmpty" name="isEmpty">
+<area shape="rect" id="node1" title="Checks if the queue is empty." alt="" coords="380,56,455,83"/>
+<area shape="rect" id="node2" href="$queue_8c.html#a192fd3b9c9d70c9316c8c94e1ffc99d5" title="Returns the back element of the queue without removing it." alt="" coords="279,5,332,32"/>
+<area shape="rect" id="node3" href="$queue_8c.html#af339653f1c1e891a7699b21c0a4c3d2c" title="Returns the front element of the queue without removing it." alt="" coords="279,56,332,83"/>
+<area shape="rect" id="node4" href="$queue_8c.html#ab0a7af1151628d3b2580f6da46706fce" title="Pops and returns the front element of the queue." alt="" coords="282,107,329,133"/>
+<area shape="rect" id="node5" href="$serialport_8c.html#a347c4803f177ea110296efee25790462" title="Sends a byte through the serial port." alt="" coords="115,107,231,133"/>
+<area shape="rect" id="node6" href="$serialport_8c.html#a9353fabdd05ea291e02243dace57ae1c" title="Interrupt handler for the serial port." alt="" coords="5,107,67,133"/>
+</map>

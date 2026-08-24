@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['rb_701',['RB',['../mouse_2i8042_8h.html#a171160a766f85c8816b898ed24d28408',1,'RB():&#160;i8042.h'],['../keyboard_2i8042_8h.html#a171160a766f85c8816b898ed24d28408',1,'RB():&#160;i8042.h']]],
+  ['rbr_702',['RBR',['../UART_8h.html#aa6f7e7a9f4551d6151f9d45362118a50',1,'UART.h']]],
+  ['read_5fcmd_5fbyte_703',['READ_CMD_BYTE',['../keyboard_2i8042_8h.html#a3edb96ff4ed65c98f514852bcdd4f944',1,'READ_CMD_BYTE():&#160;i8042.h'],['../mouse_2i8042_8h.html#a3edb96ff4ed65c98f514852bcdd4f944',1,'READ_CMD_BYTE():&#160;i8042.h']]],
+  ['read_5fdays_704',['READ_DAYS',['../rtc_8h.html#ae70f32dedc33ed23ba15f02cfbe32ac5',1,'rtc.h']]],
+  ['read_5fhours_705',['READ_HOURS',['../rtc_8h.html#a0c88267973aa69b520589a15e49f1074',1,'rtc.h']]],
+  ['read_5fminutes_706',['READ_MINUTES',['../rtc_8h.html#a86d90dc080a4b3b45874b923f81c23fe',1,'rtc.h']]],
+  ['read_5fmonths_707',['READ_MONTHS',['../rtc_8h.html#afa16da5dc73f42c67a6dc7abf8a92296',1,'rtc.h']]],
+  ['read_5fseconds_708',['READ_SECONDS',['../rtc_8h.html#affe8e4ce26dd88e2ce85bde9b8df9a31',1,'rtc.h']]],
+  ['read_5fyears_709',['READ_YEARS',['../rtc_8h.html#a2eaad1adf4f12fd8320e5d7023318c7b',1,'rtc.h']]],
+  ['receive_5fdata_5fint_710',['RECEIVE_DATA_INT',['../UART_8h.html#aef0ac1f0e8fa9c9e0fc9bb00c6802298',1,'UART.h']]],
+  ['request_5fmouse_711',['REQUEST_MOUSE',['../keyboard_2i8042_8h.html#a8f5250af2650d169c4a0b0a21aa3585d',1,'REQUEST_MOUSE():&#160;i8042.h'],['../mouse_2i8042_8h.html#a8f5250af2650d169c4a0b0a21aa3585d',1,'REQUEST_MOUSE():&#160;i8042.h']]],
+  ['right_712',['RIGHT',['../defines_8h.html#a80fb826a684cf3f0d306b22aa100ddac',1,'defines.h']]],
+  ['right_5fbreak_713',['RIGHT_BREAK',['../keyboard_2i8042_8h.html#a4c2291f3ce4b075fe429b7c661260774',1,'i8042.h']]],
+  ['right_5fmake_714',['RIGHT_MAKE',['../keyboard_2i8042_8h.html#a80b3878eb7339923b42f0acd492a5fd3',1,'i8042.h']]],
+  ['rtc_5fbinary_715',['RTC_BINARY',['../rtc_8h.html#afc6b6f30254fde92718e53118ca3a11b',1,'rtc.h']]],
+  ['rtc_5fcounting_5freg_716',['RTC_COUNTING_REG',['../rtc_8h.html#a86caef52fda17dd71718a74193f4b319',1,'rtc.h']]],
+  ['rtc_5fctl_5fregister_717',['RTC_CTL_REGISTER',['../rtc_8h.html#ab73e9d21bff45d164b702eb2450b38e6',1,'rtc.h']]],
+  ['rtc_5firq_718',['RTC_IRQ',['../rtc_8h.html#a4e22feb6ffbc1cda32fadff5c740dc51',1,'rtc.h']]],
+  ['rtc_5fout_5fregister_719',['RTC_OUT_REGISTER',['../rtc_8h.html#a2e836f9c160fe7892683d82944083d21',1,'rtc.h']]],
+  ['rtc_5fupdate_5freg_720',['RTC_UPDATE_REG',['../rtc_8h.html#a2b1373d131ebfcf39dc2659a34af4ab9',1,'rtc.h']]],
+  ['rtc_5fupdating_721',['RTC_UPDATING',['../rtc_8h.html#a7e842a566d726782e493c09a7569a94b',1,'rtc.h']]]
+];

@@ -1,0 +1,6 @@
+<map id="action_handler" name="action_handler">
+<area shape="rect" id="node1" title="Handles the action for a sprite." alt="" coords="5,56,124,83"/>
+<area shape="rect" id="node2" href="$model_8c.html#a40ab632f038718c85e7e41f9e1ac94bb" title="Makes the sprite jump." alt="" coords="172,5,227,32"/>
+<area shape="rect" id="node3" href="$model_8c.html#aecf8b9b488643328d5738b3485bcd4d5" title="Moves the sprite to the left." alt="" coords="178,56,221,83"/>
+<area shape="rect" id="node4" href="$model_8c.html#a69e77492c91283f1d11fb4c7897ba5fd" title="Moves the sprite to the right." alt="" coords="173,107,225,133"/>
+</map>

@@ -1,0 +1,229 @@
+\hypertarget{draw_8h}{}\doxysection{draw.\+h File Reference}
+\label{draw_8h}\index{draw.h@{draw.h}}
+{\ttfamily \#include \char`\"{}../devices/graphics/vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../visuals/model.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../visuals/sprite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}visuals/xpms/background.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}visuals/xpms/gameover.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}visuals/xpms/leaderboard.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}visuals/xpms/menu.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}visuals/xpms/winscreen.\+xpm\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for draw.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{draw_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{draw_8h_a858c1454a817fd7dca9e21bafa491242}{draw\+\_\+sprite}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sprite)
+\begin{DoxyCompactList}\small\item\em Draws a sprite on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw_8h_ad8e3a223b81610252d08dd0e7cfd75c3}{draw\+\_\+sprite\+\_\+pos}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sprite, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws a sprite at a specific position on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw_8h_a60cc3bfe95809976618a46f078e58243}{print\+\_\+background\+\_\+game}} (xpm\+\_\+map\+\_\+t xpm)
+\begin{DoxyCompactList}\small\item\em Prints the background game using an XPM map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_a8f7acda4de2ff9ede5fca68d2db09959}{draw\+\_\+frame}} ()
+\begin{DoxyCompactList}\small\item\em Draws a frame on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{draw_8h_a00b9a438da34ecdcf2785d56624de8f0}{draw\+\_\+digits}} (int number, int x\+\_\+pos, int y\+\_\+pos, int offset)
+\begin{DoxyCompactList}\small\item\em Draws digits on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{draw_8h_adc37ea95d6b131697311029bc38d65ea}{draw\+\_\+leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Draws the leaderboard on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{draw_8h_a00b9a438da34ecdcf2785d56624de8f0}\label{draw_8h_a00b9a438da34ecdcf2785d56624de8f0}} 
+\index{draw.h@{draw.h}!draw\_digits@{draw\_digits}}
+\index{draw\_digits@{draw\_digits}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_digits()}{draw\_digits()}}
+{\footnotesize\ttfamily int draw\+\_\+digits (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{x\+\_\+pos,  }\item[{int}]{y\+\_\+pos,  }\item[{int}]{offset }\end{DoxyParamCaption})}
+
+
+
+Draws digits on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & The number to be drawn. \\
+\hline
+{\em x\+\_\+pos} & The x-\/coordinate of the position. \\
+\hline
+{\em y\+\_\+pos} & The y-\/coordinate of the position. \\
+\hline
+{\em offset} & The offset between digits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a00b9a438da34ecdcf2785d56624de8f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a00b9a438da34ecdcf2785d56624de8f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_a8f7acda4de2ff9ede5fca68d2db09959}\label{draw_8h_a8f7acda4de2ff9ede5fca68d2db09959}} 
+\index{draw.h@{draw.h}!draw\_frame@{draw\_frame}}
+\index{draw\_frame@{draw\_frame}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_frame()}{draw\_frame()}}
+{\footnotesize\ttfamily void draw\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws a frame on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a8f7acda4de2ff9ede5fca68d2db09959_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a8f7acda4de2ff9ede5fca68d2db09959_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_adc37ea95d6b131697311029bc38d65ea}\label{draw_8h_adc37ea95d6b131697311029bc38d65ea}} 
+\index{draw.h@{draw.h}!draw\_leaderboard@{draw\_leaderboard}}
+\index{draw\_leaderboard@{draw\_leaderboard}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_leaderboard()}{draw\_leaderboard()}}
+{\footnotesize\ttfamily void draw\+\_\+leaderboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the leaderboard on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_adc37ea95d6b131697311029bc38d65ea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_adc37ea95d6b131697311029bc38d65ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_a858c1454a817fd7dca9e21bafa491242}\label{draw_8h_a858c1454a817fd7dca9e21bafa491242}} 
+\index{draw.h@{draw.h}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily int draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sprite }\end{DoxyParamCaption})}
+
+
+
+Draws a sprite on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & The sprite to be drawn. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{draw_8h_a858c1454a817fd7dca9e21bafa491242_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a858c1454a817fd7dca9e21bafa491242_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_ad8e3a223b81610252d08dd0e7cfd75c3}\label{draw_8h_ad8e3a223b81610252d08dd0e7cfd75c3}} 
+\index{draw.h@{draw.h}!draw\_sprite\_pos@{draw\_sprite\_pos}}
+\index{draw\_sprite\_pos@{draw\_sprite\_pos}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite\_pos()}{draw\_sprite\_pos()}}
+{\footnotesize\ttfamily int draw\+\_\+sprite\+\_\+pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sprite,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draws a sprite at a specific position on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & The sprite to be drawn. \\
+\hline
+{\em x} & The x-\/coordinate of the position. \\
+\hline
+{\em y} & The y-\/coordinate of the position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{draw_8h_ad8e3a223b81610252d08dd0e7cfd75c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_ad8e3a223b81610252d08dd0e7cfd75c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{draw_8h_a60cc3bfe95809976618a46f078e58243}\label{draw_8h_a60cc3bfe95809976618a46f078e58243}} 
+\index{draw.h@{draw.h}!print\_background\_game@{print\_background\_game}}
+\index{print\_background\_game@{print\_background\_game}!draw.h@{draw.h}}
+\doxysubsubsection{\texorpdfstring{print\_background\_game()}{print\_background\_game()}}
+{\footnotesize\ttfamily int print\+\_\+background\+\_\+game (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+
+
+
+Prints the background game using an XPM map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & The XPM map representing the background game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{draw_8h_a60cc3bfe95809976618a46f078e58243_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{draw_8h_a60cc3bfe95809976618a46f078e58243_icgraph}
+\end{center}
+\end{figure}

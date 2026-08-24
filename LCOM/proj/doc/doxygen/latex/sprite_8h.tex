@@ -1,0 +1,180 @@
+\hypertarget{sprite_8h}{}\doxysection{sprite.\+h File Reference}
+\label{sprite_8h}\index{sprite.h@{sprite.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+Include dependency graph for sprite.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{sprite_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSprite}{Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{sprite_8h_a673cf3cd5655d631f19cb2bba104eff2}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t map, uint16\+\_\+t x, uint16\+\_\+t y, int16\+\_\+t xspeed, int16\+\_\+t yspeed)
+\begin{DoxyCompactList}\small\item\em Creates a new sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Destroys a sprite. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{sprite_8h_a88b773c686f38dba53c134469072dafb}{get\+\_\+posx}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Gets the X-\/coordinate of a sprite. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{sprite_8h_a90dc8855ccc71b93fcecaab718da6472}{get\+\_\+posy}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Gets the Y-\/coordinate of a sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a4eed2d6772fd995988a753f90e2dacbd}{set\+\_\+posx}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp, uint16\+\_\+t x)
+\begin{DoxyCompactList}\small\item\em Sets the X-\/coordinate of a sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sprite_8h_a8fa038cd1de6f145d59f1c3b45b66d86}{set\+\_\+posy}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Sets the Y-\/coordinate of a sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sprite_8h_a673cf3cd5655d631f19cb2bba104eff2}\label{sprite_8h_a673cf3cd5655d631f19cb2bba104eff2}} 
+\index{sprite.h@{sprite.h}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{map,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{int16\+\_\+t}]{xspeed,  }\item[{int16\+\_\+t}]{yspeed }\end{DoxyParamCaption})}
+
+
+
+Creates a new sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The XPM map of the sprite. \\
+\hline
+{\em x} & The initial X-\/coordinate of the sprite. \\
+\hline
+{\em y} & The initial Y-\/coordinate of the sprite. \\
+\hline
+{\em xspeed} & The initial X-\/speed of the sprite. \\
+\hline
+{\em yspeed} & The initial Y-\/speed of the sprite. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the created sprite. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a673cf3cd5655d631f19cb2bba104eff2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}\label{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed}} 
+\index{sprite.h@{sprite.h}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Destroys a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to be destroyed. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_af16c6befaac9ffb673b9e3c798d542ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_a88b773c686f38dba53c134469072dafb}\label{sprite_8h_a88b773c686f38dba53c134469072dafb}} 
+\index{sprite.h@{sprite.h}!get\_posx@{get\_posx}}
+\index{get\_posx@{get\_posx}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{get\_posx()}{get\_posx()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+posx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Gets the X-\/coordinate of a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The X-\/coordinate of the sprite. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sprite_8h_a90dc8855ccc71b93fcecaab718da6472}\label{sprite_8h_a90dc8855ccc71b93fcecaab718da6472}} 
+\index{sprite.h@{sprite.h}!get\_posy@{get\_posy}}
+\index{get\_posy@{get\_posy}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{get\_posy()}{get\_posy()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+posy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Gets the Y-\/coordinate of a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Y-\/coordinate of the sprite. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{sprite_8h_a4eed2d6772fd995988a753f90e2dacbd}\label{sprite_8h_a4eed2d6772fd995988a753f90e2dacbd}} 
+\index{sprite.h@{sprite.h}!set\_posx@{set\_posx}}
+\index{set\_posx@{set\_posx}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{set\_posx()}{set\_posx()}}
+{\footnotesize\ttfamily void set\+\_\+posx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp,  }\item[{uint16\+\_\+t}]{x }\end{DoxyParamCaption})}
+
+
+
+Sets the X-\/coordinate of a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite. \\
+\hline
+{\em x} & The new X-\/coordinate of the sprite. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a4eed2d6772fd995988a753f90e2dacbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{sprite_8h_a8fa038cd1de6f145d59f1c3b45b66d86}\label{sprite_8h_a8fa038cd1de6f145d59f1c3b45b66d86}} 
+\index{sprite.h@{sprite.h}!set\_posy@{set\_posy}}
+\index{set\_posy@{set\_posy}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{set\_posy()}{set\_posy()}}
+{\footnotesize\ttfamily void set\+\_\+posy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Sets the Y-\/coordinate of a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite. \\
+\hline
+{\em y} & The new Y-\/coordinate of the sprite. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{sprite_8h_a8fa038cd1de6f145d59f1c3b45b66d86_icgraph}
+\end{center}
+\end{figure}

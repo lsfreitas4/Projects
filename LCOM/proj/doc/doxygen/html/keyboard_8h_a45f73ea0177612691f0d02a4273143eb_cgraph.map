@@ -1,0 +1,5 @@
+<map id="read_value_data_from_kbc" name="read_value_data_from_kbc">
+<area shape="rect" id="node1" title="Reads a value/data from the keyboard controller." alt="" coords="5,31,204,57"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a5168f22184d8edc53bec6e23fe72330a" title="Checks if the output buffer can be read." alt="" coords="252,5,383,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="431,31,529,57"/>
+</map>

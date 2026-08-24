@@ -1,0 +1,9 @@
+<map id="checkCollision" name="checkCollision">
+<area shape="rect" id="node1" title="Checks for collision between a sprite and a given position." alt="" coords="5,81,121,108"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="Keyboard interrupt handler." alt="" coords="189,56,253,83"/>
+<area shape="rect" id="node5" href="$model_8c.html#a06d4a7e848486d6ad4720a3e842a7224" title="Resets the states of the game." alt="" coords="169,107,272,133"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a5168f22184d8edc53bec6e23fe72330a" title="Checks if the output buffer can be read." alt="" coords="338,5,469,32"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="535,31,633,57"/>
+<area shape="rect" id="node6" href="$sprite_8c.html#a673cf3cd5655d631f19cb2bba104eff2" title="Creates a new sprite." alt="" coords="350,107,457,133"/>
+<area shape="rect" id="node7" href="$model_8c.html#a59c0df8a9001ec8997aca3ae4ff1dd82" title="Updates the array with the given level." alt="" coords="320,157,487,184"/>
+</map>

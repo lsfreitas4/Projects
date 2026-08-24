@@ -1,0 +1,233 @@
+\hypertarget{serialport_8c}{}\doxysection{serialport.\+c File Reference}
+\label{serialport_8c}\index{serialport.c@{serialport.c}}
+{\ttfamily \#include \char`\"{}serialport.\+h\char`\"{}}\newline
+Include dependency graph for serialport.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{serialport_8c_af21628f0f9d46b62067ae790f7861e84}{ser\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes the serial port interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{serialport_8c_a30ae83ae28ebc465baa2d2f2ee51a145}{ser\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes the serial port interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{serialport_8c_a28ad8e1292e4b8ca01428f56e0795af0}{ser\+\_\+get\+\_\+status}} (uint8\+\_\+t $\ast$st)
+\begin{DoxyCompactList}\small\item\em Retrieves the status of the serial port. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{serialport_8c_a828235322fd790c645629859eace5270}{ser\+\_\+init}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the serial port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serialport_8c_ac938921551cca0e526f0e9a16c324199}{ser\+\_\+exit}} ()
+\begin{DoxyCompactList}\small\item\em Exits the serial port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{serialport_8c_a9353fabdd05ea291e02243dace57ae1c}{ser\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Interrupt handler for the serial port. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{serialport_8c_a347c4803f177ea110296efee25790462}{ser\+\_\+send\+\_\+byte}} ()
+\begin{DoxyCompactList}\small\item\em Sends a byte through the serial port. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{serialport_8c_a4755c0fac513664849f9c7e9aa997bc9}{ser\+\_\+read\+\_\+byte}} ()
+\begin{DoxyCompactList}\small\item\em Reads a byte from the serial port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{serialport_8c_a605eb7e62cf6c576555d9134bd0d5d79}{hook\+\_\+id\+\_\+\+COM1}} = \mbox{\hyperlink{UART_8h_a3685c78b9bd6dd0fa3861807e24a4e1b}{COM1\+\_\+\+IRQ}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{serialport_8c_a6df3ff01cc41e03eeb6aa232f29467dc}{ser\+\_\+port}} = \mbox{\hyperlink{UART_8h_a00dbb3ab1c59e14699be9393693e2248}{COM1}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{serialport_8c_a325819a8e492ac69542e8b31705af6e9}{data}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{serialport_8c_ac938921551cca0e526f0e9a16c324199}\label{serialport_8c_ac938921551cca0e526f0e9a16c324199}} 
+\index{serialport.c@{serialport.c}!ser\_exit@{ser\_exit}}
+\index{ser\_exit@{ser\_exit}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_exit()}{ser\_exit()}}
+{\footnotesize\ttfamily void ser\+\_\+exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exits the serial port. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{serialport_8c_ac938921551cca0e526f0e9a16c324199_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_a28ad8e1292e4b8ca01428f56e0795af0}\label{serialport_8c_a28ad8e1292e4b8ca01428f56e0795af0}} 
+\index{serialport.c@{serialport.c}!ser\_get\_status@{ser\_get\_status}}
+\index{ser\_get\_status@{ser\_get\_status}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_get\_status()}{ser\_get\_status()}}
+{\footnotesize\ttfamily int ser\+\_\+get\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{st }\end{DoxyParamCaption})}
+
+
+
+Retrieves the status of the serial port. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & Pointer to the variable that will store the status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{serialport_8c_a28ad8e1292e4b8ca01428f56e0795af0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8c_a28ad8e1292e4b8ca01428f56e0795af0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_a9353fabdd05ea291e02243dace57ae1c}\label{serialport_8c_a9353fabdd05ea291e02243dace57ae1c}} 
+\index{serialport.c@{serialport.c}!ser\_ih@{ser\_ih}}
+\index{ser\_ih@{ser\_ih}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_ih()}{ser\_ih()}}
+{\footnotesize\ttfamily void ser\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Interrupt handler for the serial port. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8c_a9353fabdd05ea291e02243dace57ae1c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_a828235322fd790c645629859eace5270}\label{serialport_8c_a828235322fd790c645629859eace5270}} 
+\index{serialport.c@{serialport.c}!ser\_init@{ser\_init}}
+\index{ser\_init@{ser\_init}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_init()}{ser\_init()}}
+{\footnotesize\ttfamily int ser\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the serial port. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{serialport_8c_a828235322fd790c645629859eace5270_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_a4755c0fac513664849f9c7e9aa997bc9}\label{serialport_8c_a4755c0fac513664849f9c7e9aa997bc9}} 
+\index{serialport.c@{serialport.c}!ser\_read\_byte@{ser\_read\_byte}}
+\index{ser\_read\_byte@{ser\_read\_byte}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_read\_byte()}{ser\_read\_byte()}}
+{\footnotesize\ttfamily int ser\+\_\+read\+\_\+byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads a byte from the serial port. 
+
+\begin{DoxyReturn}{Returns}
+Return the byte read upon success, -\/1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8c_a4755c0fac513664849f9c7e9aa997bc9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{serialport_8c_a4755c0fac513664849f9c7e9aa997bc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_a347c4803f177ea110296efee25790462}\label{serialport_8c_a347c4803f177ea110296efee25790462}} 
+\index{serialport.c@{serialport.c}!ser\_send\_byte@{ser\_send\_byte}}
+\index{ser\_send\_byte@{ser\_send\_byte}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_send\_byte()}{ser\_send\_byte()}}
+{\footnotesize\ttfamily int ser\+\_\+send\+\_\+byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sends a byte through the serial port. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialport_8c_a347c4803f177ea110296efee25790462_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{serialport_8c_a347c4803f177ea110296efee25790462_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{serialport_8c_af21628f0f9d46b62067ae790f7861e84}\label{serialport_8c_af21628f0f9d46b62067ae790f7861e84}} 
+\index{serialport.c@{serialport.c}!ser\_subscribe\_int@{ser\_subscribe\_int}}
+\index{ser\_subscribe\_int@{ser\_subscribe\_int}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_subscribe\_int()}{ser\_subscribe\_int()}}
+{\footnotesize\ttfamily int() ser\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes the serial port interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to the variable that will store the bit mask of the subscribed interrupt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{serialport_8c_a30ae83ae28ebc465baa2d2f2ee51a145}\label{serialport_8c_a30ae83ae28ebc465baa2d2f2ee51a145}} 
+\index{serialport.c@{serialport.c}!ser\_unsubscribe\_int@{ser\_unsubscribe\_int}}
+\index{ser\_unsubscribe\_int@{ser\_unsubscribe\_int}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_unsubscribe\_int()}{ser\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() ser\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes the serial port interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{serialport_8c_a325819a8e492ac69542e8b31705af6e9}\label{serialport_8c_a325819a8e492ac69542e8b31705af6e9}} 
+\index{serialport.c@{serialport.c}!data@{data}}
+\index{data@{data}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data = 0}
+
+\mbox{\Hypertarget{serialport_8c_a605eb7e62cf6c576555d9134bd0d5d79}\label{serialport_8c_a605eb7e62cf6c576555d9134bd0d5d79}} 
+\index{serialport.c@{serialport.c}!hook\_id\_COM1@{hook\_id\_COM1}}
+\index{hook\_id\_COM1@{hook\_id\_COM1}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id\_COM1}{hook\_id\_COM1}}
+{\footnotesize\ttfamily int hook\+\_\+id\+\_\+\+COM1 = \mbox{\hyperlink{UART_8h_a3685c78b9bd6dd0fa3861807e24a4e1b}{COM1\+\_\+\+IRQ}}}
+
+\mbox{\Hypertarget{serialport_8c_a6df3ff01cc41e03eeb6aa232f29467dc}\label{serialport_8c_a6df3ff01cc41e03eeb6aa232f29467dc}} 
+\index{serialport.c@{serialport.c}!ser\_port@{ser\_port}}
+\index{ser\_port@{ser\_port}!serialport.c@{serialport.c}}
+\doxysubsubsection{\texorpdfstring{ser\_port}{ser\_port}}
+{\footnotesize\ttfamily uint16\+\_\+t ser\+\_\+port = \mbox{\hyperlink{UART_8h_a00dbb3ab1c59e14699be9393693e2248}{COM1}}}
+

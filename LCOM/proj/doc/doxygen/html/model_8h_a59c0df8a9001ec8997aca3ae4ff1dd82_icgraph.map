@@ -1,0 +1,14 @@
+<map id="updateArrayWithLevel" name="updateArrayWithLevel">
+<area shape="rect" id="node1" title="Updates the array with the given level." alt="" coords="1152,56,1319,83"/>
+<area shape="rect" id="node2" href="$model_8c.html#a576001c2c0395e0363c1f9a03d7e4ee2" title="Checks for mouse click and performs the corresponding action." alt="" coords="805,56,953,83"/>
+<area shape="rect" id="node4" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,100,128,127"/>
+<area shape="rect" id="node5" href="$model_8c.html#a06d4a7e848486d6ad4720a3e842a7224" title="Resets the states of the game." alt="" coords="1001,119,1104,145"/>
+<area shape="rect" id="node3" href="$model_8c.html#ab5fa7e7da1851578789c26ec9d71448b" title="Updates the mouse." alt="" coords="333,55,452,81"/>
+<area shape="rect" id="node6" href="$model_8c.html#affabab2c68a26fa7d716b13c35048e04" title="Checks for collision between a sprite and a given position." alt="" coords="821,119,937,145"/>
+<area shape="rect" id="node10" href="$model_8c.html#a3dbbef8766f0ce676f34b8b4f1bf3485" title="Updates the timer." alt="" coords="176,132,285,159"/>
+<area shape="rect" id="node12" href="$model_8c.html#a83b1742f41d6e701033e0dd6f113c411" title="Updates the keyboard." alt="" coords="500,245,635,272"/>
+<area shape="rect" id="node7" href="$model_8c.html#a5d62ac650136606812cf07c8672734ea" title="Moves the sprite horizontally." alt="" coords="683,93,757,120"/>
+<area shape="rect" id="node11" href="$model_8c.html#a289238f5b9eee1290cfec8fd22ff2f4e" title="Moves the sprite vertically." alt="" coords="683,144,757,171"/>
+<area shape="rect" id="node8" href="$model_8c.html#a0a7939bfb6d357953b7689705e6d79b5" title="Updates the position of the sprite." alt="" coords="508,132,627,159"/>
+<area shape="rect" id="node9" href="$model_8c.html#acbfb4add61ed502548117c89c6cab7f5" title="Updates the sprite." alt="" coords="359,132,426,159"/>
+</map>

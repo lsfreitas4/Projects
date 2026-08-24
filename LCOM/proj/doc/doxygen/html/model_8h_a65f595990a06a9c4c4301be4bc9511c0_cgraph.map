@@ -1,0 +1,8 @@
+<map id="update_rtc" name="update_rtc">
+<area shape="rect" id="node1" title="Updates the real&#45;time clock." alt="" coords="5,56,96,83"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#aaf9fa7dc504378312f4e526ae11da75e" title="Updates the values of the RTC." alt="" coords="144,56,285,83"/>
+<area shape="rect" id="node3" href="$rtc_8c.html#ae3e6ef6cb5629cbbb53f0bc7f3b8324b" title="Checks if the RTC is currently updating." alt="" coords="333,5,455,32"/>
+<area shape="rect" id="node4" href="$rtc_8c.html#aad9b81b7c1ea288679dae99ca05b7118" title="Reads the output of the Real&#45;Time Clock (RTC) using the specified command byte." alt="" coords="503,31,627,57"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#a891509fed13e0cac396e9c401f887d72" title="Converts a Binary&#45;Coded Decimal (BCD) number to binary." alt="" coords="353,107,435,133"/>
+<area shape="rect" id="node5" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="675,31,773,57"/>
+</map>

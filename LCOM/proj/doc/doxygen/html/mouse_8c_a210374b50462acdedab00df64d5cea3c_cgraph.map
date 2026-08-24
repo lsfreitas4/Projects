@@ -1,0 +1,5 @@
+<map id="mouse_ih" name="mouse_ih">
+<area shape="rect" id="node1" title="Mouse interrupt handler." alt="" coords="5,31,91,57"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#adadf243f6a3148a2a63bd88ca6b89cef" title="Checks if the output buffer can be read from the mouse." alt="" coords="139,5,320,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="368,31,467,57"/>
+</map>

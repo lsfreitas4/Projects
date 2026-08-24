@@ -1,0 +1,4 @@
+<map id="can_read_outbuf" name="can_read_outbuf">
+<area shape="rect" id="node1" title="Checks if the output buffer can be read." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node2" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="184,5,283,32"/>
+</map>

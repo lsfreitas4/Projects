@@ -1,0 +1,7 @@
+<map id="send_cmd_mouse" name="send_cmd_mouse">
+<area shape="rect" id="node1" title="Sends a command to the mouse." alt="" coords="5,77,144,104"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a4776d05b8faed4b54dcba64d73b64980" title=" " alt="" coords="192,41,360,82"/>
+<area shape="rect" id="node5" href="$mouse_8c.html#ae2b9080d623ab180b1f545e9b038636f" title=" " alt="" coords="421,107,577,133"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#adadf243f6a3148a2a63bd88ca6b89cef" title="Checks if the output buffer can be read from the mouse." alt="" coords="408,5,589,32"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="637,56,736,83"/>
+</map>

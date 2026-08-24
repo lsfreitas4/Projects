@@ -1,0 +1,12 @@
+<map id="read_rtc_output" name="read_rtc_output">
+<area shape="rect" id="node1" title="Reads the output of the Real&#45;Time Clock (RTC) using the specified command byte." alt="" coords="897,56,1021,83"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#ae3cb7e5bd3f03913e98b5e75a07ceb27" title="Checks if the RTC is in binary mode." alt="" coords="557,5,662,32"/>
+<area shape="rect" id="node5" href="$rtc_8c.html#ae3e6ef6cb5629cbbb53f0bc7f3b8324b" title="Checks if the RTC is currently updating." alt="" coords="728,56,849,83"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#aaf9fa7dc504378312f4e526ae11da75e" title="Updates the values of the RTC." alt="" coords="539,81,680,108"/>
+<area shape="rect" id="node3" href="$rtc_8c.html#a5b2834a4a1e27abeb2f0663b4c85c774" title="Starts the RTC." alt="" coords="379,5,455,32"/>
+<area shape="rect" id="node4" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,81,128,108"/>
+<area shape="rect" id="node7" href="$model_8c.html#a576001c2c0395e0363c1f9a03d7e4ee2" title="Checks for mouse click and performs the corresponding action." alt="" coords="343,56,491,83"/>
+<area shape="rect" id="node9" href="$model_8c.html#a65f595990a06a9c4c4301be4bc9511c0" title="Updates the real&#45;time clock." alt="" coords="190,107,281,133"/>
+<area shape="rect" id="node10" href="$model_8c.html#a3dbbef8766f0ce676f34b8b4f1bf3485" title="Updates the timer." alt="" coords="181,157,290,184"/>
+<area shape="rect" id="node8" href="$model_8c.html#ab5fa7e7da1851578789c26ec9d71448b" title="Updates the mouse." alt="" coords="176,56,295,83"/>
+</map>

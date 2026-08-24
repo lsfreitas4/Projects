@@ -1,0 +1,5 @@
+<map id="draw_digits" name="draw_digits">
+<area shape="rect" id="node1" title="Draws digits on the screen." alt="" coords="5,5,103,32"/>
+<area shape="rect" id="node2" href="$draw_8c.html#ad8e3a223b81610252d08dd0e7cfd75c3" title="Draws a sprite at a specific position on the screen." alt="" coords="151,5,279,32"/>
+<area shape="rect" id="node3" href="$vbe_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel at the specified coordinates with the given color." alt="" coords="327,5,441,32"/>
+</map>

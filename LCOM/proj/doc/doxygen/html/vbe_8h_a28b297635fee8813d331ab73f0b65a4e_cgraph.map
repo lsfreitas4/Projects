@@ -1,0 +1,4 @@
+<map id="blue_value" name="blue_value">
+<area shape="rect" id="node1" title="Calculates the blue component of a pixel in indexed mode based on the first blue component,..." alt="" coords="5,5,99,32"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#a1990d58f93806df03940cdd203aac4e6" title="Calculates the first blue component of a pixel in indexed mode." alt="" coords="147,5,229,32"/>
+</map>

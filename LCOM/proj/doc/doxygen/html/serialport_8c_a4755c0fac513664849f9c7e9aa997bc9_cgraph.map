@@ -1,0 +1,7 @@
+<map id="ser_read_byte" name="ser_read_byte">
+<area shape="rect" id="node1" title="Reads a byte from the serial port." alt="" coords="5,56,120,83"/>
+<area shape="rect" id="node2" href="$queue_8c.html#a25897dd8dc27d857546b0d3f81058d8c" title="Pushes an element to the back of the queue." alt="" coords="200,5,253,32"/>
+<area shape="rect" id="node4" href="$serialport_8c.html#a28ad8e1292e4b8ca01428f56e0795af0" title="Retrieves the status of the serial port." alt="" coords="168,56,285,83"/>
+<area shape="rect" id="node5" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="333,81,432,108"/>
+<area shape="rect" id="node3" href="$queue_8c.html#a3f2350d97e2b928dece5642ebfc1d173" title="Checks if the queue is full." alt="" coords="355,5,411,32"/>
+</map>

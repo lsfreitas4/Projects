@@ -1,0 +1,6 @@
+<map id="draw_temp_background" name="draw_temp_background">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,184,83"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#a8becb86f48f701c43e1c411f57f60c4d" title="Gets the horizontal resolution of the screen." alt="" coords="250,5,329,32"/>
+<area shape="rect" id="node3" href="$vbe_8c.html#ad5999dee7ae30ea14b13e2e2e5a92c88" title="Gets the vertical resolution of the screen." alt="" coords="250,56,329,83"/>
+<area shape="rect" id="node4" href="$vbe_8c.html#a6f895de9725f9f231f9a7f74b6087f60" title="Draws a pixel at the specified coordinates with the given color." alt="" coords="232,107,347,133"/>
+</map>

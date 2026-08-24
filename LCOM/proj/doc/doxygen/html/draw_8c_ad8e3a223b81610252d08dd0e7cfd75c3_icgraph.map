@@ -1,0 +1,9 @@
+<map id="draw_sprite_pos" name="draw_sprite_pos">
+<area shape="rect" id="node1" title="Draws a sprite at a specific position on the screen." alt="" coords="813,56,941,83"/>
+<area shape="rect" id="node2" href="$draw_8c.html#a00b9a438da34ecdcf2785d56624de8f0" title="Draws digits on the screen." alt="" coords="668,56,765,83"/>
+<area shape="rect" id="node3" href="$draw_8c.html#adc37ea95d6b131697311029bc38d65ea" title="Draws the leaderboard on the screen." alt="" coords="481,5,620,32"/>
+<area shape="rect" id="node4" href="$draw_8c.html#a8f7acda4de2ff9ede5fca68d2db09959" title="Draws a frame on the screen." alt="" coords="333,56,433,83"/>
+<area shape="rect" id="node7" href="$draw_8c.html#a4f3d01370e91e93f6b4fe1f9d8201e9f" title=" " alt="" coords="505,56,596,83"/>
+<area shape="rect" id="node5" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,56,128,83"/>
+<area shape="rect" id="node6" href="$model_8c.html#a3dbbef8766f0ce676f34b8b4f1bf3485" title="Updates the timer." alt="" coords="176,81,285,108"/>
+</map>

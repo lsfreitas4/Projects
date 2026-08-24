@@ -1,0 +1,191 @@
+\hypertarget{UART_8h}{}\doxysection{UART.\+h File Reference}
+\label{UART_8h}\index{UART.h@{UART.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{UART_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{UART_8h_a00dbb3ab1c59e14699be9393693e2248}{COM1}}~0x3\+F8
+\item 
+\#define \mbox{\hyperlink{UART_8h_a3685c78b9bd6dd0fa3861807e24a4e1b}{COM1\+\_\+\+IRQ}}~4
+\item 
+\#define \mbox{\hyperlink{UART_8h_aa9a536b03e27127aa1701976628f33bb}{COM1\+\_\+\+IRQ\+\_\+\+MASK}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(\mbox{\hyperlink{UART_8h_a3685c78b9bd6dd0fa3861807e24a4e1b}{COM1\+\_\+\+IRQ}})
+\item 
+\#define \mbox{\hyperlink{UART_8h_aa6f7e7a9f4551d6151f9d45362118a50}{RBR}}~0x00
+\item 
+\#define \mbox{\hyperlink{UART_8h_a5e9787adf3c9afcc4b781e85bb545b35}{THR}}~0x00
+\item 
+\#define \mbox{\hyperlink{UART_8h_a3e27fa35f9febccdc4a0c28a5c8cffbb}{IER}}~0x01
+\item 
+\#define \mbox{\hyperlink{UART_8h_a67004975983f9c99226d63db17ba74c4}{IIR}}~0x02
+\item 
+\#define \mbox{\hyperlink{UART_8h_a264b36b13386e3f62fe69e04711bc006}{FCR}}~0x02
+\item 
+\#define \mbox{\hyperlink{UART_8h_a851cb396b6eaa97346364a772b439f37}{LCR}}~0x03
+\item 
+\#define \mbox{\hyperlink{UART_8h_a65364db1603cde6f6533cb61bcfcf553}{MCR}}~0x04
+\item 
+\#define \mbox{\hyperlink{UART_8h_ad51d51aee21f6cc77d4955221aee3dcb}{LSR}}~0x05
+\item 
+\#define \mbox{\hyperlink{UART_8h_ad4806a0bfd996121bc27d2466393207e}{MSR}}~0x06
+\item 
+\#define \mbox{\hyperlink{UART_8h_abaed93a16a0cde13f32bc4dc48b96804}{SR}}~0x07
+\item 
+\#define \mbox{\hyperlink{UART_8h_a4466639cd64ebf372a621168c5e25964}{DLL}}~0x00
+\item 
+\#define \mbox{\hyperlink{UART_8h_a3b48b12dc65f62dd40ab1163fe7997fb}{DLM}}~0x01
+\item 
+\#define \mbox{\hyperlink{UART_8h_a4f139b06f232e8e36f4e44e1af958b26}{SER\+\_\+\+NO\+\_\+\+INT\+\_\+\+PEND}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(0)
+\item 
+\#define \mbox{\hyperlink{UART_8h_a57912ff27e6b123b86821203a0338760}{INT\+\_\+\+ID}}~(\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(1) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(2) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(3))
+\item 
+\#define \mbox{\hyperlink{UART_8h_a27237d52151a861d3a88daa2946b1cd5}{SER\+\_\+\+RX\+\_\+\+ERR}}~(\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(1) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(2) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(3))
+\item 
+\#define \mbox{\hyperlink{UART_8h_a58681ab2e0017021b4cbdcdad0d4566f}{SER\+\_\+\+FIFO\+\_\+\+INT}}~(\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(2) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(3))
+\item 
+\#define \mbox{\hyperlink{UART_8h_aef0ac1f0e8fa9c9e0fc9bb00c6802298}{RECEIVE\+\_\+\+DATA\+\_\+\+INT}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(0)
+\item 
+\#define \mbox{\hyperlink{UART_8h_a15f734faded601c25843362bbddcfac9}{SEND\+\_\+\+DATA\+\_\+\+INT}}~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(1)
+\item 
+\#define \mbox{\hyperlink{UART_8h_a64ae26491b09a5e1c748f44f5b95c4b0}{SERIAL\+\_\+\+CLEAR}}~255
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{UART_8h_a00dbb3ab1c59e14699be9393693e2248}\label{UART_8h_a00dbb3ab1c59e14699be9393693e2248}} 
+\index{UART.h@{UART.h}!COM1@{COM1}}
+\index{COM1@{COM1}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{COM1}{COM1}}
+{\footnotesize\ttfamily \#define COM1~0x3\+F8}
+
+\mbox{\Hypertarget{UART_8h_a3685c78b9bd6dd0fa3861807e24a4e1b}\label{UART_8h_a3685c78b9bd6dd0fa3861807e24a4e1b}} 
+\index{UART.h@{UART.h}!COM1\_IRQ@{COM1\_IRQ}}
+\index{COM1\_IRQ@{COM1\_IRQ}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{COM1\_IRQ}{COM1\_IRQ}}
+{\footnotesize\ttfamily \#define COM1\+\_\+\+IRQ~4}
+
+\mbox{\Hypertarget{UART_8h_aa9a536b03e27127aa1701976628f33bb}\label{UART_8h_aa9a536b03e27127aa1701976628f33bb}} 
+\index{UART.h@{UART.h}!COM1\_IRQ\_MASK@{COM1\_IRQ\_MASK}}
+\index{COM1\_IRQ\_MASK@{COM1\_IRQ\_MASK}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{COM1\_IRQ\_MASK}{COM1\_IRQ\_MASK}}
+{\footnotesize\ttfamily \#define COM1\+\_\+\+IRQ\+\_\+\+MASK~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(\mbox{\hyperlink{UART_8h_a3685c78b9bd6dd0fa3861807e24a4e1b}{COM1\+\_\+\+IRQ}})}
+
+\mbox{\Hypertarget{UART_8h_a4466639cd64ebf372a621168c5e25964}\label{UART_8h_a4466639cd64ebf372a621168c5e25964}} 
+\index{UART.h@{UART.h}!DLL@{DLL}}
+\index{DLL@{DLL}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{DLL}{DLL}}
+{\footnotesize\ttfamily \#define DLL~0x00}
+
+\mbox{\Hypertarget{UART_8h_a3b48b12dc65f62dd40ab1163fe7997fb}\label{UART_8h_a3b48b12dc65f62dd40ab1163fe7997fb}} 
+\index{UART.h@{UART.h}!DLM@{DLM}}
+\index{DLM@{DLM}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{DLM}{DLM}}
+{\footnotesize\ttfamily \#define DLM~0x01}
+
+\mbox{\Hypertarget{UART_8h_a264b36b13386e3f62fe69e04711bc006}\label{UART_8h_a264b36b13386e3f62fe69e04711bc006}} 
+\index{UART.h@{UART.h}!FCR@{FCR}}
+\index{FCR@{FCR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{FCR}{FCR}}
+{\footnotesize\ttfamily \#define FCR~0x02}
+
+\mbox{\Hypertarget{UART_8h_a3e27fa35f9febccdc4a0c28a5c8cffbb}\label{UART_8h_a3e27fa35f9febccdc4a0c28a5c8cffbb}} 
+\index{UART.h@{UART.h}!IER@{IER}}
+\index{IER@{IER}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{IER}{IER}}
+{\footnotesize\ttfamily \#define IER~0x01}
+
+\mbox{\Hypertarget{UART_8h_a67004975983f9c99226d63db17ba74c4}\label{UART_8h_a67004975983f9c99226d63db17ba74c4}} 
+\index{UART.h@{UART.h}!IIR@{IIR}}
+\index{IIR@{IIR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{IIR}{IIR}}
+{\footnotesize\ttfamily \#define IIR~0x02}
+
+\mbox{\Hypertarget{UART_8h_a57912ff27e6b123b86821203a0338760}\label{UART_8h_a57912ff27e6b123b86821203a0338760}} 
+\index{UART.h@{UART.h}!INT\_ID@{INT\_ID}}
+\index{INT\_ID@{INT\_ID}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{INT\_ID}{INT\_ID}}
+{\footnotesize\ttfamily \#define INT\+\_\+\+ID~(\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(1) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(2) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(3))}
+
+\mbox{\Hypertarget{UART_8h_a851cb396b6eaa97346364a772b439f37}\label{UART_8h_a851cb396b6eaa97346364a772b439f37}} 
+\index{UART.h@{UART.h}!LCR@{LCR}}
+\index{LCR@{LCR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{LCR}{LCR}}
+{\footnotesize\ttfamily \#define LCR~0x03}
+
+\mbox{\Hypertarget{UART_8h_ad51d51aee21f6cc77d4955221aee3dcb}\label{UART_8h_ad51d51aee21f6cc77d4955221aee3dcb}} 
+\index{UART.h@{UART.h}!LSR@{LSR}}
+\index{LSR@{LSR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{LSR}{LSR}}
+{\footnotesize\ttfamily \#define LSR~0x05}
+
+\mbox{\Hypertarget{UART_8h_a65364db1603cde6f6533cb61bcfcf553}\label{UART_8h_a65364db1603cde6f6533cb61bcfcf553}} 
+\index{UART.h@{UART.h}!MCR@{MCR}}
+\index{MCR@{MCR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{MCR}{MCR}}
+{\footnotesize\ttfamily \#define MCR~0x04}
+
+\mbox{\Hypertarget{UART_8h_ad4806a0bfd996121bc27d2466393207e}\label{UART_8h_ad4806a0bfd996121bc27d2466393207e}} 
+\index{UART.h@{UART.h}!MSR@{MSR}}
+\index{MSR@{MSR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{MSR}{MSR}}
+{\footnotesize\ttfamily \#define MSR~0x06}
+
+\mbox{\Hypertarget{UART_8h_aa6f7e7a9f4551d6151f9d45362118a50}\label{UART_8h_aa6f7e7a9f4551d6151f9d45362118a50}} 
+\index{UART.h@{UART.h}!RBR@{RBR}}
+\index{RBR@{RBR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{RBR}{RBR}}
+{\footnotesize\ttfamily \#define RBR~0x00}
+
+\mbox{\Hypertarget{UART_8h_aef0ac1f0e8fa9c9e0fc9bb00c6802298}\label{UART_8h_aef0ac1f0e8fa9c9e0fc9bb00c6802298}} 
+\index{UART.h@{UART.h}!RECEIVE\_DATA\_INT@{RECEIVE\_DATA\_INT}}
+\index{RECEIVE\_DATA\_INT@{RECEIVE\_DATA\_INT}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{RECEIVE\_DATA\_INT}{RECEIVE\_DATA\_INT}}
+{\footnotesize\ttfamily \#define RECEIVE\+\_\+\+DATA\+\_\+\+INT~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(0)}
+
+\mbox{\Hypertarget{UART_8h_a15f734faded601c25843362bbddcfac9}\label{UART_8h_a15f734faded601c25843362bbddcfac9}} 
+\index{UART.h@{UART.h}!SEND\_DATA\_INT@{SEND\_DATA\_INT}}
+\index{SEND\_DATA\_INT@{SEND\_DATA\_INT}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{SEND\_DATA\_INT}{SEND\_DATA\_INT}}
+{\footnotesize\ttfamily \#define SEND\+\_\+\+DATA\+\_\+\+INT~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(1)}
+
+\mbox{\Hypertarget{UART_8h_a58681ab2e0017021b4cbdcdad0d4566f}\label{UART_8h_a58681ab2e0017021b4cbdcdad0d4566f}} 
+\index{UART.h@{UART.h}!SER\_FIFO\_INT@{SER\_FIFO\_INT}}
+\index{SER\_FIFO\_INT@{SER\_FIFO\_INT}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{SER\_FIFO\_INT}{SER\_FIFO\_INT}}
+{\footnotesize\ttfamily \#define SER\+\_\+\+FIFO\+\_\+\+INT~(\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(2) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(3))}
+
+\mbox{\Hypertarget{UART_8h_a4f139b06f232e8e36f4e44e1af958b26}\label{UART_8h_a4f139b06f232e8e36f4e44e1af958b26}} 
+\index{UART.h@{UART.h}!SER\_NO\_INT\_PEND@{SER\_NO\_INT\_PEND}}
+\index{SER\_NO\_INT\_PEND@{SER\_NO\_INT\_PEND}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{SER\_NO\_INT\_PEND}{SER\_NO\_INT\_PEND}}
+{\footnotesize\ttfamily \#define SER\+\_\+\+NO\+\_\+\+INT\+\_\+\+PEND~\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(0)}
+
+\mbox{\Hypertarget{UART_8h_a27237d52151a861d3a88daa2946b1cd5}\label{UART_8h_a27237d52151a861d3a88daa2946b1cd5}} 
+\index{UART.h@{UART.h}!SER\_RX\_ERR@{SER\_RX\_ERR}}
+\index{SER\_RX\_ERR@{SER\_RX\_ERR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{SER\_RX\_ERR}{SER\_RX\_ERR}}
+{\footnotesize\ttfamily \#define SER\+\_\+\+RX\+\_\+\+ERR~(\mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(1) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(2) $\vert$ \mbox{\hyperlink{group__utils_ga3a8ea58898cb58fc96013383d39f482c}{BIT}}(3))}
+
+\mbox{\Hypertarget{UART_8h_a64ae26491b09a5e1c748f44f5b95c4b0}\label{UART_8h_a64ae26491b09a5e1c748f44f5b95c4b0}} 
+\index{UART.h@{UART.h}!SERIAL\_CLEAR@{SERIAL\_CLEAR}}
+\index{SERIAL\_CLEAR@{SERIAL\_CLEAR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{SERIAL\_CLEAR}{SERIAL\_CLEAR}}
+{\footnotesize\ttfamily \#define SERIAL\+\_\+\+CLEAR~255}
+
+\mbox{\Hypertarget{UART_8h_abaed93a16a0cde13f32bc4dc48b96804}\label{UART_8h_abaed93a16a0cde13f32bc4dc48b96804}} 
+\index{UART.h@{UART.h}!SR@{SR}}
+\index{SR@{SR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{SR}{SR}}
+{\footnotesize\ttfamily \#define SR~0x07}
+
+\mbox{\Hypertarget{UART_8h_a5e9787adf3c9afcc4b781e85bb545b35}\label{UART_8h_a5e9787adf3c9afcc4b781e85bb545b35}} 
+\index{UART.h@{UART.h}!THR@{THR}}
+\index{THR@{THR}!UART.h@{UART.h}}
+\doxysubsubsection{\texorpdfstring{THR}{THR}}
+{\footnotesize\ttfamily \#define THR~0x00}
+

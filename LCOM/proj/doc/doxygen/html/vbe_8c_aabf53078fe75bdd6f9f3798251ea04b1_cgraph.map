@@ -1,0 +1,4 @@
+<map id="green_value" name="green_value">
+<area shape="rect" id="node1" title="Calculates the green component of a pixel in indexed mode based on the first green component,..." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#a1f07c8cb0a604240fd847535fb9aa93c" title="Calculates the first green component of a pixel in indexed mode." alt="" coords="156,5,247,32"/>
+</map>

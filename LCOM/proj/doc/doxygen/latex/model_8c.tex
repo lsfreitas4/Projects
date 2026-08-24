@@ -1,0 +1,1005 @@
+\hypertarget{model_8c}{}\doxysection{model.\+c File Reference}
+\label{model_8c}\index{model.c@{model.c}}
+{\ttfamily \#include \char`\"{}model.\+h\char`\"{}}\newline
+Include dependency graph for model.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{group__timer_ga91a2072306c68353712a6b771287dc2c}{timer\+\_\+int\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em Timer 0 interrupt handler. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a26d3dd4d93472051b4e0bb50e319494b}{load\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Loads the sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932}{destroy\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Destroys all sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a2a361626260fdc5319222f0e4d81fd71}{initialize\+\_\+leaderboard}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the leaderboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a59c0df8a9001ec8997aca3ae4ff1dd82}{update\+Array\+With\+Level}} (int \mbox{\hyperlink{model_8c_acf4d33ee4cff36f69b924471174dcb11}{level}})
+\begin{DoxyCompactList}\small\item\em Updates the array with the given level. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_affabab2c68a26fa7d716b13c35048e04}{check\+Collision}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Checks for collision between a sprite and a given position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a3dbbef8766f0ce676f34b8b4f1bf3485}{update\+\_\+timer}} ()
+\begin{DoxyCompactList}\small\item\em Updates the timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a83b1742f41d6e701033e0dd6f113c411}{update\+\_\+keyboard}} ()
+\begin{DoxyCompactList}\small\item\em Updates the keyboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_ab5fa7e7da1851578789c26ec9d71448b}{update\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Updates the mouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a65f595990a06a9c4c4301be4bc9511c0}{update\+\_\+rtc}} ()
+\begin{DoxyCompactList}\small\item\em Updates the real-\/time clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_ae6513b1d86e99c33c62472f1b42dc913}{move\+\_\+cursor}} (struct \mbox{\hyperlink{model_8c_aa93413b717e8f22525818b0f5efdd448}{packet}} $\ast$pp)
+\begin{DoxyCompactList}\small\item\em Moves the cursor based on the given mouse packet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a77b060b5fa05c2208d59d870741f3e11}{action\+\_\+handler}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Handles the action for a sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8c_acbfb4add61ed502548117c89c6cab7f5}{update}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Updates the sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a8982e2565f6e56d02f7664b35a8031d9}{update\+Speed}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Updates the speed of the sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8c_a0a7939bfb6d357953b7689705e6d79b5}{update\+Position}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Updates the position of the sprite. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8c_a5d62ac650136606812cf07c8672734ea}{move\+\_\+x}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Moves the sprite horizontally. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{model_8c_a289238f5b9eee1290cfec8fd22ff2f4e}{move\+\_\+y}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Moves the sprite vertically. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a40ab632f038718c85e7e41f9e1ac94bb}{jump}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Makes the sprite jump. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a450a3352bbf61fc777e842068b9d2e51}{set\+\_\+ground}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Sets the ground for the sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a69e77492c91283f1d11fb4c7897ba5fd}{right}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Moves the sprite to the right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_aecf8b9b488643328d5738b3485bcd4d5}{left}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Moves the sprite to the left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a2e87729979f6d801ab66de2ecc08f536}{gravity}} (\mbox{\hyperlink{structSprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em Applies gravity to the sprite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a576001c2c0395e0363c1f9a03d7e4ee2}{check\+\_\+mouse\+\_\+click}} (struct \mbox{\hyperlink{model_8c_aa93413b717e8f22525818b0f5efdd448}{packet}} pp)
+\begin{DoxyCompactList}\small\item\em Checks for mouse click and performs the corresponding action. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a06d4a7e848486d6ad4720a3e842a7224}{reset\+\_\+states}} ()
+\begin{DoxyCompactList}\small\item\em Resets the states of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_adb597ce60397fa935ef3e3daa852015b}{add\+\_\+to\+\_\+leaderboard}} (uint8\+\_\+t day, uint8\+\_\+t month, uint8\+\_\+t year, uint8\+\_\+t hour, uint8\+\_\+t minute, int score)
+\begin{DoxyCompactList}\small\item\em Adds a score to the leaderboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_ac6f0ca3d20b146a1e4a06ddf434d1757}{write\+\_\+leaderboard\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Writes the leaderboard data to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a27b36ee7a933058f7251575baeb41c99}{read\+\_\+leaderboard\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Reads the leaderboard data from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{model_8c_aa135bb051c7a68877c688aaa5a9c64ab}{global\+\_\+counter}} = 0
+\item 
+int \mbox{\hyperlink{model_8c_abb10b16a7eda7b221fa88745fae00bfd}{level\+\_\+time}} = 0
+\item 
+int \mbox{\hyperlink{model_8c_a30ac53c6f8911c318a6b435a5b220c3f}{changesprite}} = 0
+\item 
+int \mbox{\hyperlink{model_8c_a288a4ad3067bb40e26324d042d45cae5}{spriteindex}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{model_8c_a11a320aed8770b182f75f3f6e636c6af}{kbd\+\_\+outbuf}}
+\item 
+bool \mbox{\hyperlink{model_8c_a857502cff71d45019163294ccc1779d5}{change}} = false
+\item 
+bool \mbox{\hyperlink{model_8c_a8c06e370b709d689e392a4b7b53b47c5}{completed}} = false
+\item 
+bool \mbox{\hyperlink{model_8c_a982054efcc21da28b309aaa8930ae021}{redlever}} = true
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a35b1081aba8b60716983701cf54611bc}{boy}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a393171e75c0064c19d75d2f6e5ee0091}{button}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a476eb08b725fe75cd0ffa538ab3f4cdb}{buttonpressed}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cda}{Sprite\+State}} \mbox{\hyperlink{model_8c_a306b5c902624921f60f4010ab49835d6}{boy\+State}} = \mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cdaa50d1448013c6f17125caee18aa418af7}{NORMAL}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a8f2904241f1adf96df2fa8d7d2d2518e}{boys}} \mbox{[}6\mbox{]}
+\item 
+\mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cda}{Sprite\+State}} \mbox{\hyperlink{model_8c_ab6bde507de6d862a8352dabbfafb87a7}{girl\+State}} = \mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cdaa50d1448013c6f17125caee18aa418af7}{NORMAL}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a12bd63bc06374368207b311c4b3e33a0}{girls}} \mbox{[}6\mbox{]}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a3a7ea4305773abf5347bb261a8a5c16b}{cursor}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a76454a7d013e0b6d5feb29b0ced6429e}{start}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a11382df1bce4210cf96c3656272ee98e}{exit\+\_\+button}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a56f47a01583b1a01e9ac684e4ddf94ef}{tryagain\+\_\+button}}
+\item 
+\mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}} \mbox{\hyperlink{model_8c_ac705089b22877f6322d09a9f0f5bdb1d}{system\+State}} = \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75a1061be6c3fb88d32829cba6f6b2be304}{RUNNING}}
+\item 
+\mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} \mbox{\hyperlink{model_8c_a92b62ab09159876ce3ca4dc9340931ca}{menu\+State}} = \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2a13d000b4d7dc70d90239b7430d1eb6b2}{START}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_aaf35afe450858a9f17da25539c1a9963}{doorblue}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a4e1804183a745ec9f41708f4083c61a3}{doorred}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a4b3ecb7cf5812884ca2b7d3be9114fe9}{walls20}} \mbox{[}1200\mbox{]}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_aba66a1ceb852911beed9297766c13b22}{arrow}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a32d32408153eed3bdf5a1dc923b7046b}{lever}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a37396565c2a4b9c4977d910b4257e18a}{opendoor}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_ad908b2354c1c5568f5641e21ca439b92}{leaderboard\+\_\+button}}
+\item 
+\mbox{\hyperlink{structSprite}{Sprite}} $\ast$ \mbox{\hyperlink{model_8c_a75e8e5728a85c84e7d46702505c09973}{num}} \mbox{[}12\mbox{]}
+\item 
+int $\ast$ \mbox{\hyperlink{model_8c_a6d6d9d1fee2f05cae09c886a9312265e}{level\+Array}}
+\item 
+int \mbox{\hyperlink{model_8c_acf4d33ee4cff36f69b924471174dcb11}{level}} = 1
+\item 
+struct packet \mbox{\hyperlink{model_8c_aa93413b717e8f22525818b0f5efdd448}{packet}}
+\item 
+int \mbox{\hyperlink{model_8c_a4f7c98f6c10907a76e442224efcd6b73}{byte\+\_\+counter}}
+\item 
+\mbox{\hyperlink{structrtc__values}{rtc\+\_\+values}} \mbox{\hyperlink{model_8c_a6b7588a7d28264c9e9bba547fc1c4ee3}{rtc}}
+\item 
+\mbox{\hyperlink{structLeaderboardEntry}{Leaderboard\+Entry}} \mbox{\hyperlink{model_8c_ad19bbd3e04b40024b57df4e94ddd28d4}{leaderboard}} \mbox{[}\mbox{\hyperlink{defines_8h_a74f3cecfb9d0618b1636f9f2f2dee25c}{LEADERBOARD\+\_\+\+SIZE}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{model_8c_a77b060b5fa05c2208d59d870741f3e11}\label{model_8c_a77b060b5fa05c2208d59d870741f3e11}} 
+\index{model.c@{model.c}!action\_handler@{action\_handler}}
+\index{action\_handler@{action\_handler}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{action\_handler()}{action\_handler()}}
+{\footnotesize\ttfamily void action\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Handles the action for a sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to handle the action for. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{model_8c_a77b060b5fa05c2208d59d870741f3e11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a77b060b5fa05c2208d59d870741f3e11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_adb597ce60397fa935ef3e3daa852015b}\label{model_8c_adb597ce60397fa935ef3e3daa852015b}} 
+\index{model.c@{model.c}!add\_to\_leaderboard@{add\_to\_leaderboard}}
+\index{add\_to\_leaderboard@{add\_to\_leaderboard}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{add\_to\_leaderboard()}{add\_to\_leaderboard()}}
+{\footnotesize\ttfamily void add\+\_\+to\+\_\+leaderboard (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{year,  }\item[{uint8\+\_\+t}]{month,  }\item[{uint8\+\_\+t}]{day,  }\item[{uint8\+\_\+t}]{hour,  }\item[{uint8\+\_\+t}]{minute,  }\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+Adds a score to the leaderboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & The year of the score. \\
+\hline
+{\em month} & The month of the score. \\
+\hline
+{\em day} & The day of the score. \\
+\hline
+{\em hour} & The hour of the score. \\
+\hline
+{\em minute} & The minute of the score. \\
+\hline
+{\em score} & The score to add. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_adb597ce60397fa935ef3e3daa852015b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a576001c2c0395e0363c1f9a03d7e4ee2}\label{model_8c_a576001c2c0395e0363c1f9a03d7e4ee2}} 
+\index{model.c@{model.c}!check\_mouse\_click@{check\_mouse\_click}}
+\index{check\_mouse\_click@{check\_mouse\_click}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{check\_mouse\_click()}{check\_mouse\_click()}}
+{\footnotesize\ttfamily void check\+\_\+mouse\+\_\+click (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{model_8c_aa93413b717e8f22525818b0f5efdd448}{packet}}}]{pp }\end{DoxyParamCaption})}
+
+
+
+Checks for mouse click and performs the corresponding action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & The mouse packet containing the click information. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a576001c2c0395e0363c1f9a03d7e4ee2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a576001c2c0395e0363c1f9a03d7e4ee2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_affabab2c68a26fa7d716b13c35048e04}\label{model_8c_affabab2c68a26fa7d716b13c35048e04}} 
+\index{model.c@{model.c}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Checks for collision between a sprite and a given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to check collision with. \\
+\hline
+{\em x} & The x-\/coordinate of the position to check. \\
+\hline
+{\em y} & The y-\/coordinate of the position to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sprite that collided with the position, or NULL if no collision occurred. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_affabab2c68a26fa7d716b13c35048e04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_affabab2c68a26fa7d716b13c35048e04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932}\label{model_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932}} 
+\index{model.c@{model.c}!destroy\_sprites@{destroy\_sprites}}
+\index{destroy\_sprites@{destroy\_sprites}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprites()}{destroy\_sprites()}}
+{\footnotesize\ttfamily void destroy\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys all sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{model_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{model_8c_a8fdbc6c7bfca3ef4a8800a3cdc19d932_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a2e87729979f6d801ab66de2ecc08f536}\label{model_8c_a2e87729979f6d801ab66de2ecc08f536}} 
+\index{model.c@{model.c}!gravity@{gravity}}
+\index{gravity@{gravity}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{gravity()}{gravity()}}
+{\footnotesize\ttfamily void gravity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Applies gravity to the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to apply gravity to. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a2e87729979f6d801ab66de2ecc08f536_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a2a361626260fdc5319222f0e4d81fd71}\label{model_8c_a2a361626260fdc5319222f0e4d81fd71}} 
+\index{model.c@{model.c}!initialize\_leaderboard@{initialize\_leaderboard}}
+\index{initialize\_leaderboard@{initialize\_leaderboard}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_leaderboard()}{initialize\_leaderboard()}}
+{\footnotesize\ttfamily void initialize\+\_\+leaderboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the leaderboard. 
+
+\mbox{\Hypertarget{model_8c_a40ab632f038718c85e7e41f9e1ac94bb}\label{model_8c_a40ab632f038718c85e7e41f9e1ac94bb}} 
+\index{model.c@{model.c}!jump@{jump}}
+\index{jump@{jump}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{jump()}{jump()}}
+{\footnotesize\ttfamily void jump (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Makes the sprite jump. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to make jump. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a40ab632f038718c85e7e41f9e1ac94bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_aecf8b9b488643328d5738b3485bcd4d5}\label{model_8c_aecf8b9b488643328d5738b3485bcd4d5}} 
+\index{model.c@{model.c}!left@{left}}
+\index{left@{left}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily void left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite to the left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to move. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_aecf8b9b488643328d5738b3485bcd4d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a26d3dd4d93472051b4e0bb50e319494b}\label{model_8c_a26d3dd4d93472051b4e0bb50e319494b}} 
+\index{model.c@{model.c}!load\_sprites@{load\_sprites}}
+\index{load\_sprites@{load\_sprites}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{load\_sprites()}{load\_sprites()}}
+{\footnotesize\ttfamily void load\+\_\+sprites (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{model_8c_a26d3dd4d93472051b4e0bb50e319494b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{model_8c_a26d3dd4d93472051b4e0bb50e319494b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_ae6513b1d86e99c33c62472f1b42dc913}\label{model_8c_ae6513b1d86e99c33c62472f1b42dc913}} 
+\index{model.c@{model.c}!move\_cursor@{move\_cursor}}
+\index{move\_cursor@{move\_cursor}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{move\_cursor()}{move\_cursor()}}
+{\footnotesize\ttfamily void move\+\_\+cursor (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{model_8c_aa93413b717e8f22525818b0f5efdd448}{packet}} $\ast$}]{pp }\end{DoxyParamCaption})}
+
+
+
+Moves the cursor based on the given mouse packet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp} & The mouse packet containing the movement information. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_ae6513b1d86e99c33c62472f1b42dc913_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a5d62ac650136606812cf07c8672734ea}\label{model_8c_a5d62ac650136606812cf07c8672734ea}} 
+\index{model.c@{model.c}!move\_x@{move\_x}}
+\index{move\_x@{move\_x}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{move\_x()}{move\_x()}}
+{\footnotesize\ttfamily int move\+\_\+x (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite horizontally. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the sprite was moved successfully, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a5d62ac650136606812cf07c8672734ea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a5d62ac650136606812cf07c8672734ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a289238f5b9eee1290cfec8fd22ff2f4e}\label{model_8c_a289238f5b9eee1290cfec8fd22ff2f4e}} 
+\index{model.c@{model.c}!move\_y@{move\_y}}
+\index{move\_y@{move\_y}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{move\_y()}{move\_y()}}
+{\footnotesize\ttfamily int move\+\_\+y (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite vertically. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the sprite was moved successfully, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a289238f5b9eee1290cfec8fd22ff2f4e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a289238f5b9eee1290cfec8fd22ff2f4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a27b36ee7a933058f7251575baeb41c99}\label{model_8c_a27b36ee7a933058f7251575baeb41c99}} 
+\index{model.c@{model.c}!read\_leaderboard\_data@{read\_leaderboard\_data}}
+\index{read\_leaderboard\_data@{read\_leaderboard\_data}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{read\_leaderboard\_data()}{read\_leaderboard\_data()}}
+{\footnotesize\ttfamily void read\+\_\+leaderboard\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the leaderboard data from a file. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{model_8c_a27b36ee7a933058f7251575baeb41c99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a06d4a7e848486d6ad4720a3e842a7224}\label{model_8c_a06d4a7e848486d6ad4720a3e842a7224}} 
+\index{model.c@{model.c}!reset\_states@{reset\_states}}
+\index{reset\_states@{reset\_states}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{reset\_states()}{reset\_states()}}
+{\footnotesize\ttfamily void reset\+\_\+states (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the states of the game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{model_8c_a06d4a7e848486d6ad4720a3e842a7224_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a06d4a7e848486d6ad4720a3e842a7224_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a69e77492c91283f1d11fb4c7897ba5fd}\label{model_8c_a69e77492c91283f1d11fb4c7897ba5fd}} 
+\index{model.c@{model.c}!right@{right}}
+\index{right@{right}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily void right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Moves the sprite to the right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to move. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a69e77492c91283f1d11fb4c7897ba5fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a450a3352bbf61fc777e842068b9d2e51}\label{model_8c_a450a3352bbf61fc777e842068b9d2e51}} 
+\index{model.c@{model.c}!set\_ground@{set\_ground}}
+\index{set\_ground@{set\_ground}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{set\_ground()}{set\_ground()}}
+{\footnotesize\ttfamily void set\+\_\+ground (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Sets the ground for the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to set the ground for. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a450a3352bbf61fc777e842068b9d2e51_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_acbfb4add61ed502548117c89c6cab7f5}\label{model_8c_acbfb4add61ed502548117c89c6cab7f5}} 
+\index{model.c@{model.c}!update@{update}}
+\index{update@{update}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily int update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Updates the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to update. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the sprite was updated successfully, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_acbfb4add61ed502548117c89c6cab7f5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_acbfb4add61ed502548117c89c6cab7f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a83b1742f41d6e701033e0dd6f113c411}\label{model_8c_a83b1742f41d6e701033e0dd6f113c411}} 
+\index{model.c@{model.c}!update\_keyboard@{update\_keyboard}}
+\index{update\_keyboard@{update\_keyboard}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{update\_keyboard()}{update\_keyboard()}}
+{\footnotesize\ttfamily void update\+\_\+keyboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the keyboard. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a83b1742f41d6e701033e0dd6f113c411_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{model_8c_a83b1742f41d6e701033e0dd6f113c411_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_ab5fa7e7da1851578789c26ec9d71448b}\label{model_8c_ab5fa7e7da1851578789c26ec9d71448b}} 
+\index{model.c@{model.c}!update\_mouse@{update\_mouse}}
+\index{update\_mouse@{update\_mouse}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{update\_mouse()}{update\_mouse()}}
+{\footnotesize\ttfamily void update\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the mouse. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_ab5fa7e7da1851578789c26ec9d71448b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{model_8c_ab5fa7e7da1851578789c26ec9d71448b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a65f595990a06a9c4c4301be4bc9511c0}\label{model_8c_a65f595990a06a9c4c4301be4bc9511c0}} 
+\index{model.c@{model.c}!update\_rtc@{update\_rtc}}
+\index{update\_rtc@{update\_rtc}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{update\_rtc()}{update\_rtc()}}
+{\footnotesize\ttfamily void update\+\_\+rtc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the real-\/time clock. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a65f595990a06a9c4c4301be4bc9511c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{model_8c_a65f595990a06a9c4c4301be4bc9511c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a3dbbef8766f0ce676f34b8b4f1bf3485}\label{model_8c_a3dbbef8766f0ce676f34b8b4f1bf3485}} 
+\index{model.c@{model.c}!update\_timer@{update\_timer}}
+\index{update\_timer@{update\_timer}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{update\_timer()}{update\_timer()}}
+{\footnotesize\ttfamily void update\+\_\+timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the timer. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a3dbbef8766f0ce676f34b8b4f1bf3485_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{model_8c_a3dbbef8766f0ce676f34b8b4f1bf3485_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a59c0df8a9001ec8997aca3ae4ff1dd82}\label{model_8c_a59c0df8a9001ec8997aca3ae4ff1dd82}} 
+\index{model.c@{model.c}!updateArrayWithLevel@{updateArrayWithLevel}}
+\index{updateArrayWithLevel@{updateArrayWithLevel}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{updateArrayWithLevel()}{updateArrayWithLevel()}}
+{\footnotesize\ttfamily void update\+Array\+With\+Level (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+Updates the array with the given level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The level to update the array with. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a59c0df8a9001ec8997aca3ae4ff1dd82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a0a7939bfb6d357953b7689705e6d79b5}\label{model_8c_a0a7939bfb6d357953b7689705e6d79b5}} 
+\index{model.c@{model.c}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily int update\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Updates the position of the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to update the position for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the sprite\textquotesingle{}s position was updated successfully, 0 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a0a7939bfb6d357953b7689705e6d79b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a0a7939bfb6d357953b7689705e6d79b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_a8982e2565f6e56d02f7664b35a8031d9}\label{model_8c_a8982e2565f6e56d02f7664b35a8031d9}} 
+\index{model.c@{model.c}!updateSpeed@{updateSpeed}}
+\index{updateSpeed@{updateSpeed}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{updateSpeed()}{updateSpeed()}}
+{\footnotesize\ttfamily void update\+Speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+Updates the speed of the sprite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & The sprite to update the speed for. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{model_8c_a8982e2565f6e56d02f7664b35a8031d9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a8982e2565f6e56d02f7664b35a8031d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{model_8c_ac6f0ca3d20b146a1e4a06ddf434d1757}\label{model_8c_ac6f0ca3d20b146a1e4a06ddf434d1757}} 
+\index{model.c@{model.c}!write\_leaderboard\_data@{write\_leaderboard\_data}}
+\index{write\_leaderboard\_data@{write\_leaderboard\_data}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{write\_leaderboard\_data()}{write\_leaderboard\_data()}}
+{\footnotesize\ttfamily void write\+\_\+leaderboard\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Writes the leaderboard data to a file. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{model_8c_ac6f0ca3d20b146a1e4a06ddf434d1757_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{model_8c_aba66a1ceb852911beed9297766c13b22}\label{model_8c_aba66a1ceb852911beed9297766c13b22}} 
+\index{model.c@{model.c}!arrow@{arrow}}
+\index{arrow@{arrow}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{arrow}{arrow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ arrow}
+
+\mbox{\Hypertarget{model_8c_a35b1081aba8b60716983701cf54611bc}\label{model_8c_a35b1081aba8b60716983701cf54611bc}} 
+\index{model.c@{model.c}!boy@{boy}}
+\index{boy@{boy}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{boy}{boy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ boy}
+
+\mbox{\Hypertarget{model_8c_a8f2904241f1adf96df2fa8d7d2d2518e}\label{model_8c_a8f2904241f1adf96df2fa8d7d2d2518e}} 
+\index{model.c@{model.c}!boys@{boys}}
+\index{boys@{boys}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{boys}{boys}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ boys\mbox{[}6\mbox{]}}
+
+\mbox{\Hypertarget{model_8c_a306b5c902624921f60f4010ab49835d6}\label{model_8c_a306b5c902624921f60f4010ab49835d6}} 
+\index{model.c@{model.c}!boyState@{boyState}}
+\index{boyState@{boyState}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{boyState}{boyState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cda}{Sprite\+State}} boy\+State = \mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cdaa50d1448013c6f17125caee18aa418af7}{NORMAL}}}
+
+\mbox{\Hypertarget{model_8c_a393171e75c0064c19d75d2f6e5ee0091}\label{model_8c_a393171e75c0064c19d75d2f6e5ee0091}} 
+\index{model.c@{model.c}!button@{button}}
+\index{button@{button}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{button}{button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ button\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{model_8c_a476eb08b725fe75cd0ffa538ab3f4cdb}\label{model_8c_a476eb08b725fe75cd0ffa538ab3f4cdb}} 
+\index{model.c@{model.c}!buttonpressed@{buttonpressed}}
+\index{buttonpressed@{buttonpressed}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{buttonpressed}{buttonpressed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ buttonpressed\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{model_8c_a4f7c98f6c10907a76e442224efcd6b73}\label{model_8c_a4f7c98f6c10907a76e442224efcd6b73}} 
+\index{model.c@{model.c}!byte\_counter@{byte\_counter}}
+\index{byte\_counter@{byte\_counter}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{byte\_counter}{byte\_counter}}
+{\footnotesize\ttfamily int byte\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{model_8c_a857502cff71d45019163294ccc1779d5}\label{model_8c_a857502cff71d45019163294ccc1779d5}} 
+\index{model.c@{model.c}!change@{change}}
+\index{change@{change}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{change}{change}}
+{\footnotesize\ttfamily bool change = false}
+
+\mbox{\Hypertarget{model_8c_a30ac53c6f8911c318a6b435a5b220c3f}\label{model_8c_a30ac53c6f8911c318a6b435a5b220c3f}} 
+\index{model.c@{model.c}!changesprite@{changesprite}}
+\index{changesprite@{changesprite}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{changesprite}{changesprite}}
+{\footnotesize\ttfamily int changesprite = 0}
+
+\mbox{\Hypertarget{model_8c_a8c06e370b709d689e392a4b7b53b47c5}\label{model_8c_a8c06e370b709d689e392a4b7b53b47c5}} 
+\index{model.c@{model.c}!completed@{completed}}
+\index{completed@{completed}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{completed}{completed}}
+{\footnotesize\ttfamily bool completed = false}
+
+\mbox{\Hypertarget{model_8c_a3a7ea4305773abf5347bb261a8a5c16b}\label{model_8c_a3a7ea4305773abf5347bb261a8a5c16b}} 
+\index{model.c@{model.c}!cursor@{cursor}}
+\index{cursor@{cursor}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ cursor}
+
+\mbox{\Hypertarget{model_8c_aaf35afe450858a9f17da25539c1a9963}\label{model_8c_aaf35afe450858a9f17da25539c1a9963}} 
+\index{model.c@{model.c}!doorblue@{doorblue}}
+\index{doorblue@{doorblue}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{doorblue}{doorblue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ doorblue}
+
+\mbox{\Hypertarget{model_8c_a4e1804183a745ec9f41708f4083c61a3}\label{model_8c_a4e1804183a745ec9f41708f4083c61a3}} 
+\index{model.c@{model.c}!doorred@{doorred}}
+\index{doorred@{doorred}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{doorred}{doorred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ doorred}
+
+\mbox{\Hypertarget{model_8c_a11382df1bce4210cf96c3656272ee98e}\label{model_8c_a11382df1bce4210cf96c3656272ee98e}} 
+\index{model.c@{model.c}!exit\_button@{exit\_button}}
+\index{exit\_button@{exit\_button}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{exit\_button}{exit\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ exit\+\_\+button}
+
+\mbox{\Hypertarget{model_8c_a12bd63bc06374368207b311c4b3e33a0}\label{model_8c_a12bd63bc06374368207b311c4b3e33a0}} 
+\index{model.c@{model.c}!girls@{girls}}
+\index{girls@{girls}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{girls}{girls}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ girls\mbox{[}6\mbox{]}}
+
+\mbox{\Hypertarget{model_8c_ab6bde507de6d862a8352dabbfafb87a7}\label{model_8c_ab6bde507de6d862a8352dabbfafb87a7}} 
+\index{model.c@{model.c}!girlState@{girlState}}
+\index{girlState@{girlState}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{girlState}{girlState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cda}{Sprite\+State}} girl\+State = \mbox{\hyperlink{model_8h_af7ccac6abcbe8bf213b36feaa7b69cdaa50d1448013c6f17125caee18aa418af7}{NORMAL}}}
+
+\mbox{\Hypertarget{model_8c_aa135bb051c7a68877c688aaa5a9c64ab}\label{model_8c_aa135bb051c7a68877c688aaa5a9c64ab}} 
+\index{model.c@{model.c}!global\_counter@{global\_counter}}
+\index{global\_counter@{global\_counter}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{global\_counter}{global\_counter}}
+{\footnotesize\ttfamily int global\+\_\+counter = 0}
+
+\mbox{\Hypertarget{model_8c_a11a320aed8770b182f75f3f6e636c6af}\label{model_8c_a11a320aed8770b182f75f3f6e636c6af}} 
+\index{model.c@{model.c}!kbd\_outbuf@{kbd\_outbuf}}
+\index{kbd\_outbuf@{kbd\_outbuf}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_outbuf}{kbd\_outbuf}}
+{\footnotesize\ttfamily uint8\+\_\+t kbd\+\_\+outbuf}
+
+\mbox{\Hypertarget{model_8c_ad19bbd3e04b40024b57df4e94ddd28d4}\label{model_8c_ad19bbd3e04b40024b57df4e94ddd28d4}} 
+\index{model.c@{model.c}!leaderboard@{leaderboard}}
+\index{leaderboard@{leaderboard}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{leaderboard}{leaderboard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLeaderboardEntry}{Leaderboard\+Entry}} leaderboard\mbox{[}\mbox{\hyperlink{defines_8h_a74f3cecfb9d0618b1636f9f2f2dee25c}{LEADERBOARD\+\_\+\+SIZE}}\mbox{]}}
+
+\mbox{\Hypertarget{model_8c_ad908b2354c1c5568f5641e21ca439b92}\label{model_8c_ad908b2354c1c5568f5641e21ca439b92}} 
+\index{model.c@{model.c}!leaderboard\_button@{leaderboard\_button}}
+\index{leaderboard\_button@{leaderboard\_button}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{leaderboard\_button}{leaderboard\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ leaderboard\+\_\+button}
+
+\mbox{\Hypertarget{model_8c_acf4d33ee4cff36f69b924471174dcb11}\label{model_8c_acf4d33ee4cff36f69b924471174dcb11}} 
+\index{model.c@{model.c}!level@{level}}
+\index{level@{level}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int level = 1}
+
+\mbox{\Hypertarget{model_8c_abb10b16a7eda7b221fa88745fae00bfd}\label{model_8c_abb10b16a7eda7b221fa88745fae00bfd}} 
+\index{model.c@{model.c}!level\_time@{level\_time}}
+\index{level\_time@{level\_time}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{level\_time}{level\_time}}
+{\footnotesize\ttfamily int level\+\_\+time = 0}
+
+\mbox{\Hypertarget{model_8c_a6d6d9d1fee2f05cae09c886a9312265e}\label{model_8c_a6d6d9d1fee2f05cae09c886a9312265e}} 
+\index{model.c@{model.c}!levelArray@{levelArray}}
+\index{levelArray@{levelArray}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{levelArray}{levelArray}}
+{\footnotesize\ttfamily int$\ast$ level\+Array}
+
+\mbox{\Hypertarget{model_8c_a32d32408153eed3bdf5a1dc923b7046b}\label{model_8c_a32d32408153eed3bdf5a1dc923b7046b}} 
+\index{model.c@{model.c}!lever@{lever}}
+\index{lever@{lever}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{lever}{lever}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ lever}
+
+\mbox{\Hypertarget{model_8c_a92b62ab09159876ce3ca4dc9340931ca}\label{model_8c_a92b62ab09159876ce3ca4dc9340931ca}} 
+\index{model.c@{model.c}!menuState@{menuState}}
+\index{menuState@{menuState}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{menuState}{menuState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} menu\+State = \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2a13d000b4d7dc70d90239b7430d1eb6b2}{START}}}
+
+\mbox{\Hypertarget{model_8c_a75e8e5728a85c84e7d46702505c09973}\label{model_8c_a75e8e5728a85c84e7d46702505c09973}} 
+\index{model.c@{model.c}!num@{num}}
+\index{num@{num}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ num\mbox{[}12\mbox{]}}
+
+\mbox{\Hypertarget{model_8c_a37396565c2a4b9c4977d910b4257e18a}\label{model_8c_a37396565c2a4b9c4977d910b4257e18a}} 
+\index{model.c@{model.c}!opendoor@{opendoor}}
+\index{opendoor@{opendoor}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{opendoor}{opendoor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ opendoor}
+
+\mbox{\Hypertarget{model_8c_aa93413b717e8f22525818b0f5efdd448}\label{model_8c_aa93413b717e8f22525818b0f5efdd448}} 
+\index{model.c@{model.c}!packet@{packet}}
+\index{packet@{packet}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{packet}{packet}}
+{\footnotesize\ttfamily struct packet packet\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{model_8c_a982054efcc21da28b309aaa8930ae021}\label{model_8c_a982054efcc21da28b309aaa8930ae021}} 
+\index{model.c@{model.c}!redlever@{redlever}}
+\index{redlever@{redlever}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{redlever}{redlever}}
+{\footnotesize\ttfamily bool redlever = true}
+
+\mbox{\Hypertarget{model_8c_a6b7588a7d28264c9e9bba547fc1c4ee3}\label{model_8c_a6b7588a7d28264c9e9bba547fc1c4ee3}} 
+\index{model.c@{model.c}!rtc@{rtc}}
+\index{rtc@{rtc}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{rtc}{rtc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrtc__values}{rtc\+\_\+values}} rtc\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{model_8c_a288a4ad3067bb40e26324d042d45cae5}\label{model_8c_a288a4ad3067bb40e26324d042d45cae5}} 
+\index{model.c@{model.c}!spriteindex@{spriteindex}}
+\index{spriteindex@{spriteindex}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{spriteindex}{spriteindex}}
+{\footnotesize\ttfamily int spriteindex = 0}
+
+\mbox{\Hypertarget{model_8c_a76454a7d013e0b6d5feb29b0ced6429e}\label{model_8c_a76454a7d013e0b6d5feb29b0ced6429e}} 
+\index{model.c@{model.c}!start@{start}}
+\index{start@{start}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ start}
+
+\mbox{\Hypertarget{model_8c_ac705089b22877f6322d09a9f0f5bdb1d}\label{model_8c_ac705089b22877f6322d09a9f0f5bdb1d}} 
+\index{model.c@{model.c}!systemState@{systemState}}
+\index{systemState@{systemState}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{systemState}{systemState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}} system\+State = \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75a1061be6c3fb88d32829cba6f6b2be304}{RUNNING}}}
+
+\mbox{\Hypertarget{model_8c_a56f47a01583b1a01e9ac684e4ddf94ef}\label{model_8c_a56f47a01583b1a01e9ac684e4ddf94ef}} 
+\index{model.c@{model.c}!tryagain\_button@{tryagain\_button}}
+\index{tryagain\_button@{tryagain\_button}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{tryagain\_button}{tryagain\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ tryagain\+\_\+button}
+
+\mbox{\Hypertarget{model_8c_a4b3ecb7cf5812884ca2b7d3be9114fe9}\label{model_8c_a4b3ecb7cf5812884ca2b7d3be9114fe9}} 
+\index{model.c@{model.c}!walls20@{walls20}}
+\index{walls20@{walls20}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{walls20}{walls20}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structSprite}{Sprite}}$\ast$ walls20\mbox{[}1200\mbox{]}}
+

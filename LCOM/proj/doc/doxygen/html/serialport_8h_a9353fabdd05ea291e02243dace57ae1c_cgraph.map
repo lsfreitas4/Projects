@@ -1,0 +1,11 @@
+<map id="ser_ih" name="ser_ih">
+<area shape="rect" id="node1" title="Interrupt handler for the serial port." alt="" coords="5,107,67,133"/>
+<area shape="rect" id="node2" href="$serialport_8c.html#a4755c0fac513664849f9c7e9aa997bc9" title="Reads a byte from the serial port." alt="" coords="115,56,230,83"/>
+<area shape="rect" id="node6" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="444,107,543,133"/>
+<area shape="rect" id="node7" href="$serialport_8c.html#a347c4803f177ea110296efee25790462" title="Sends a byte through the serial port." alt="" coords="115,157,231,184"/>
+<area shape="rect" id="node3" href="$queue_8c.html#a25897dd8dc27d857546b0d3f81058d8c" title="Pushes an element to the back of the queue." alt="" coords="311,5,364,32"/>
+<area shape="rect" id="node5" href="$serialport_8c.html#a28ad8e1292e4b8ca01428f56e0795af0" title="Retrieves the status of the serial port." alt="" coords="279,157,396,184"/>
+<area shape="rect" id="node4" href="$queue_8c.html#a3f2350d97e2b928dece5642ebfc1d173" title="Checks if the queue is full." alt="" coords="465,5,521,32"/>
+<area shape="rect" id="node8" href="$queue_8c.html#ab0a7af1151628d3b2580f6da46706fce" title="Pops and returns the front element of the queue." alt="" coords="314,208,361,235"/>
+<area shape="rect" id="node9" href="$queue_8c.html#a29cc47cb6982704e8c4045db0927b888" title="Checks if the queue is empty." alt="" coords="456,208,531,235"/>
+</map>

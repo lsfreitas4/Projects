@@ -1,0 +1,7 @@
+<map id="restore_interrupts" name="restore_interrupts">
+<area shape="rect" id="node1" title="Restores the interrupts." alt="" coords="5,81,144,108"/>
+<area shape="rect" id="node2" href="$keyboard_8c.html#a3089f4e9cc9ce432897e142f31bf69ef" title="Reads a value/data from the keyboard controller." alt="" coords="192,56,391,83"/>
+<area shape="rect" id="node5" href="$keyboard_8c.html#a1ae2434f19a86a8d31a03f8f0ad6db30" title="Writes a command byte to the keyboard controller." alt="" coords="451,107,557,133"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a5168f22184d8edc53bec6e23fe72330a" title="Checks if the output buffer can be read." alt="" coords="439,5,569,32"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="617,56,716,83"/>
+</map>

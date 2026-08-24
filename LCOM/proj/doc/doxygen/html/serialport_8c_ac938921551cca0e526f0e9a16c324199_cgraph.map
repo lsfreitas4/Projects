@@ -1,0 +1,4 @@
+<map id="ser_exit" name="ser_exit">
+<area shape="rect" id="node1" title="Exits the serial port." alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="$queue_8c.html#ac9c47c6bcc2955fed6349fc78d6e54a1" title="Clears the queue, removing all elements." alt="" coords="128,5,183,32"/>
+</map>

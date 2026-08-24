@@ -1,0 +1,6 @@
+<map id="ser_get_status" name="ser_get_status">
+<area shape="rect" id="node1" title="Retrieves the status of the serial port." alt="" coords="279,31,396,57"/>
+<area shape="rect" id="node2" href="$serialport_8c.html#a4755c0fac513664849f9c7e9aa997bc9" title="Reads a byte from the serial port." alt="" coords="115,5,230,32"/>
+<area shape="rect" id="node4" href="$serialport_8c.html#a347c4803f177ea110296efee25790462" title="Sends a byte through the serial port." alt="" coords="115,56,231,83"/>
+<area shape="rect" id="node3" href="$serialport_8c.html#a9353fabdd05ea291e02243dace57ae1c" title="Interrupt handler for the serial port." alt="" coords="5,31,67,57"/>
+</map>

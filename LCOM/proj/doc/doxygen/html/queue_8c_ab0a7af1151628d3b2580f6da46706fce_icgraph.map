@@ -1,0 +1,5 @@
+<map id="pop" name="pop">
+<area shape="rect" id="node1" title="Pops and returns the front element of the queue." alt="" coords="279,5,325,32"/>
+<area shape="rect" id="node2" href="$serialport_8c.html#a347c4803f177ea110296efee25790462" title="Sends a byte through the serial port." alt="" coords="115,5,231,32"/>
+<area shape="rect" id="node3" href="$serialport_8c.html#a9353fabdd05ea291e02243dace57ae1c" title="Interrupt handler for the serial port." alt="" coords="5,5,67,32"/>
+</map>

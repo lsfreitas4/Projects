@@ -1,0 +1,258 @@
+\hypertarget{keyboard_8c}{}\doxysection{keyboard.\+c File Reference}
+\label{keyboard_8c}\index{keyboard.c@{keyboard.c}}
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+Include dependency graph for keyboard.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \mbox{\hyperlink{keyboard_8c_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Keyboard interrupt handler. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keyboard_8c_a088baa9cfa5677f344bf7936c57a6f2f}{wait\+\_\+esc\+\_\+key}} ()
+\begin{DoxyCompactList}\small\item\em Waits for the ESC key to be pressed. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8c_a178b1db0b319dccad2840cc3fd273132}{keyboard\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{keyboard_8c_a32cc4de66854f8a7bd909e7aa8b901ed}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes from keyboard interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keyboard_8c_a5168f22184d8edc53bec6e23fe72330a}{can\+\_\+read\+\_\+outbuf}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the output buffer can be read. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keyboard_8c_a1ae2434f19a86a8d31a03f8f0ad6db30}{write\+\_\+to\+\_\+kbc}} (uint8\+\_\+t port, uint8\+\_\+t cmdbyte)
+\begin{DoxyCompactList}\small\item\em Writes a command byte to the keyboard controller. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keyboard_8c_a3089f4e9cc9ce432897e142f31bf69ef}{read\+\_\+value\+\_\+data\+\_\+from\+\_\+kbc}} (uint8\+\_\+t port, uint8\+\_\+t $\ast$output)
+\begin{DoxyCompactList}\small\item\em Reads a value/data from the keyboard controller. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keyboard_8c_a14426e8ab2226cd7aabf6c1048c402db}{restore\+\_\+interrupts}} ()
+\begin{DoxyCompactList}\small\item\em Restores the interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{keyboard_8c_a74708534432e98d4ab30ba40e2e5dcc3}{kbd\+\_\+hook\+\_\+id}} = 1
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a11a320aed8770b182f75f3f6e636c6af}{kbd\+\_\+outbuf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{keyboard_8c_a5168f22184d8edc53bec6e23fe72330a}\label{keyboard_8c_a5168f22184d8edc53bec6e23fe72330a}} 
+\index{keyboard.c@{keyboard.c}!can\_read\_outbuf@{can\_read\_outbuf}}
+\index{can\_read\_outbuf@{can\_read\_outbuf}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{can\_read\_outbuf()}{can\_read\_outbuf()}}
+{\footnotesize\ttfamily int can\+\_\+read\+\_\+outbuf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the output buffer can be read. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 if the output buffer can be read, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{keyboard_8c_a5168f22184d8edc53bec6e23fe72330a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a5168f22184d8edc53bec6e23fe72330a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_aea970a154161a35f6894898a092ed70a}\label{keyboard_8c_aea970a154161a35f6894898a092ed70a}} 
+\index{keyboard.c@{keyboard.c}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Keyboard interrupt handler. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_aea970a154161a35f6894898a092ed70a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_aea970a154161a35f6894898a092ed70a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a178b1db0b319dccad2840cc3fd273132}\label{keyboard_8c_a178b1db0b319dccad2840cc3fd273132}} 
+\index{keyboard.c@{keyboard.c}!keyboard\_subscribe\_int@{keyboard\_subscribe\_int}}
+\index{keyboard\_subscribe\_int@{keyboard\_subscribe\_int}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{keyboard\_subscribe\_int()}{keyboard\_subscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes to keyboard interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & Pointer to the variable that will store the keyboard interrupt bit mask. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{keyboard_8c_a178b1db0b319dccad2840cc3fd273132_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a32cc4de66854f8a7bd909e7aa8b901ed}\label{keyboard_8c_a32cc4de66854f8a7bd909e7aa8b901ed}} 
+\index{keyboard.c@{keyboard.c}!keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}}
+\index{keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{keyboard\_unsubscribe\_int()}{keyboard\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes from keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a32cc4de66854f8a7bd909e7aa8b901ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a3089f4e9cc9ce432897e142f31bf69ef}\label{keyboard_8c_a3089f4e9cc9ce432897e142f31bf69ef}} 
+\index{keyboard.c@{keyboard.c}!read\_value\_data\_from\_kbc@{read\_value\_data\_from\_kbc}}
+\index{read\_value\_data\_from\_kbc@{read\_value\_data\_from\_kbc}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{read\_value\_data\_from\_kbc()}{read\_value\_data\_from\_kbc()}}
+{\footnotesize\ttfamily int read\+\_\+value\+\_\+data\+\_\+from\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port,  }\item[{uint8\+\_\+t $\ast$}]{output }\end{DoxyParamCaption})}
+
+
+
+Reads a value/data from the keyboard controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to read from. \\
+\hline
+{\em output} & Pointer to the variable that will store the read value/data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a3089f4e9cc9ce432897e142f31bf69ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a3089f4e9cc9ce432897e142f31bf69ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a14426e8ab2226cd7aabf6c1048c402db}\label{keyboard_8c_a14426e8ab2226cd7aabf6c1048c402db}} 
+\index{keyboard.c@{keyboard.c}!restore\_interrupts@{restore\_interrupts}}
+\index{restore\_interrupts@{restore\_interrupts}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{restore\_interrupts()}{restore\_interrupts()}}
+{\footnotesize\ttfamily int restore\+\_\+interrupts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restores the interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a14426e8ab2226cd7aabf6c1048c402db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a088baa9cfa5677f344bf7936c57a6f2f}\label{keyboard_8c_a088baa9cfa5677f344bf7936c57a6f2f}} 
+\index{keyboard.c@{keyboard.c}!wait\_esc\_key@{wait\_esc\_key}}
+\index{wait\_esc\_key@{wait\_esc\_key}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{wait\_esc\_key()}{wait\_esc\_key()}}
+{\footnotesize\ttfamily int wait\+\_\+esc\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Waits for the ESC key to be pressed. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8c_a088baa9cfa5677f344bf7936c57a6f2f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{keyboard_8c_a1ae2434f19a86a8d31a03f8f0ad6db30}\label{keyboard_8c_a1ae2434f19a86a8d31a03f8f0ad6db30}} 
+\index{keyboard.c@{keyboard.c}!write\_to\_kbc@{write\_to\_kbc}}
+\index{write\_to\_kbc@{write\_to\_kbc}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{write\_to\_kbc()}{write\_to\_kbc()}}
+{\footnotesize\ttfamily int write\+\_\+to\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port,  }\item[{uint8\+\_\+t}]{cmdbyte }\end{DoxyParamCaption})}
+
+
+
+Writes a command byte to the keyboard controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The port to write the command byte to. \\
+\hline
+{\em cmdbyte} & The command byte to write. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success, non-\/zero otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{keyboard_8c_a1ae2434f19a86a8d31a03f8f0ad6db30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{keyboard_8c_a1ae2434f19a86a8d31a03f8f0ad6db30_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{keyboard_8c_a74708534432e98d4ab30ba40e2e5dcc3}\label{keyboard_8c_a74708534432e98d4ab30ba40e2e5dcc3}} 
+\index{keyboard.c@{keyboard.c}!kbd\_hook\_id@{kbd\_hook\_id}}
+\index{kbd\_hook\_id@{kbd\_hook\_id}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_hook\_id}{kbd\_hook\_id}}
+{\footnotesize\ttfamily int kbd\+\_\+hook\+\_\+id = 1}
+
+\mbox{\Hypertarget{keyboard_8c_a11a320aed8770b182f75f3f6e636c6af}\label{keyboard_8c_a11a320aed8770b182f75f3f6e636c6af}} 
+\index{keyboard.c@{keyboard.c}!kbd\_outbuf@{kbd\_outbuf}}
+\index{kbd\_outbuf@{kbd\_outbuf}!keyboard.c@{keyboard.c}}
+\doxysubsubsection{\texorpdfstring{kbd\_outbuf}{kbd\_outbuf}}
+{\footnotesize\ttfamily uint8\+\_\+t kbd\+\_\+outbuf}
+

@@ -1,0 +1,4 @@
+<map id="flip_screen" name="flip_screen">
+<area shape="rect" id="node1" title="Flips the screen by swapping the front and back buffers." alt="" coords="5,5,97,32"/>
+<area shape="rect" id="node2" href="$vbe_8c.html#a609bbc8e7716577069b3bb3d523ed562" title="Copies the buffer to the screen." alt="" coords="145,5,244,32"/>
+</map>

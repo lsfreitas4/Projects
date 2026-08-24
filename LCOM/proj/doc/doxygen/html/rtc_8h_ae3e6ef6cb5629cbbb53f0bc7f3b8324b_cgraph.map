@@ -1,0 +1,5 @@
+<map id="is_updating_rtc" name="is_updating_rtc">
+<area shape="rect" id="node1" title="Checks if the RTC is currently updating." alt="" coords="5,5,127,32"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#aad9b81b7c1ea288679dae99ca05b7118" title="Reads the output of the Real&#45;Time Clock (RTC) using the specified command byte." alt="" coords="175,5,299,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga79a031a8611f5b2d6afa4158e92b0fb4" title="Invokes sys_inb() system call but reads the value into a uint8_t variable." alt="" coords="347,5,445,32"/>
+</map>

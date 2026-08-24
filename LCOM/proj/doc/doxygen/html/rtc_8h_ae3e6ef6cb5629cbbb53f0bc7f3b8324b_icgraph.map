@@ -1,0 +1,10 @@
+<map id="is_updating_rtc" name="is_updating_rtc">
+<area shape="rect" id="node1" title="Checks if the RTC is currently updating." alt="" coords="728,81,849,108"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#aaf9fa7dc504378312f4e526ae11da75e" title="Updates the values of the RTC." alt="" coords="539,81,680,108"/>
+<area shape="rect" id="node3" href="$model_8c.html#a576001c2c0395e0363c1f9a03d7e4ee2" title="Checks for mouse click and performs the corresponding action." alt="" coords="343,5,491,32"/>
+<area shape="rect" id="node6" href="$rtc_8c.html#a5b2834a4a1e27abeb2f0663b4c85c774" title="Starts the RTC." alt="" coords="197,56,273,83"/>
+<area shape="rect" id="node7" href="$model_8c.html#a65f595990a06a9c4c4301be4bc9511c0" title="Updates the real&#45;time clock." alt="" coords="190,107,281,133"/>
+<area shape="rect" id="node8" href="$model_8c.html#a3dbbef8766f0ce676f34b8b4f1bf3485" title="Updates the timer." alt="" coords="362,157,471,184"/>
+<area shape="rect" id="node4" href="$model_8c.html#ab5fa7e7da1851578789c26ec9d71448b" title="Updates the mouse." alt="" coords="176,5,295,32"/>
+<area shape="rect" id="node5" href="$proj_8c.html#ad290208c74ef25eb347d1d96a390cd66" title=" " alt="" coords="5,81,128,108"/>
+</map>

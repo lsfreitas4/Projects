@@ -1,0 +1,52 @@
+<map id="proj_main_loop" name="proj_main_loop">
+<area shape="rect" id="node1" title=" " alt="" coords="5,752,128,779"/>
+<area shape="rect" id="node2" href="$mouse_8c.html#a0d62a61bfd722c1d12e4764d5f36a1cf" title="Changes the sample rate of the mouse." alt="" coords="193,195,350,221"/>
+<area shape="rect" id="node5" href="$model_8c.html#a8fdbc6c7bfca3ef4a8800a3cdc19d932" title="Destroys all sprites." alt="" coords="210,245,333,272"/>
+<area shape="rect" id="node7" href="$draw_8c.html#a8f7acda4de2ff9ede5fca68d2db09959" title="Draws a frame on the screen." alt="" coords="449,296,549,323"/>
+<area shape="rect" id="node19" href="$vbe_8c.html#ab3fa90a009de7dbcdd47c404ed99ac4d" title="Flips the screen by swapping the front and back buffers." alt="" coords="453,347,545,373"/>
+<area shape="rect" id="node21" href="$keyboard_8c.html#a178b1db0b319dccad2840cc3fd273132" title="Subscribes to keyboard interrupts." alt="" coords="184,701,359,728"/>
+<area shape="rect" id="node22" href="$keyboard_8c.html#a32cc4de66854f8a7bd909e7aa8b901ed" title="Unsubscribes from keyboard interrupts." alt="" coords="176,752,367,779"/>
+<area shape="rect" id="node23" href="$model_8c.html#a26d3dd4d93472051b4e0bb50e319494b" title="Loads the sprites." alt="" coords="448,651,549,677"/>
+<area shape="rect" id="node25" href="$vbe_8c.html#a6d7ae86cd6c0a50b77a6994d730d422c" title="Maps the physical video memory to the virtual address space using the specified video mode." alt="" coords="212,803,331,829"/>
+<area shape="rect" id="node26" href="$mouse_8c.html#a20285aed4b3ef45812cd967532dd09db" title="Subscribes to mouse interrupts." alt="" coords="192,853,351,880"/>
+<area shape="rect" id="node27" href="$mouse_8c.html#a3ecf823d80520009ae5e0d76ae40a3c3" title="Unsubscribes from mouse interrupts." alt="" coords="184,904,359,931"/>
+<area shape="rect" id="node28" href="$model_8c.html#a27b36ee7a933058f7251575baeb41c99" title="Reads the leaderboard data from a file." alt="" coords="185,955,357,981"/>
+<area shape="rect" id="node29" href="$rtc_8c.html#a6bbe679f115cec90d36d50eb2aac1b89" title="Subscribes to RTC interrupts." alt="" coords="205,1005,337,1032"/>
+<area shape="rect" id="node30" href="$rtc_8c.html#a9d4850bb2a488644672d43287f160622" title="Unsubscribes from RTC interrupts." alt="" coords="197,1056,345,1083"/>
+<area shape="rect" id="node31" href="$mouse_8c.html#ae4d02df9cd1d60745697ef4d2b249431" title="Sends a command to the mouse." alt="" coords="202,144,341,171"/>
+<area shape="rect" id="node32" href="$video_8c.html#a16d73f78d19c944e160e8b3e7024f0cd" title="Sets the graphic mode to the specified mode." alt="" coords="201,1107,342,1133"/>
+<area shape="rect" id="node33" href="$rtc_8c.html#a5b2834a4a1e27abeb2f0663b4c85c774" title="Starts the RTC." alt="" coords="233,499,309,525"/>
+<area shape="rect" id="node36" href="$group__timer.html#gaf2c04fa8e97ffa748fd3f612886a92a7" title="Changes the operating frequency of a timer." alt="" coords="193,1157,349,1184"/>
+<area shape="rect" id="node40" href="$group__timer.html#gac57a7e1140a7e00ad95ac5488d2a671b" title="Subscribes and enables Timer 0 interrupts." alt="" coords="196,1208,347,1235"/>
+<area shape="rect" id="node41" href="$group__timer.html#gafabd21de449be154dd65d5fdb2d8045d" title="Unsubscribes Timer 0 interrupts." alt="" coords="188,1259,355,1285"/>
+<area shape="rect" id="node42" href="$model_8c.html#a83b1742f41d6e701033e0dd6f113c411" title="Updates the keyboard." alt="" coords="204,549,339,576"/>
+<area shape="rect" id="node46" href="$model_8c.html#a59c0df8a9001ec8997aca3ae4ff1dd82" title="Updates the array with the given level." alt="" coords="657,689,824,716"/>
+<area shape="rect" id="node47" href="$model_8c.html#ab5fa7e7da1851578789c26ec9d71448b" title="Updates the mouse." alt="" coords="212,1309,331,1336"/>
+<area shape="rect" id="node48" href="$model_8c.html#a65f595990a06a9c4c4301be4bc9511c0" title="Updates the real&#45;time clock." alt="" coords="226,397,317,424"/>
+<area shape="rect" id="node49" href="$model_8c.html#a3dbbef8766f0ce676f34b8b4f1bf3485" title="Updates the timer." alt="" coords="217,448,326,475"/>
+<area shape="rect" id="node50" href="$model_8c.html#ac6f0ca3d20b146a1e4a06ddf434d1757" title="Writes the leaderboard data to a file." alt="" coords="183,1360,359,1387"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a4776d05b8faed4b54dcba64d73b64980" title=" " alt="" coords="415,129,583,170"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#ae2b9080d623ab180b1f545e9b038636f" title=" " alt="" coords="421,195,577,221"/>
+<area shape="rect" id="node6" href="$sprite_8c.html#af16c6befaac9ffb673b9e3c798d542ed" title="Destroys a sprite." alt="" coords="441,245,556,272"/>
+<area shape="rect" id="node8" href="$draw_8c.html#adc37ea95d6b131697311029bc38d65ea" title="Draws the leaderboard on the screen." alt="" coords="671,512,810,539"/>
+<area shape="rect" id="node9" href="$draw_8c.html#ad8e3a223b81610252d08dd0e7cfd75c3" title="Draws a sprite at a specific position on the screen." alt="" coords="899,487,1027,513"/>
+<area shape="rect" id="node10" href="$draw_8c.html#a858c1454a817fd7dca9e21bafa491242" title="Draws a sprite on the screen." alt="" coords="691,5,790,32"/>
+<area shape="rect" id="node11" href="$draw_8c.html#a4f3d01370e91e93f6b4fe1f9d8201e9f" title=" " alt="" coords="695,56,786,83"/>
+<area shape="rect" id="node12" href="$draw_8c.html#a60cc3bfe95809976618a46f078e58243" title="Prints the background game using an XPM map." alt="" coords="651,107,830,133"/>
+<area shape="rect" id="node13" href="$draw_8c.html#a19492846d5e97c5459c41aace99039be" title=" " alt="" coords="637,157,845,184"/>
+<area shape="rect" id="node14" href="$draw_8c.html#a4bae38b3c936411dfc25ee018a90bdf4" title=" " alt="" coords="631,208,851,235"/>
+<area shape="rect" id="node15" href="$draw_8c.html#ac630afb0b0dcc1c88b343fefdf45a002" title=" " alt="" coords="651,259,830,285"/>
+<area shape="rect" id="node16" href="$draw_8c.html#a662bbff5f4dcf5b8ac718e15bece4fb7" title=" " alt="" coords="658,309,823,336"/>
+<area shape="rect" id="node17" href="$sprite_8c.html#a4eed2d6772fd995988a753f90e2dacbd" title="Sets the X&#45;coordinate of a sprite." alt="" coords="701,360,781,387"/>
+<area shape="rect" id="node18" href="$sprite_8c.html#a8fa038cd1de6f145d59f1c3b45b66d86" title="Sets the Y&#45;coordinate of a sprite." alt="" coords="701,411,781,437"/>
+<area shape="rect" id="node20" href="$vbe_8c.html#a609bbc8e7716577069b3bb3d523ed562" title="Copies the buffer to the screen." alt="" coords="691,563,790,589"/>
+<area shape="rect" id="node24" href="$sprite_8c.html#a673cf3cd5655d631f19cb2bba104eff2" title="Creates a new sprite." alt="" coords="687,639,794,665"/>
+<area shape="rect" id="node34" href="$rtc_8c.html#ae3cb7e5bd3f03913e98b5e75a07ceb27" title="Checks if the RTC is in binary mode." alt="" coords="446,549,551,576"/>
+<area shape="rect" id="node35" href="$rtc_8c.html#aaf9fa7dc504378312f4e526ae11da75e" title="Updates the values of the RTC." alt="" coords="428,397,569,424"/>
+<area shape="rect" id="node37" href="$group__timer.html#ga703c60b40c8c49607d6ecb6fef82d27a" title="Reads the input timer configuration (status) via read&#45;back command." alt="" coords="439,1107,559,1133"/>
+<area shape="rect" id="node38" href="$group__utils.html#ga81621440b3d65680979425e39aa8c789" title="Returns the LSB of a 2 byte integer." alt="" coords="447,1157,550,1184"/>
+<area shape="rect" id="node39" href="$group__utils.html#ga6a880076cd2ec468834438b6e0c58836" title="Returns the MSB of a 2 byte integer." alt="" coords="445,1208,552,1235"/>
+<area shape="rect" id="node43" href="$model_8c.html#a77b060b5fa05c2208d59d870741f3e11" title="Handles the action for a sprite." alt="" coords="439,600,558,627"/>
+<area shape="rect" id="node44" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="Keyboard interrupt handler." alt="" coords="467,448,531,475"/>
+<area shape="rect" id="node45" href="$model_8c.html#a06d4a7e848486d6ad4720a3e842a7224" title="Resets the states of the game." alt="" coords="447,499,550,525"/>
+</map>

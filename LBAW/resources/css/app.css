@@ -1,0 +1,1101 @@
+body {
+    align-self: center;
+    text-align: center;
+    background-color: #FFFFE4;
+    color: #003300; /* Dark green text color */
+    margin: 0; 
+    padding: 0;
+  }
+  
+  
+  main > header h1 {
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    margin: 0px !important;
+    align-self: center;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    background-color: #004300; /* Dark green header background */
+    padding: 1em;
+    gap: 1em; /* Gap between grid items */
+    
+  }
+  
+  
+  main > a.button {
+    margin: 3em;
+    text-align: center;
+    display: inline;
+    text-align: center;
+    grid-auto-flow: row;
+    align-content: center;
+    margin: 1em;
+    text-align: center;
+    
+    color: #ffffff; /* White text color */
+  }
+  .buttonColor {
+    background-color:#9ed19e;;
+  }
+  
+  
+  /* New styles for a.grid-container for organizing the buttons */
+  main > header a.grid-container {
+    display: grid;
+    text-align: center;
+    grid-auto-flow: column;
+    align-content: center;
+    gap: 1em; /* Adjust the gap between buttons */
+  }
+  
+  /* Apply styles for individual buttons within the grid */
+  main > header a.grid-container a.button {
+    margin: 0; /* Reset margin for buttons inside the grid */
+  }
+  
+  
+  main > header a.button {
+    align-content: center;
+    margin-top: 1em;
+    justify-self: center; /* Align buttons to the right */
+    color: #ffffff; /* White text color */
+  }
+  
+  main > header span {
+    
+    justify-self: center;
+    color: #000000; /* White text color */
+  }
+  #cards {
+    display: grid; /* Display as a grid */
+    width: 100%; /* Full width of the container */
+    border-spacing: 10px; /* Spacing between "table cells" */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #cards article.card {
+    display: flex; 
+    background-color: #9ed19e; /* Dark green card background */
+    padding: 1em;
+    border-radius: 5px; /* Rounded corners for each "cell" */
+    vertical-align: top; /* Align cards to the top within the "cell" */
+  }
+  
+    #cards article.card header {
+      display: flex;
+      align-items: center;
+    }
+    #cards article.card header h2 {
+      flex-grow: 1;
+    }
+    #cards article.card header a.delete {
+      display: none;
+      font-size: 2.6rem;
+      margin-top: .5rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.25;
+    }
+    #cards article.card header:hover a.delete {
+      display: inline;
+    }
+    #cards article.card li {
+      list-style-type: none;
+    }
+    #cards article.card li label {
+      display: flex;
+      align-items: baseline;
+    }
+    #cards article.card li label span {
+      margin-left: .5em;
+      flex-grow: 1;
+    }
+    #cards article.card li label a {
+      display: none;
+    }
+    #cards article.card li label:hover a {
+      display: inline;
+    }
+    #cards article.card input:checked + span {
+      text-decoration: var(--primary-color) solid line-through;
+    }
+    #cards article.card ul {
+      margin: 0;
+    }
+    #cards article.card form {
+      margin: 0;
+    }
+    #cards article.card input[type=text] {
+      background-color: white;
+      margin: 0;
+    }
+    #content label {
+      font-weight: normal;
+    }
+    #content > form {
+      margin: 0 auto;
+      padding: 1em;
+      max-width: 20em;
+      
+    }
+    #content > form .error {
+      font-weight: bold;
+      color: #ff3333;
+    }
+    #content > form .success {
+      font-weight: bold;
+      color: white;
+    }
+    #content > form input {
+      background-color: white;
+    }
+    @media (max-width: 70em) {
+      #cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      main > header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+      }
+      main > header h1 {
+        grid-row-end: span 2;
+      }
+    }
+    @media (max-width: 40em) {
+      #cards {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 25em) {
+      body {
+        margin: 0;
+      }
+      main > header {
+        margin: 0;
+        padding: 0.5em;
+      }
+      main > header span {
+        margin: 0;
+      }
+      #content form {
+        margin: 0;
+        max-width: 25em;
+      }
+      article.card {
+        margin: 0;
+        border-bottom: 1px solid rgba(96, 108, 118, 0.4);
+      }
+    }
+    /**
+     * Override milligram colors
+     * Some styles might be missing
+     **/
+     button,
+     a.button {
+        display:inline-block;
+        text-align:center;
+        background-color: #125e12; /* Dark green button background */
+        border-color: #125e12; /* Dark green border color */
+        
+        color: #ffffff; /* White text color */
+     }
+     
+     a.button.button-outline {
+      align-content: center;
+       color: #125e12; /* Dark green text color */
+     }
+     
+     
+     a {
+      text-align: center;
+      justify-content: space-between; /* Align items with space between them */
+      align-items: center; /* Center items vertically */
+      background-color: #004300; /* Dark green header background */
+      padding: 8px;
+      border-radius: 5px;
+      color: #ffffff; /* White text color */
+    }
+      
+    strong{
+      align-content: center;
+      text-align: center;
+  
+    }
+     
+     
+     input[type=text]:focus,
+     input[type=email]:focus,
+     input[type=password]:focus {
+       border-color: #125e12; /* Dark green border color on focus */
+     }
+  
+  #search-form {
+      text-align: center; /* Center the form */
+      margin: 10px auto; /* Center the form horizontally */
+      max-width: 300px; /* Limit the form's width */
+      margin-top: 1em;
+  }
+  
+  #search-form input[type="text"] {
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Slightly larger padding for a better look */
+    border: 2px solid #008000; /* Green border */
+    background-color: #ffffff; /* White background */
+    border-radius: 20px; /* More rounded corners */
+    font-size: 16px; /* Font size */
+    outline: none; /* No focus outline */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+  }
+  
+  #search-form input[type="text"]:focus {
+    border-color: #004d00; /* Darker green on focus */
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.5); /* Green glow effect on focus */
+  }
+  
+  
+  /* Main Container */
+  .content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  /* Auctions and Bidders Containers */
+  .auctions-container-home,
+  .bidders-container {
+    flex-basis: 48%;
+    margin: 15px;
+    background-color: #FFFFE4; /* Light green background */
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3);*/
+  }
+  
+  /* Auction and Bidder Items */
+  .auction-item,
+  .bidder-item {
+    /*border: 1px solid #006622;*/
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 128, 0, 0.3);
+    background-color: #9ed19e; /*#bef7be;  Very light green for items */
+  }
+  
+  /* Headers and Paragraphs */
+  h1 {
+    color: #005500; /* Darker green for main headers */
+  }
+  
+  h2 {
+    color: #007700; /* Mid-tone green for subheaders */
+  }
+  
+  h3 {
+    color: #007700;
+  }
+  
+  h4 {
+    color:#ff0000;
+  }
+  
+  p {
+    color: #003300; /* Very dark green for text */
+  }
+  
+  
+  .profile-container {
+    background-color: #FFFFE4; /* Light green background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: none;/*0 3px 6px rgba(0, 128, 0, 0.2);*/
+    text-align: center; /* Center-align text */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Headers within the profile */
+  .profile-header, .addresses-header {
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Larger font size for headers */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+  }
+  
+  /* User information and address item styling */
+  .user-info, .address-item {
+    background-color: #9ed19e;/* #FFFFE4; /* Light gray for contrast */
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: none;/*0 4px 8px rgba(0, 0, 0, 0.1);  Subtle shadow for depth */
+    font-size: 1.1em; /* Slightly larger font size */
+  }
+  
+  /* Container for addresses */
+  .addresses-container {
+    display: grid;
+    /*grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));*/
+    gap: 15px; /* Increased gap */
+    margin-top: 10px; /* Top margin for separation */
+  }
+  
+  /* Styling for buttons */
+  .button {
+    background-color: #125e12; /* Dark green */
+    color: #ffffff;
+    padding: 0px 18px; /* Increased padding for better touch */
+    border-radius: 8px; /* More rounded */
+    text-align: center;
+    margin: 0px 10px; /* Adjusted margin */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+    font-weight: bold; /* Bold font for buttons */
+  }
+  
+  .button:hover {
+    background-color: #0d4a0b; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  
+  /* Form alignment with buttons */
+  .admin-form {
+    display: inline-block; /* Align form with buttons */
+  }
+  
+  .users-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .user-search-form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for No Users Message */
+  .no-users-message {
+    text-align: center;
+    color: #000000; 
+    margin-top: 20px;
+  }
+  
+  /* Container for user cards */
+  .users-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual user card */
+  .user-card {
+    background-color: #9ed19e; /* Light green background */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 128, 0, 0.3); /* Shadow for depth */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 128, 0, 0.5); /* Increased shadow on hover */
+  }
+  
+  .user-name {
+    color: #adc0ad; /* Dark green */
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block; /* Make name a block element for better layout */
+  }
+  
+  .user-details p {
+    margin: 5px 0;
+  }
+  
+  /* Pagination styles ... */
+  
+  .auctions-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .auction-search-form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for No Auctions Message */
+  .no-auctions-message {
+    text-align: center;
+    color: #000000; 
+    margin-top: 20px;
+  }
+  
+  /* Container for auction cards */
+  .auctions-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual auction card */
+  .auction-card {
+    background-color: #9ed19e; /* Light green background */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 128, 0, 0.3); /* Shadow for depth */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .auction-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 128, 0, 0.5); /* Increased shadow on hover */
+  }
+  
+  .auction-title {
+    color: #adc0ad; /* Dark green */
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block; /* Make title a block element for better layout */
+  }
+  
+  .auction-details p {
+    margin: 5px 0;
+  }
+  
+  /* Pagination styles ... */
+  
+  .search-results-section {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 15px;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #9ed19e; /* Light green background for cards */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); /* Shadow for depth */
+    text-align: center;
+  }
+  
+  .card-title {
+    color: #adc0ad; /* Custom color for titles */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .no-results-message {
+    text-align: center;
+    color: #000000; /* Red color for no results message */
+  }
+  
+  .create-auction-container {
+    max-width: 600px;
+    margin: 10px  auto;
+    padding: 20px;
+    background-color: #9ed19e; /* Light gray background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .auction-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #004d00; /* Darker green for labels */
+  }
+  
+  .auction-form input[type="text"],
+  .auction-form input[type="number"],
+  .auction-form input[type="datetime-local"],
+  .auction-form textarea,
+  .auction-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+  
+  .auction-form textarea {
+    resize: vertical;
+  }
+  
+  .submit-button, .cancel-button {
+    background-color: #125e12; /* Dark green */
+    color: #ffffff;
+    padding: 0px 20px; /* Increased padding for larger size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from 'Cancel' link */
+    margin-right: 10px;
+    display: inline-block; /* Ensure link behaves like a button */
+    text-align: center; /* Center text in 'Cancel' link-button */
+    width: auto; /* Auto width for content adjustment */
+    min-width: 100px; /* Minimum width for consistency */
+  }
+  
+  .submit-button:hover, .cancel-button:hover {
+    background-color: #0d4a0b; /* Slightly darker green on hover */
+  }
+  
+  .alert-danger {
+    background-color: #ffdddd; /* Light red background for error messages */
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+  }
+  
+  .auction-details-container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #9ed19e;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .auction-info p {
+    margin: 10px 0;
+    color: #004d00;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .edit-button, .cancel-button {
+    background-color: #125e12;
+    color: #ffffff;
+    padding: 0px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .edit-button:hover, .cancel-button:hover {
+    background-color: #0d4a0b;
+  }
+  
+  #bidTable {
+    width: 100%;
+    margin-top: 20px;
+    /* Additional styling for table */
+  }
+  
+  #bidForm {
+    margin-top: 20px;
+    /* Styling for bid form */
+  }
+  
+  .alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    margin: 10px 0px;
+  }
+  
+  .alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    margin: 10px 0px;
+  }
+  
+  .my-bids-container {
+    max-width: 800px;
+    margin: 10px  auto;
+    padding: 20px;
+    background-color: #FFFFE4;
+    border-radius: 15px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  .page-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .no-bids-message {
+    text-align: center;
+    color: #ff0000; /* Red color for message */
+    margin-top: 20px;
+  }
+  
+  .bids-list {
+    margin-bottom: 20px;
+  }
+  
+  .bid-card {
+    background-color: #9ed19e; /* Light green background for cards */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .pagination {
+    text-align: center;
+    margin: 10px 0px;
+  }
+  
+  .back-button {
+    background-color: #125e12;
+    color: #ffffff;
+    padding: 0px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #0d4a0b;
+  }
+  
+  .owned-auctions-container {
+    max-width: 800px;
+    margin: 10px  auto;
+    padding: 20px;
+    background-color: #FFFFE4;
+    border-radius: 15px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  }
+  
+  .auctions-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .no-auctions-message {
+    text-align: center;
+    color: #ff0000; /* Red color for message */
+  }
+  
+  .auctions-list {
+    margin-bottom: 20px;
+  }
+  
+  .auction-card {
+    background-color: #9ed19e; /* Light green background for cards */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .auction-link {
+    color: rgb(255, 255, 255); /* Dark green */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .auction-details p {
+    margin: 5px 0;
+  }
+  
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    background-color: #125e12;
+    color: #ffffff;
+    padding: 0px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #0d4a0b;
+  }
+  
+  .add-funds-container {
+    max-width: 400px;
+    margin: 10px  auto;
+    padding: 20px;
+    background-color: #9ed19e;
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+  }
+  
+  .add-funds-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .add-funds-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray */
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+  }
+  
+  .error {
+    color: #ff0000; /* Red color for error message */
+  }
+  
+  .add-funds-button {
+    background-color: #125e12; /* Dark green */
+    color: #ffffff;
+    padding: 0px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .add-funds-button:hover {
+    background-color: #0d4a0b; /* Slightly darker green on hover */
+  }
+  
+  .cancel-button {
+    background-color: #ff0000; /* Red color for cancel button */
+    color: #ffffff;
+    padding: 0px 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: #cc0000; /* Slightly darker red on hover */
+  }
+  
+  .edit-auction-container {
+    max-width: 400px;
+    margin: 10px  auto;
+    padding: 20px;
+    background-color: #9ed19e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-auction-title {
+    text-align: center;
+    color: #006400; /* Dark green */
+    margin-bottom: 20px;
+  }
+  
+  .edit-auction-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray */
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+  }
+  
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+  }
+  
+  .update-auction-button {
+    background-color: #125e12; /* Dark green */
+    color: #ffffff;
+    padding: 0px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .update-auction-button:hover {
+    background-color: #0d4a0b; /* Slightly darker green on hover */
+  }
+  
+  .profile-update-container {
+    max-width: 400px;
+    margin: 10px  auto;
+    padding: 20px;
+    background-color: #9ed19e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-update-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Dark gray */
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+  }
+  
+  .error {
+    color: #ff0000; /* Red for error messages */
+  }
+  
+  .update-profile-button {
+    background-color: #125e12; /* Dark green */
+    color: #ffffff;
+    padding: 0px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .update-profile-button:hover {
+    background-color: #0d4a0b; /* Slightly darker green on hover */
+  }
+  
+  .profile-picture img, .user-profile-image {
+    width: 175px;
+    height: 175px;
+    object-fit: cover; /* This ensures the image covers the whole area without stretching */
+    border-radius: 50%; /* Optional: makes the image circular */
+    border: 2px solid #0d4a0b;
+  }
+  
+  .auction-image img {
+    width: 300px;
+    height: auto;
+    object-fit: cover; /* This ensures the image covers the whole area without stretching */
+    border-radius: 5%; /* Optional: makes the image circular */
+    border: 2px solid #0d4a0b;
+  }
+  
+  .filter-section {
+    display: flex;
+    flex-direction: row; /* aligns children in a row */
+    flex-wrap: wrap; /* allows items to wrap onto the next line */
+    gap: 20px; /* space between children */
+    padding: 0 100px; /* padding on the left and right */
+  }
+  
+  .filter-price, 
+  .filter-condition, 
+  .filter-category, 
+  .order-by {
+    display: flex;
+    flex-direction: column; /* stacks the label and input/select vertically */
+    align-items: flex-start; /* aligns items to the start of the flex container */
+    padding: 10px; /* padding around each filter block */
+    flex: 1; /* each block will grow equally to fill the space */
+    min-width: 160px; /* minimum width for each block */
+  }
+  
+  .price-inputs, 
+  .input-group {
+    display: flex;
+    flex-direction: column; /* stacks inputs vertically */
+    gap: 10px; /* space between inputs */
+  }
+  
+  .input-group input[type="number"],
+  .input-group select {
+    border: 1px solid #0d4a0b; /* sets the border color */
+  }
+  
+  .apply-filters {
+    align-self: center; /* centers the button in the flex container */
+    color: white; /* text color of the button */
+    border: none; /* no border */
+    border-radius: 5px; /* rounded corners of the button */
+    cursor: pointer; /* pointer cursor on hover */
+    margin-top: 20px; /* space above the button */
+  }
+  
+  .blocked-container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  .blocked-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .blocked-message p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-spacing: 0;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead tr {
+    background-color: #9ed19e;
+    font-weight: bold;
+  }
+  
+  .checkbox-unread {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  tr.unread-notification {
+    background-color: #FFCCCC; 
+  }
+  
+  tr.read-notification {
+    background-color: #CCFFCC; 
+  }
+  
+  td:first-child , th:first-child {
+    padding: 10px;
+  }
+  
+  .reports {
+    padding: 20px;
+  }
+  
+  .review-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .review-item {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .review-header {
+    margin-bottom: 5px;
+  }
+  
+  .rating {
+    color: #FFD700; /* Gold color for rating */
+  }
+  
+  .review-title {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .review-description {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+  }
